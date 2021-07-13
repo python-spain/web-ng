@@ -1,0 +1,45 @@
+{
+  "name": "gatsby-serif-theme",
+  "version": "1.0.1",
+  "author": "Robert Austin <rob@zerostatic.io>",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "build": "gatsby build"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "engineStrict": true,
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "gatsby": "^3.0.3",
+    "gatsby-plugin-google-analytics": "^3.0.0",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-react-helmet": "^4.0.0",
+    "gatsby-plugin-sass": "^4.0.2",
+    "gatsby-source-filesystem": "^3.0.0",
+    "gatsby-transformer-json": "^3.0.0",
+    "gatsby-transformer-remark": "^3.0.0",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/eslint-parser": "^7.13.10",
+    "@babel/eslint-plugin": "^7.13.10",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0"
+  }
+}
