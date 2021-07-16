@@ -1,8 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
-
-import logoPython from '../../static/images/pythonES.svg';
+import favicon from '../../static/fav.png';
 
 const SEO = props => (
   <StaticQuery
@@ -17,7 +16,7 @@ const SEO = props => (
           title={title}
           titleTemplate={props.title ? `%s` : `%s - ${data.site.siteMetadata.title}`}
           link={[
-            { rel: 'shortcut icon', type: 'image/svg', href: `${logoPython}` }
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
           ]}
         />
       );
