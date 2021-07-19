@@ -5,6 +5,7 @@
   }
   img {
     max-width: unset;
+    height: 4rem;
   }
   a {
     display: block;
@@ -14,14 +15,13 @@
 }
 .logo-mobile {
   display: block;
-  width: 40px;
   padding: 10px 0 10px 0;
   @include media-breakpoint-up(sm) {
     display: none;
   }
   img {
-    width: 100%;
-    height: auto;
+    max-width: unset;
+    height: 3.5rem;
   }
   a {
     display: block;
