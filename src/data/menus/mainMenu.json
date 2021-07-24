@@ -1,22 +1,28 @@
 [
     {
-        "name": "Services",
-        "url": "/services/",
+        "name": "Quienes somos",
+        "url": "/Quienes-somos/",
         "weight": 2
     },
     {
-        "name": "Team",
-        "url": "/team/",
+        "name": "Aprende Python",
+        "url": "/aprende-python/",
         "weight": 3
     },
     {
-        "name": "About",
-        "url": "/about/",
+        "name": "Ofertas de Empleo",
+        "url": "/ofertas-empleo/",
         "weight": 4
     },
     {
-        "name": "Contact",
-        "url": "/contact/",
+        "name": "Comunidades Locales",
+        "url": "/Comunidades Locales/",
         "weight": 5
+    },
+    
+    {
+        "name": "Blog",
+        "url": "/blog/",
+        "weight": 6
     }
 ]
