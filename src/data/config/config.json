@@ -3,10 +3,10 @@
         "show_call_box": true
     },
     "logo": {
-        "mobile": "/images/logo/logo-mobile.svg",
-        "desktop": "/images/logo/logo.svg",
+        "mobile": "/images/logo-pythonES.png",
+        "desktop": "/images/logo-pythonES.png",
         "desktop_height": "36px",
-        "alt": "Serif - A Gatsby Business Theme"
+        "alt": "Python España"
     },
     "homepage_meta_tags": {
         "meta_description": "Serif is a modern business theme for Gatsby. It contains content types for the archetypical business website. The theme is fully responsive, blazing fast and artfully illustrated.",
