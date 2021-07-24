@@ -1,22 +1,22 @@
 [
     {
-        "name": "Services",
-        "url": "/services/",
+        "name": "La Asociación",
+        "url": "/la-asociacion/",
         "weight": 2
     },
     {
-        "name": "Team",
-        "url": "/team/",
+        "name": "Código de conducta",
+        "url": "/codigo-conducta/",
         "weight": 3
     },
     {
-        "name": "About",
-        "url": "/about/",
+        "name": "Aprende Python",
+        "url": "/aprende-python",
         "weight": 4
     },
     {
-        "name": "Contact",
-        "url": "/contact/",
+        "name": "Empleos",
+        "url": "/empleos/",
         "weight": 5
     }
 ]
