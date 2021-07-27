@@ -15,6 +15,9 @@ const Menu = props => {
       }
     }
   `);
+
+  console.log(data)
+  
   return (
     <div id="main-menu" className="main-menu">
       <ul>
