@@ -18,5 +18,10 @@
         "name": "Contact",
         "url": "/contact/",
         "weight": 5
+    },
+    {
+        "name": "Ofertas de empleo",
+        "url": "/ofertas-de-empleo/",
+        "weight": 5
     }
 ]
