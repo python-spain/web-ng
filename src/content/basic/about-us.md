@@ -37,7 +37,7 @@ Vocalía | Maria Antònia Tugores
 Vocalía | Yamila Moreno
 Vocalía | David Barragán
 
-Si quieres contactar con la junta escribe a **mailto:junta@es.python.org**.
+Si quieres contactar con la junta escribe a **junta@es.python.org**.
 
 Los objetivos de la actual Junta son los siguientes.
 
