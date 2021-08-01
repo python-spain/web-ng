@@ -1,12 +1,12 @@
 [
     {
         "name": "Github",
-        "link": "https://github.com/zerostaticthemes/gatsby-serif-theme",
+        "link": "https://github.com/python-spain/web-ng",
         "image": "/images/social/github.svg"
     },
     {
         "name": "Twitter",
-        "link": "https://twitter.com/zerostaticio",
+        "link": "https://twitter.com/python_es",
         "image": "/images/social/twitter.svg"
     }
 ]

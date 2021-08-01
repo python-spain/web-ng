@@ -1,12 +1,12 @@
 [
     {
-        "name": "Home",
-        "url": "/",
+        "name": "Comunidades locales",
+        "url": "/comunidades-locales/",
         "weight": 1
     },
     {
-        "name": "Contact",
-        "url": "/contact/",
+        "name": "Contacto",
+        "url": "/contacto/",
         "weight": 2
     }
 ]
