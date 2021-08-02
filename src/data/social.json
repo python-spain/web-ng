@@ -1,12 +1,37 @@
 [
     {
+        "name": "Twitter",
+        "link": "https://twitter.com/python_es",
+        "image": "/images/social/twitter.svg"
+    },
+    {
         "name": "Github",
-        "link": "https://github.com/zerostaticthemes/gatsby-serif-theme",
+        "link": "https://github.com/python-spain",
         "image": "/images/social/github.svg"
     },
     {
-        "name": "Twitter",
-        "link": "https://twitter.com/zerostaticio",
-        "image": "/images/social/twitter.svg"
+        "name": "YouTube",
+        "link": "https://www.youtube.com/c/PythonEspa%C3%B1aOficial",
+        "image": "/images/social/youtube.svg"
+    },
+    {
+        "name": "Planet",
+        "link": "http://planet.es.python.org/",
+        "image": "/images/social/mundo.svg"
+    },
+    {
+        "name": "Telegram",
+        "link": "https://t.me/PythonEsp",
+        "image": "/images/social/telegram.svg"
+    },
+    {
+        "name": "Comunidades Python España",
+        "link": "https://comunidad.es.python.org/",
+        "image": "/images/social/python-blanco.svg"
+    },
+    {
+        "name": "Discord",
+        "link": "https://discord.com/invite/35E3Ph7Fez",
+        "image": "/images/social/discord.svg"
     }
 ]
