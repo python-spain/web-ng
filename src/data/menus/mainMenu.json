@@ -18,5 +18,10 @@
         "name": "Contact",
         "url": "/contact/",
         "weight": 5
+    },
+    {
+        "name": "Aprende python",
+        "url": "/aprende-python/",
+        "weight": 7
     }
 ]
