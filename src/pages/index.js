@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import Call from '../components/Call';
+import Twitter from '../components/Twitter';
 
 const Home = props => {
   const intro = props.data.intro;
@@ -85,6 +86,9 @@ const Home = props => {
           </div>
         </div>
       )}
+      <div className="d-flex justify-content-center">
+        <Twitter />
+      </div>
     </Layout>
   );
 };
