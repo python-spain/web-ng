@@ -10,13 +10,18 @@
         "weight": 3
     },
     {
-        "name": "Aprende Python",
-        "url": "/aprende-python",
+        "name": "Quiénes somos",
+        "url": "/asociacion/",
         "weight": 4
     },
     {
         "name": "Empleos",
         "url": "/empleos/",
         "weight": 5
+    },
+    {
+        "name": "Aprende python",
+        "url": "/aprende-python/",
+        "weight": 7
     }
 ]

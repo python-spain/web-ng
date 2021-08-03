@@ -8,7 +8,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-transformer-json',
-    'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
@@ -46,6 +45,20 @@ module.exports = {
           'Playfair+Display:400,700'
         ],
         display: 'swap'
+      }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+        {
+          resolve: "gatsby-remark-external-links",
+          options: {
+            target: "_blank",
+            rel: "nofollow"
+          }
+        }
+        ]
       }
     }
   ]

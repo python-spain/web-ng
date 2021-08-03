@@ -19,6 +19,7 @@
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-react-helmet": "^4.0.0",
     "gatsby-plugin-sass": "^4.0.2",
+    "gatsby-remark-external-links": "0.0.4",
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-transformer-json": "^3.0.0",
     "gatsby-transformer-remark": "^4.6.0",
