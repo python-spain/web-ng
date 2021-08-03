@@ -15,6 +15,7 @@ const Menu = props => {
       }
     }
   `);
+  
   return (
     <div id="main-menu" className="main-menu">
       <ul>
