@@ -8,19 +8,19 @@ date: 2021-07-27T16:52:34+07:00
 
 Tienes varias opciones donde buscar trabajo relacionado con Python:
 
-- <a href="https://comunidad.es.python.org/c/empleo/9" target="_blank">Comunidad de Python España</a>
-- <a href="https://www.linkedin.com/jobs/search/" target="_blank">LinkedIn</a> (buscando por Python programming language o Python Developer)
-- <a href="https://stackoverflow.com/jobs" target="_blank">StackOverflow</a> (buscando por Python)
-- <a href="https://www.python.org/jobs/" target="_blank">Python.org</a> (puedes filtrar por lugar utilizando el menú Location)
+- [Comunidad de Python España](https://comunidad.es.python.org/c/empleo/9)
+- [LinkedIn](https://www.linkedin.com/jobs/search/) (buscando por Python programming language o Python Developer)
+- [StackOverflow](https://stackoverflow.com/jobs) (buscando por Python)
+- [Python.org](https://www.python.org/jobs/) (puedes filtrar por lugar utilizando el menú Location)
 
-Si tienes dudas sobre cómo prepararte para la entrevista de trabajo, te recomendamos que veas una mesa redonda sobre el tema además de otra <a href="https://www.youtube.com/watch?v=_D-wcRYzsHo" target="_blank">charla sobre los requisitos de un perfil Fullstack</a>.
+Si tienes dudas sobre cómo prepararte para la entrevista de trabajo, te recomendamos que veas una mesa redonda sobre el tema además de otra [charla sobre los requisitos de un perfil Fullstack](https://www.youtube.com/watch?v=_D-wcRYzsHo).
 
 ## ¿Quieres publicar una oferta de trabajo en la Comunidad de Python España?
 
 Para ello debes realizar los siguientes pasos:
 
-- Regístrate e inicia sesión en <a href="https://comunidad.es.python.org" target="_blank">https://comunidad.es.python.org</a>.
-- Crea un nuevo tema en la categoría <a href="https://comunidad.es.python.org/c/empleo/9" target="_blank">https://comunidad.es.python.org/c/empleo/9</a> siguiendo la plantilla que aparece automáticamente.
+- Regístrate e inicia sesión en [https://comunidad.es.python.org](https://comunidad.es.python.org).
+- Crea un nuevo tema en la categoría [https://comunidad.es.python.org/c/empleo/9](https://comunidad.es.python.org/c/empleo/9) siguiendo la plantilla que aparece automáticamente.
 - El mensaje entrará en la cola de moderación para revisar que cumple los requisitos. Recibirás un aviso cuando sea publicado o se requieran cambios. Normalmente tardamos 1-2 días.
 
 ### Recuerda que toda oferta debe incluir:
