@@ -20,6 +20,11 @@
         "weight": 5
     },
     {
+        "name": "Ofertas de empleo",
+        "url": "/ofertas-de-empleo/",
+        "weight": 6
+    },
+    {
         "name": "Aprende python",
         "url": "/aprende-python/",
         "weight": 7
