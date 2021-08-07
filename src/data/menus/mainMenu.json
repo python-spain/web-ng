@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Quienes somos",
+        "url": "/quienes-somos/",
+        "weight": 2
+    },
+    {
+        "name": "Aprende python",
+        "url": "/aprende-python/",
+        "weight": 3
+    },
+    {
+        "name": "Ofertas de empleo",
+        "url": "/ofertas-empleo/",
+        "weight": 4
+    },
+    {
+        "name": "Comunidades locales",
+        "url": "/comunidades-locales/",
+        "weight": 5
+    },
+    {
+        "name": "Blog",
+        "url": "/blog/",
+        "weight": 6
+    }
+    
+    
+   
+]
