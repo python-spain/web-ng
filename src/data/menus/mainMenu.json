@@ -2,26 +2,28 @@
     {
         "name": "Quienes somos",
         "url": "/Quienes-somos/",
-        "weight": 2
+        "weight": 1
     },
     {
         "name": "Aprende Python",
         "url": "/aprende-python/",
-        "weight": 3
+        "weight": 2
     },
     {
         "name": "Ofertas de Empleo",
         "url": "/ofertas-empleo/",
-        "weight": 4
+        "weight": 3
     },
     {
         "name": "Comunidades Locales",
-        "url": "/Comunidades Locales/",
-        "weight": 5
+        "url": "/Comunidades-locales/",
+        "weight": 4
     },    
     {
+
         "name": "Blog",
         "url": "/blog/",
-        "weight": 6
+        "weight": 5
+
     }
 ]
