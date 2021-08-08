@@ -116,4 +116,6 @@ Es posible que te hayan contado _cosas malas_ de Python pero ¿te crees todo lo 
 
 ### ¿Echas en falta algo?
 
-Abre un [issue](https://github.com/python-spain/web/issues/new) en el repositorio para solicitar contenido nuevo. Comprueba primero que no se haya pedido antes ([ver listado](https://github.com/python-spain/web/issues)). ¡Gracias!
+
+Abre un <a href="https://github.com/python-spain/web/issues/new" target="_blank">issue</a> en el repositorio para solicitar contenido nuevo. Comprueba primero que no se haya pedido antes (<a href="https://github.com/python-spain/web/issues" target="_blank">ver listado</a>). ¡Gracias!
+
