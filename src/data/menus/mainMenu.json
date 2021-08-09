@@ -1,6 +1,7 @@
 [
     {
         "name": "Quienes somos",
+
         "url": "/Quienes-somos/",
         "weight": 1
     },
@@ -18,12 +19,18 @@
         "name": "Comunidades Locales",
         "url": "/Comunidades-locales/",
         "weight": 4
+
+
     },    
     {
+
 
         "name": "Blog",
         "url": "/blog/",
         "weight": 5
 
     }
+    
+    
+   
 ]
