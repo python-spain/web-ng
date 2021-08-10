@@ -2,29 +2,26 @@
     {
         "name": "Quienes somos",
         "url": "/quienes-somos/",
+        "weight": 1
+    },
+    {
+        "name": "Aprende Python",
+        "url": "/aprende-python/",
         "weight": 2
     },
     {
-        "name": "Aprende python",
-        "url": "/aprende-python/",
+        "name": "Ofertas de Empleo",
+        "url": "/ofertas-empleo/",
         "weight": 3
     },
     {
-        "name": "Ofertas de empleo",
-        "url": "/ofertas-empleo/",
-        "weight": 4
-    },
-    {
-        "name": "Comunidades locales",
+        "name": "Comunidades Locales",
         "url": "/comunidades-locales/",
-        "weight": 5
+        "weight": 4
     },
     {
         "name": "Blog",
         "url": "/blog/",
-        "weight": 6
+        "weight": 5
     }
-    
-    
-   
 ]
