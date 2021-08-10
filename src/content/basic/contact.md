@@ -1,17 +1,13 @@
 ---
 path: '/contact'
-title: 'Contact'
+title: 'Contacto'
 date: 2018-02-22T17:01:34+07:00
 template: "contact"
 ---
 
-Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae crimen habet Priamum nec.
+Si tienes cualquier duda acerca de la asociación, escríbenos a contacto@es.python.org.
 
-| Day       | Opening Hours   |
-| --------- | --------------- |
-| Tuesday   | 8:30am - 5:00pm |
-| Wednesday | 8:30am - 5:00pm |
-| Thursday  | 8:30am - 5:00pm |
-| Friday    | 8:30am - 5:00pm |
-| Saturday  | 10:am - 4:00pm  |
-| Saturday  | Closed          |
+También puedes contactar con nosotros a través de nuestras redes sociales:
+
+
+
