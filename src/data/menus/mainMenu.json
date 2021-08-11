@@ -11,12 +11,12 @@
     },
     {
         "name": "Ofertas de empleo",
-        "url": "/ofertas-empleo/",
+        "url": "/ofertas-de-empleo/",
         "weight": 4
     },
     {
         "name": "Comunidades locales",
-        "url": "/comunidades-locales/",
+        "url": "/comunidades/",
         "weight": 5
     },
     {

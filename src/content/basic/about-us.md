@@ -1,5 +1,5 @@
 ---
-path: '/asociacion'
+path: '/quienes-somos'
 title: 'Asociación'
 date: 2021-07-26T22:30:34+07:00
 ---
