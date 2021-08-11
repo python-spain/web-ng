@@ -1,5 +1,5 @@
 ---
-path: '/ofertas-de-empleo'
+path: '/ofertas-de-empleo/'
 title: 'Ofertas de empleo'
 date: 2021-07-27T16:52:34+07:00
 ---
