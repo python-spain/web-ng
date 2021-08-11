@@ -1,32 +1,27 @@
 [
     {
-        "name": "Services",
-        "url": "/services/",
-        "weight": 2
-    },
-    {
-        "name": "Team",
-        "url": "/team/",
-        "weight": 3
-    },
-    {
         "name": "Quiénes somos",
         "url": "/asociacion/",
-        "weight": 4
-    },
-    {
-        "name": "Contact",
-        "url": "/contact/",
-        "weight": 5
-    },
-    {
-        "name": "Ofertas de empleo",
-        "url": "/ofertas-de-empleo/",
-        "weight": 6
+        "weight": 1
     },
     {
         "name": "Aprende python",
         "url": "/aprende-python/",
-        "weight": 7
+        "weight": 2
+    },
+    {
+        "name": "Ofertas de empleo",
+        "url": "/ofertas-de-empleo/",
+        "weight": 3
+    },
+    {
+        "name": "Comunidades locales",
+        "url": "/comunidades-locales/",
+        "weight": 4
+    },
+    {
+        "name": "Blog",
+        "url": "/blog/",
+        "weight": 5
     }
 ]

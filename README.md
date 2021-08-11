@@ -2,9 +2,10 @@
 
 Pasos para instalar e iniciar el sistema:
 
+0. Instalar el gestor de versiones de node [`nvm`](https://github.com/nvm-sh/nvm) y activar la última versión de node LTS: `nvm use --lts`.
 1. Instalar gatsby-cli: `npm install -g gatsby-cli`
 2. Clonarlo este repo: `git clone git@github.com:python-spain/web-ng.git`.
-3. Ir al directorio nuevo y ejecutar `npm i` para instalar todo.
+3. Ir al directorio nuevo y ejecutar `npm ci` para instalar todo.
 4. Ejecutar `gatsby develop` para iniciar el servidor.
 5. El sitio debería ser visible en http://localhost:8000/.
 
