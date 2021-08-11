@@ -1,5 +1,5 @@
 ---
-path: '/aprende-python'
+path: '/aprende-python/'
 title: 'Aprende python'
 date: 2021-07-27T17:18:34+07:00
 ---
