@@ -3,5 +3,10 @@
         "name": "Home",
         "url": "/",
         "weight": 1
+    },
+    {
+        "name": "Código de conducta",
+        "url": "/codigo-conducta/",
+        "weight": 2
     }
 ]
