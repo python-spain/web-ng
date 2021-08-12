@@ -1,0 +1,18 @@
+.posts {
+    height: 100%;
+    border: 1px solid #e1e1e1;
+    border-radius: 3px;
+    padding: 15px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    .post-title {
+    }
+    .post-content {
+        text-align: left;
+        margin-bottom: 0;
+        margin-top: auto;
+    }
+}

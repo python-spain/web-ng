@@ -4,7 +4,7 @@ $secondary: #ffe55f;
 $black: #2f2f41;
 $white: #ffffff;
 $white-offset: #f6f7ff;
-$steel: #5C5A5A;
+$steel: #5c5a5a;
 
 // Links
 $link-color: $primary;
@@ -28,7 +28,6 @@ $sub-footer-text-color: $white;
 @import 'bootstrap/bootstrap-grid';
 // @import 'bootstrap/bootstrap'; // Uncomment this line to import the entire Bootstrap library
 
-
 // Libraries
 @import 'libraries/hamburgers/hamburgers';
 
@@ -51,6 +50,7 @@ $sub-footer-text-color: $white;
 @import 'components/strip';
 @import 'components/feature';
 @import 'components/social';
+@import 'components/last-posts';
 
 // Pages
 @import 'pages/home';
@@ -58,11 +58,14 @@ $sub-footer-text-color: $white;
 @import 'pages/services/page-services-single';
 
 body {
-  font-size: 16px;
-  line-height: 1.2;
-  font-family: $font-family-base;
-  @include media-breakpoint-up(md) {
     font-size: 16px;
-    line-height: 1.3;
-  }
+    line-height: 1.2;
+    font-family: $font-family-base;
+    @include media-breakpoint-up(md) {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+}
+.min-w-max {
+    min-width: max-content;
 }
