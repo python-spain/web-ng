@@ -5,6 +5,8 @@ import Footer from './Footer';
 import SubFooter from './SubFooter';
 import '../scss/style.scss';
 
+
+
 const Layout = props => (
   <>
     <SEO />
@@ -12,7 +14,9 @@ const Layout = props => (
       <div id="wrapper" className="wrapper">
         <Header />
         {props.children}
+        
       </div>
+      
       <Footer />
       <SubFooter />
     </div>

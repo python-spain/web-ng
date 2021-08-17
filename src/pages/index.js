@@ -6,6 +6,9 @@ import Layout from '../components/Layout';
 import Call from '../components/Call';
 import Twitter from '../components/Twitter';
 
+
+
+
 const Home = props => {
   const intro = props.data.intro;
   const site = props.data.site.siteMetadata;
@@ -15,6 +18,7 @@ const Home = props => {
 
   return (
     <Layout bodyClass="page-home">
+      
       <SEO title={site.title} />
       <Helmet>
         <meta
@@ -34,6 +38,7 @@ const Home = props => {
               <div className="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
                 <img alt={intro.frontmatter.title} className={introImageClasses} src={intro.frontmatter.intro_image} />
               </div>
+              
             )}
           </div>
         </div>
@@ -88,6 +93,7 @@ const Home = props => {
       )}
       <div className="d-flex justify-content-center">
         <Twitter />
+        
       </div>
     </Layout>
   );
