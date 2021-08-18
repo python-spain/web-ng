@@ -6,6 +6,7 @@ import Hamburger from './Hamburger';
 //import logoMobile from '../../static/images/logo/logo-mobile.png';
 import MenuMobile from './MenuMobile';
 
+
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -42,6 +43,7 @@ class Header extends React.Component {
           <MenuMobile active={this.state.menuActive} />
           <Menu />
           <Hamburger toggleMenu={this.toggleMenu} />
+         
         </div>
       </div>
     );

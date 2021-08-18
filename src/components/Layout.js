@@ -7,6 +7,7 @@ import '../scss/style.scss';
 
 
 
+
 const Layout = props => (
   <>
     <SEO />

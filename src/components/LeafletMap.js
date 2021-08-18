@@ -1,44 +1,32 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
-// import './leafletmap.css'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 
-class LeafletMap extends React.Component {
 
-  static propTypes = {
-    /** Latitude and Longitude of the map centre in an array, eg [51, -1] **/
-    position: PropTypes.array,
+const LeafletMap = () => {
 
-    /** Initial zoom level for the map (default 13) **/
-    zoom: PropTypes.number,
+  const position = [51.505, -0.09]
 
-    /** If set, will display a marker, which when clicked will display this text **/
-    markerText: PropTypes.string
-  }
 
-  static defaultProps = {
-    position: [51, -1],
-    zoom: 13,
-    markerText: ""
-  }
+return(
+  <div>
+  <h1>este es mi mapa</h1>
+  <MapContainer center={position} zoom={13} scrollWheelZoom={true}>
+    <TileLayer
+      attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    />
+    <Marker position={position}>
+      <Popup>
+        A pretty CSS3 popup. <br /> Easily customizable.
+      </Popup>
+    </Marker>
+  </MapContainer>
+  </div>
+)
 
-  render() {
-
-      return (
-        <Map center={this.props.position} zoom={this.props.zoom}>
-          <TileLayer
-            url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
-            attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
-          />
-          {this.props.markerText !== "" &&
-          <Marker position={this.props.position}>
-            <Popup>{this.props.markerText}</Popup>
-          </Marker>
-          }
-        </Map>
-      );
-  }
 }
 
+
 export default LeafletMap
+
