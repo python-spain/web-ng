@@ -1,14 +1,14 @@
 .posts {
   height: 100%;
-  border: 1px solid #a586c4a2;
-  border-radius: 3px;
-  padding: 15px;
+  border: 1px solid #844abd67;
+  border-radius: 4px;
+  padding: 1.6em;
   background-color: #ffffff;
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.08);
   .post-title {
   }
   .post-content {
@@ -16,7 +16,12 @@
     margin-bottom: 0;
     margin-top: auto;
   }
+  img {
+    max-width: 8em;
+    height: auto;
+  }
 }
 .subHeader {
   color: $primary;
+  font-size: 32px;
 }
