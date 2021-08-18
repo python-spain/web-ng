@@ -10,15 +10,17 @@ const Social = props => {
             name
             image
             link
+            imageDark
           }
         }
       }
     }
   `);
+  const dark = props.dark;
   return (
     <div className="social">
       {data.allSocialJson.edges.map(({ node }) => (
-        <a key={node.name} href={node.link} target="blank"><img src={node.image} title={node.name} alt={node.name} /></a>
+        <a key={node.name} href={node.link} target="blank"><img src={dark? node.imageDark : node.image} title={node.name} alt={node.name} /></a>
       ))}
     </div>
   );

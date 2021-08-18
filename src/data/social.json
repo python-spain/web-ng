@@ -2,36 +2,43 @@
     {
         "name": "Twitter",
         "link": "https://twitter.com/python_es",
-        "image": "/images/social/twitter.svg"
+        "image": "/images/social/twitter.svg",
+        "imageDark": "/images/social/twitter-dark.svg"
     },
     {
         "name": "Github",
         "link": "https://github.com/python-spain",
-        "image": "/images/social/github.svg"
+        "image": "/images/social/github.svg",
+        "imageDark": "/images/social/github-dark.svg"
     },
     {
         "name": "YouTube",
         "link": "https://www.youtube.com/c/PythonEspa%C3%B1aOficial",
-        "image": "/images/social/youtube.svg"
+        "image": "/images/social/youtube.svg",
+        "imageDark": "/images/social/youtube-dark.svg"
     },
     {
         "name": "Planet",
         "link": "http://planet.es.python.org/",
-        "image": "/images/social/mundo.svg"
+        "image": "/images/social/mundo.svg",
+        "imageDark": "/images/social/mundo-dark.svg"
     },
     {
         "name": "Telegram",
         "link": "https://t.me/PythonEsp",
-        "image": "/images/social/telegram.svg"
+        "image": "/images/social/telegram.svg",
+        "imageDark": "/images/social/telegram-dark.svg"
     },
     {
         "name": "Comunidades Python España",
         "link": "https://comunidad.es.python.org/",
-        "image": "/images/social/python-blanco.svg"
+        "image": "/images/social/python-blanco.svg",
+        "imageDark": "/images/social/python-dark.svg"
     },
     {
         "name": "Discord",
         "link": "https://discord.com/invite/35E3Ph7Fez",
-        "image": "/images/social/discord.svg"
+        "image": "/images/social/discord.svg",
+        "imageDark": "/images/social/discord-dark.svg"
     }
 ]
