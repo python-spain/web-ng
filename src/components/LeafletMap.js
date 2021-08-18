@@ -1,12 +1,9 @@
 import React from 'react'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-
-
+import { MapContainer, TileLayer, Marker, Popup} from 'react-leaflet'
 
 const LeafletMap = () => {
 
   const position = [51.505, -0.09]
-
 
 return(
   <div>
@@ -23,10 +20,10 @@ return(
     </Marker>
   </MapContainer>
   </div>
-)
-
-}
-
+)}
 
 export default LeafletMap
+
+
+
 

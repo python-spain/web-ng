@@ -79,6 +79,25 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
+            comunidades: allMarkdownRemark(
+              filter: { fileAbsolutePath: { regex: "content/comunidades\/.*/" } }
+            ) {
+              edges {
+                node {
+                  id
+                  excerpt
+                  html
+                  frontmatter {
+                    title
+                    path
+                    template
+                  }
+                  fields {
+                    slug
+                  }
+                }
+              }
+            }
           }
         `,
       ).then(result => {
@@ -104,6 +123,19 @@ exports.createPages = ({ graphql, actions }) => {
         });
         result.data.basic.edges.forEach(({ node }) => {
           let component = path.resolve('src/templates/basic.js');
+          if (node.frontmatter.template) {
+            component = path.resolve(`src/templates/${node.frontmatter.template}.js`);
+          }
+          createPage({
+            path: node.frontmatter.path ? node.frontmatter.path : node.fields.slug,
+            component,
+            context: {
+              id: node.id
+            }
+          });
+        });
+        result.data.comunidades.edges.forEach(({ node }) => {
+          let component = path.resolve('src/templates/comunidades.js');
           if (node.frontmatter.template) {
             component = path.resolve(`src/templates/${node.frontmatter.template}.js`);
           }
