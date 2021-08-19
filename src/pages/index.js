@@ -27,7 +27,6 @@ const Home = props => {
           content="Small Business Theme. Multiple content types using Markdown and JSON sources. Responsive design and SCSS. This is a beautiful and artfully designed starting theme."
         />
       </Helmet>
-      <LeafletMap/>
       <div className="intro">
         <div className="container">
           <div className="row justify-content-start">

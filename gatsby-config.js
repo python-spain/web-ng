@@ -10,6 +10,7 @@ module.exports = {
     'gatsby-transformer-json',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-react-leaflet',
+    'gatsby-plugin-fontawesome-css',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
