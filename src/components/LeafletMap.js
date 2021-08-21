@@ -4,7 +4,8 @@ import Leaflet from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { divIcon } from 'leaflet';
 import { renderToStaticMarkup } from 'react-dom/server';
-import { FaPython } from 'react-icons/fa';
+import { SiPython } from "@react-icons/all-files/si/SiPython"
+import "./LeafletMap.css"
 
 
 Leaflet.Icon.Default.imagePath =
@@ -18,8 +19,9 @@ Leaflet.Icon.Default.mergeOptions({
   shadowUrl: require('leaflet/dist/images/marker-shadow.png')
 });
 
-{/* <i class="fab fa-python"></i> */ }
-const iconMarkup = renderToStaticMarkup(<FaPython/>);
+
+
+const iconMarkup = renderToStaticMarkup(<div class="python"><SiPython /></div>);
 const customMarkerIcon = divIcon({
   html: iconMarkup,
 });
@@ -36,10 +38,9 @@ export default class LeafletMap extends Component {
 
   render() {
     const position = [this.state.lat, this.state.lng]
-    const PythonVigo = [42.19864, -8.7726]
+    const PythonVigo = [42.19864, -8.7726] 
     const PythonMalaga = [36.7644, -4.4242]
     const PythonValencia = [39.4227, -0.3525]
-    const PythonMallorca = [39.6602, -2.9862]
     const PythonSevilla = [37.3766, -5.926]
     const PythonGranada = [37.1809, -3.5983]
     const PythonCanarias = [28.4811, -16.3227]
@@ -56,8 +57,9 @@ export default class LeafletMap extends Component {
     const PythonMurcia = [37.990434, -1.133015]
     const PythonCórdoba = [37.883333, -4.766667]
     const PythonCyL = [41.652778, -4.723611]
-    const PyLadiesBarcelona = [41.3959,  2.1404]
-    
+    const PyLadiesBarcelona = [41.3959, 2.1404]
+    const MallorcaPython = [39.6602, 2.9862]
+    const PyBCN = [ 41.3929, 2.1404]
 
     return (
       <MapContainer center={position} zoom={5.5} style={{ height: '400px' }}>
@@ -67,7 +69,7 @@ export default class LeafletMap extends Component {
         />
         <Marker position={PythonValencia} icon={customMarkerIcon}>
           <Popup>
-          Python Valencia
+            Python Valencia
           </Popup>
         </Marker>
         <Marker position={PythonVigo} icon={customMarkerIcon}>
@@ -80,122 +82,108 @@ export default class LeafletMap extends Component {
             Python Málaga
           </Popup>
         </Marker>
-        <Marker position={PythonMallorca} icon={customMarkerIcon}>
-          <Popup>
-            Python Mallorca
-          </Popup>
-        </Marker>
         <Marker position={PythonSevilla} icon={customMarkerIcon}>
           <Popup>
-          Python Sevilla
+            Python Sevilla
           </Popup>
         </Marker>
         <Marker position={PythonGranada} icon={customMarkerIcon}>
           <Popup>
-          Python Granada
+            Python Granada
           </Popup>
         </Marker>
         <Marker position={PythonCanarias} icon={customMarkerIcon}>
           <Popup>
-          Python Canarias
+            Python Canarias
           </Popup>
         </Marker>
         <Marker position={PythonAlicante} icon={customMarkerIcon}>
           <Popup>
-          Python Alicante
+            Python Alicante
           </Popup>
         </Marker>
         <Marker position={PythonSanSebastián} icon={customMarkerIcon}>
           <Popup>
-          Python San Sebastián
+            Python San Sebastián
           </Popup>
         </Marker>
         <Marker position={PythonGirona} icon={customMarkerIcon}>
           <Popup>
-          Python Girona
+            Python Girona
           </Popup>
         </Marker>
         <Marker position={PythonMadrid} icon={customMarkerIcon}>
           <Popup>
-          Python Madrid
+            Python Madrid
           </Popup>
         </Marker>
         <Marker position={PyLadiesMadrid} icon={customMarkerIcon}>
           <Popup>
-          PyLadies Madrid
+            PyLadies Madrid
           </Popup>
         </Marker>
         <Marker position={PyDataMallorca} icon={customMarkerIcon}>
           <Popup>
-          PyData Mallorca
+            PyData Mallorca
           </Popup>
         </Marker>
         <Marker position={PythonAlmería} icon={customMarkerIcon}>
           <Popup>
-          Python Almería
+            Python Almería
           </Popup>
         </Marker>
         <Marker position={PyDataSalamanca} icon={customMarkerIcon}>
           <Popup>
-          Python Salamanca
+            Python Salamanca
           </Popup>
         </Marker>
         <Marker position={ExtrePython} icon={customMarkerIcon}>
           <Popup>
-          ExtrePython
+            ExtrePython
           </Popup>
         </Marker>
         <Marker position={PythonNavarra} icon={customMarkerIcon}>
           <Popup>
-          Python Navarra
+            Python Navarra
           </Popup>
         </Marker>
         <Marker position={PythonMurcia} icon={customMarkerIcon}>
           <Popup>
-          Python Murcia
+            Python Murcia
           </Popup>
         </Marker>
         <Marker position={PythonCórdoba} icon={customMarkerIcon}>
           <Popup>
-          Python Córdoba
+            Python Córdoba
           </Popup>
         </Marker>
         <Marker position={PythonCyL} icon={customMarkerIcon}>
           <Popup>
-          PythonCyL
+            PythonCyL
           </Popup>
         </Marker>
         <Marker position={PyLadiesBarcelona} icon={customMarkerIcon}>
           <Popup>
-          PyLadies Barcelona
+            PyLadies Barcelona
+          </Popup>
+        </Marker>
+        <Marker position={MallorcaPython} icon={customMarkerIcon}>
+          <Popup>
+            Python Mallorca
+          </Popup>
+        </Marker>
+        <Marker position={PyBCN} icon={customMarkerIcon}>
+          <Popup>
+          PyBCN
           </Popup>
         </Marker>
       </MapContainer>
+
+
     )
   }
 }
-// const LeafletMap = () => {
 
-//   const position = [51.505, -0.09]
-
-// return(
-//   <div>
-//   <h1>este es mi mapa</h1>
-//   <MapContainer center={position} zoom={13} scrollWheelZoom={true}>
-//     <TileLayer
-//       attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-//       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-//     />
-//     <Marker position={position}>
-//       <Popup>
-//         A pretty CSS3 popup. <br /> Easily customizable.
-//       </Popup>
-//     </Marker>
-//   </MapContainer>
-//   </div>
-// )}
-
-// export default LeafletMap
 
 
 
