@@ -5,6 +5,12 @@ import 'leaflet/dist/leaflet.css';
 import { divIcon } from 'leaflet';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { SiPython } from "@react-icons/all-files/si/SiPython"
+import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter"
+import { BiWorld } from "@react-icons/all-files/bi/BiWorld"
+import { FaTelegram } from "@react-icons/all-files/fa/FaTelegram"
+import { FiMail } from "@react-icons/all-files/fi/FiMail"
+import { FaMeetup } from "@react-icons/all-files/fa/FaMeetup"
+import { FaVideo } from "@react-icons/all-files/fa/FaVideo"
 import "./LeafletMap.css"
 
 
@@ -21,7 +27,7 @@ Leaflet.Icon.Default.mergeOptions({
 
 
 
-const iconMarkup = renderToStaticMarkup(<div class="python"><SiPython /></div>);
+const iconMarkup = renderToStaticMarkup(<div class="python-logo"><SiPython /></div>);
 const customMarkerIcon = divIcon({
   html: iconMarkup,
 });
@@ -38,7 +44,7 @@ export default class LeafletMap extends Component {
 
   render() {
     const position = [this.state.lat, this.state.lng]
-    const PythonVigo = [42.19864, -8.7726] 
+    const PythonVigo = [42.19864, -8.7726]
     const PythonMalaga = [36.7644, -4.4242]
     const PythonValencia = [39.4227, -0.3525]
     const PythonSevilla = [37.3766, -5.926]
@@ -59,7 +65,7 @@ export default class LeafletMap extends Component {
     const PythonCyL = [41.652778, -4.723611]
     const PyLadiesBarcelona = [41.3959, 2.1404]
     const MallorcaPython = [39.6602, 2.9862]
-    const PyBCN = [ 41.3929, 2.1404]
+    const PyBCN = [41.3929, 2.1404]
 
     return (
       <MapContainer center={position} zoom={5.5} style={{ height: '400px' }}>
@@ -69,112 +75,287 @@ export default class LeafletMap extends Component {
         />
         <Marker position={PythonValencia} icon={customMarkerIcon}>
           <Popup>
-            Python Valencia
+            <div class="div-container">
+              <b>Python Valencia</b>
+              <div class="links">
+                <a href='https://twitter.com/python_vlc'><FaTwitter /></a><a href='http://www.meetup.com/es-ES/Python-Valencia-Meetup/'>< BiWorld /></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PythonVigo} icon={customMarkerIcon}>
           <Popup>
-            Python Vigo
+            <div class="div-container">
+              <b>Python Vigo</b>
+              <div class="links">
+                <a href='https://twitter.com/python_vigo'><FaTwitter /></a>
+                <a href='http://www.python-vigo.es/'>< BiWorld /></a>
+                <a href='https://t.me/joinchat/AAAAAAfW2-q8miOKsVGjCg'><FaTelegram /></a>
+                <a href='vigo@lists.es.python.org'><FiMail /></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PythonMalaga} icon={customMarkerIcon}>
           <Popup>
-            Python Málaga
+            <div class="div-container">
+              <b>Python Málaga</b>
+              <div class="links">
+                <a href='https://twitter.com/python_malaga'><FaTwitter /></a>
+                <a href='https://www.python-malaga.es/'>< BiWorld /></a>
+                <a href='https://www.meetup.com/es-ES/python_malaga/'><FaMeetup/></a>
+                <a href='https://www.youtube.com/watch?v=wnhtNjsSLe8'><FaVideo/></a>
+                <a href='https://t.me/python_malaga'><FaTelegram /></a>
+                <a href='python.malaga@gmail.com'><FiMail /></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PythonSevilla} icon={customMarkerIcon}>
           <Popup>
-            Python Sevilla
+            <div class="div-container">
+              <b>Python Sevilla</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PythonGranada} icon={customMarkerIcon}>
           <Popup>
-            Python Granada
+            <div class="div-container">
+              <b>Python Granada</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PythonCanarias} icon={customMarkerIcon}>
           <Popup>
-            Python Canarias
+            <div class="div-container">
+              <b>Python Canarias</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PythonAlicante} icon={customMarkerIcon}>
           <Popup>
-            Python Alicante
+            <div class="div-container">
+              <b>Python Alicante</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PythonSanSebastián} icon={customMarkerIcon}>
           <Popup>
-            Python San Sebastián
+            <div class="div-container">
+              <b>Python San Sebastián</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PythonGirona} icon={customMarkerIcon}>
           <Popup>
-            Python Girona
+            <div class="div-container">
+              <b>Python Girona</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PythonMadrid} icon={customMarkerIcon}>
           <Popup>
-            Python Madrid
+            <div class="div-container">
+              <b>Python Madrid</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PyLadiesMadrid} icon={customMarkerIcon}>
           <Popup>
-            PyLadies Madrid
+            <div class="div-container">
+              <b>PyLadies Madrid</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PyDataMallorca} icon={customMarkerIcon}>
           <Popup>
-            PyData Mallorca
+            <div class="div-container">
+              <b>PyData Mallorca</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PythonAlmería} icon={customMarkerIcon}>
           <Popup>
-            Python Almería
+            <div class="div-container">
+              <b>Python Almería</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PyDataSalamanca} icon={customMarkerIcon}>
           <Popup>
-            Python Salamanca
+            <div class="div-container">
+              <b>Python Salamanca</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={ExtrePython} icon={customMarkerIcon}>
           <Popup>
-            ExtrePython
+            <div class="div-container">
+              <b>ExtrePython</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PythonNavarra} icon={customMarkerIcon}>
           <Popup>
-            Python Navarra
+            <div class="div-container">
+              <b>Python Navarra</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PythonMurcia} icon={customMarkerIcon}>
           <Popup>
-            Python Murcia
+            <div class="div-container">
+              <b>Python Murcia</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PythonCórdoba} icon={customMarkerIcon}>
           <Popup>
-            Python Córdoba
+            <div class="div-container">
+              <b>Python Córdoba</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PythonCyL} icon={customMarkerIcon}>
           <Popup>
-            PythonCyL
+            <div class="div-container">
+              <b>PythonCyL</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PyLadiesBarcelona} icon={customMarkerIcon}>
           <Popup>
-            PyLadies Barcelona
+            <div class="div-container">
+              <b>PyLadies Barcelona</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={MallorcaPython} icon={customMarkerIcon}>
           <Popup>
-            Python Mallorca
+            <div class="div-container">
+              <b>Python Mallorca</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
         <Marker position={PyBCN} icon={customMarkerIcon}>
           <Popup>
-          PyBCN
+            <div class="div-container">
+              <b>PyBCN</b>
+              <div class="links">
+                <a href=''><FaTwitter /></a>
+                <a href=''>< BiWorld /></a>
+                <a href=''></a>
+                <a href=''></a>
+              </div>
+            </div>
           </Popup>
         </Marker>
       </MapContainer>
