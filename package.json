@@ -40,6 +40,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
     "react-leaflet": "^3.2.1",
+    "react-leaflet-markercluster": "^3.0.0-rc1",
     "remark-parse": "^9.0.0"
   },
   "devDependencies": {
