@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { graphql, Link } from 'gatsby';
 import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
@@ -16,6 +16,12 @@ const Home = props => {
   const services = props.data.services.edges;
   const features = props.data.features.edges;
   const introImageClasses = `intro-image ${intro.frontmatter.intro_image_absolute && 'intro-image-absolute'} ${intro.frontmatter.intro_image_hide_on_mobile && 'intro-image-hide-mobile'}`;
+
+  useEffect(() => {
+    if (typeof twttr.widgets !== 'undefined') {
+      twttr.widgets.load()
+    }
+  }, [])
 
   return (
     <Layout bodyClass="page-home">
