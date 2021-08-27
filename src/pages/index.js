@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { graphql, Link } from 'gatsby';
 import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
@@ -7,7 +7,7 @@ import Call from '../components/Call';
 import Twitter from '../components/Twitter';
 import LastPosts from '../components/LastPosts';
 
-const Home = (props) => {
+const Home = props => {
     const intro = props.data.intro;
     const site = props.data.site.siteMetadata;
     const services = props.data.services.edges;
@@ -19,6 +19,12 @@ const Home = (props) => {
         'intro-image-hide-mobile'
     }`;
     const lastPosts = props.data.posts.edges;
+
+    useEffect(() => {
+        if (typeof twttr.widgets !== 'undefined') {
+            twttr.widgets.load();
+        }
+    }, []);
 
     return (
         <Layout bodyClass='page-home'>
