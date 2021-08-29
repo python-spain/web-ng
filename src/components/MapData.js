@@ -17,21 +17,21 @@ import "./LeafletMap.css"
 
 
 
-// Leaflet.Icon.Default.imagePath =
-//   '../node_modules/leaflet'
-
-// delete Leaflet.Icon.Default.prototype._getIconUrl;
-
 Leaflet.Icon.Default.mergeOptions({
     iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
     iconUrl: require('leaflet/dist/images/marker-icon.png'),
     shadowUrl: require('leaflet/dist/images/marker-shadow.png')
 });
 
-const iconMarkup = renderToStaticMarkup(<div class="python-logo"><SiPython /></div>);
-const customMarkerIcon = divIcon({
-    html: iconMarkup,
-});
+const iconMarkup = renderToStaticMarkup(<div class="python-logo"><SiPython /></div>); // Utilizamos renderToStaticMarkup() cuando queremos utilizar React como un simple generador de páginas estáticas, 
+const customMarkerIcon = divIcon({                                                    // en este caso LeafletMap se espera un "string" de markup que tiene que renderizar como icono, 
+    html: iconMarkup,                                                                 // de esta manera convertimos el JSX en un string
+});                                                                                   // Si planeas usar React en el cliente para hacer que el marcado sea interactivo, no uses este método. 
+                                                                                      // En su lugar, use renderToString en el servidor y ReactDOM.hydrate() en el cliente.
+
+
+
+
 
 const MapData = () => {
     const groups = [
@@ -224,35 +224,30 @@ const MapData = () => {
             video: 'https://www.youtube.com/watch?v=JYCcPr4QW_k',
         },
     ]
-    let grouparray = [] 
-    groups.forEach(key => {
-        grouparray.push(key)
-    })
-    console.log(grouparray,"este es mi array")
-    
-    return grouparray.map(group => {
-        return < Marker position = { [group.latitude, group.longitude] } icon = { customMarkerIcon } >
-        <Popup>
-            <div class="div-container">
-                <b>{group.name}</b>
-                <div class="links">
-                    {group.twitter?(<a href={group.twitter}><FaTwitter /></a>):''}
-                    {group.web?(<a href={group.web}>< BiWorld /></a>):''}
-                   {group.telegram?(<a href={group.telegram}><FaTelegram /></a>):''} 
-                   {group.mail?(<a href={group.mail}><FiMail /></a>):''} 
-                    {group.meetup?(<a href={group.meetup}><FaMeetup /></a>):''}
-                   {group.video?(<a href={group.video}><FaVideo /></a>):''} 
-                   {group.discord?(<a href={group.discord}><FaDiscord /></a>):''} 
+
+
+    return groups.map((group, index) => {
+        return < Marker key={index.toString()} position={[group.latitude, group.longitude]} icon={customMarkerIcon} >
+            <Popup>
+                <div class="div-container">
+                    <b>{group.name}</b>
+                    <div class="links">
+                        {group.twitter ? (<a href={group.twitter}><FaTwitter /></a>) : ''}
+                        {group.web ? (<a href={group.web}>< BiWorld /></a>) : ''}
+                        {group.telegram ? (<a href={group.telegram}><FaTelegram /></a>) : ''}
+                        {group.mail ? (<a href={group.mail}><FiMail /></a>) : ''}
+                        {group.meetup ? (<a href={group.meetup}><FaMeetup /></a>) : ''}
+                        {group.video ? (<a href={group.video}><FaVideo /></a>) : ''}
+                        {group.discord ? (<a href={group.discord}><FaDiscord /></a>) : ''}
+                    </div>
                 </div>
-            </div>
-        </Popup>
+            </Popup>
         </Marker >
-    
+
     })
-   
+
 
 }
 export default MapData
 
 
-    
