@@ -9,6 +9,8 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-transformer-json',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-react-leaflet',
+    'gatsby-plugin-fontawesome-css',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -59,6 +61,12 @@ module.exports = {
           }
         }
         ]
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-react-leaflet',
+      options: {
+        linkStyles: true // (default: true) Enable/disable loading stylesheets via CDN
       }
     }
   ]

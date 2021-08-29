@@ -16,7 +16,7 @@
     },
     {
         "name": "Comunidades locales",
-        "url": "/comunidades-locales/",
+        "url": "/ComunidadesLocales/",
         "weight": 4
     },
     {
@@ -24,4 +24,7 @@
         "url": "/blog/",
         "weight": 5
     }
+    
+    
+   
 ]

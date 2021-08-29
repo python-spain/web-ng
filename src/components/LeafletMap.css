@@ -1,0 +1,35 @@
+.python-logo{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    color:#306998
+}
+.leaflet-container{
+    font: 15px/0 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+.leaflet-container a{
+    color:#306998
+    
+}
+.leaflet-marker-icon{
+    background-color: transparent;
+    border-style:none;
+}
+.leaflet-popup-content-wrapper{
+    padding:0.02rem
+}
+.links{
+    text-align: center; 
+    font-size: 18px;
+}
+.links > a:hover{
+    color:#ffd43b
+}
+.links > a{
+    margin-right:1px
+}
+
+.name{
+    margin:none
+}
+
