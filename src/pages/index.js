@@ -6,7 +6,9 @@ import Layout from '../components/Layout';
 import Call from '../components/Call';
 import Twitter from '../components/Twitter';
 import LastPosts from '../components/LastPosts';
-// import Image from "src/components/Image";
+import Image from "../components/Image";
+import { StaticImage } from "gatsby-plugin-image"
+
 
 const Home = props => {
     const intro = props.data.intro;
@@ -87,17 +89,13 @@ const Home = props => {
                                 >
                                     View All Services
                                 </Link>
-                                {/* <Image
-                                    src="python.png"
-                                    className="mx-auto shadow-xl"
-                                    alt="Python Image"
-                                    style={{
-                                        border: "10px solid green",
-                                    }}
-                                /> */}
+                                
+                                
                             </div>
                         </div>
+                        
                     </div>
+                    <Image/>
                 </div>
             )}
 
