@@ -6,18 +6,17 @@ import Layout from '../components/Layout';
 import Call from '../components/Call';
 import Twitter from '../components/Twitter';
 import LastPosts from '../components/LastPosts';
+// import Image from "src/components/Image";
 
 const Home = props => {
     const intro = props.data.intro;
     const site = props.data.site.siteMetadata;
     const services = props.data.services.edges;
     const features = props.data.features.edges;
-    const introImageClasses = `intro-image ${
-        intro.frontmatter.intro_image_absolute && 'intro-image-absolute'
-    } ${
-        intro.frontmatter.intro_image_hide_on_mobile &&
+    const introImageClasses = `intro-image ${intro.frontmatter.intro_image_absolute && 'intro-image-absolute'
+        } ${intro.frontmatter.intro_image_hide_on_mobile &&
         'intro-image-hide-mobile'
-    }`;
+        }`;
     const lastPosts = props.data.posts.edges;
 
     useEffect(() => {
@@ -88,6 +87,14 @@ const Home = props => {
                                 >
                                     View All Services
                                 </Link>
+                                {/* <Image
+                                    src="python.png"
+                                    className="mx-auto shadow-xl"
+                                    alt="Python Image"
+                                    style={{
+                                        border: "10px solid green",
+                                    }}
+                                /> */}
                             </div>
                         </div>
                     </div>
