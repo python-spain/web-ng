@@ -122,11 +122,11 @@ const Home = props => {
                     </div>
                 </div>
             )}
-            <div className='d-flex justify-content pt-2 px-4'>
-                <div className='flex-grow-1 pr-4'>
+            <div className='container d-md-flex justify-content pt-2 px-4'>
+                <div className='flex-grow-1 pr-md-4'>
                     <LastPosts posts={lastPosts} />
                 </div>
-                <div className='min-w-max'>
+                <div className='w-100'>
                     <Twitter />
                 </div>
             </div>
