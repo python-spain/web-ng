@@ -1,8 +1,7 @@
 ---
-title: 'Post 4 Prueba'
-date: 2018-12-29T15:14:39+10:00
+title: 'Post 7 Prueba'
+date: 2017-09-28T15:14:39+10:00
 featured: true
-featuredImage: '/images/posts/example.jpg'
 draft: false
 weight: 2
 ---
