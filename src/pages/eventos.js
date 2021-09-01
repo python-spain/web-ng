@@ -2,59 +2,35 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
+import EventosProximos from '../components/EventosProximos';
 
 const Eventos = (props) => {
-    const eventos = props.data.eventos.edges;
-    const { intro } = props.data;
-    const introImageClasses = `intro-image ${
-        intro.frontmatter.intro_image_absolute && 'intro-image-absolute'
-    } ${
-        intro.frontmatter.intro_image_hide_on_mobile &&
-        'intro-image-hide-mobile'
-    }`;
+    const eventosProximos = props.data.eventosProximos.edges;
+    const eventosPasados = props.data.eventosPasados.edges;
 
     return (
         <Layout bodyClass='page-services'>
             <SEO title='Eventos' />
 
-            <div className='intro'>
-                <div className='container'>
-                    <div className='row justify-content-start'>
-                        <div className='col-12 col-md-7 col-lg-6 order-2 order-md-1'>
-                            <div
-                                dangerouslySetInnerHTML={{ __html: intro.html }}
-                            />
-                        </div>
-                        {intro.frontmatter.intro_image && (
-                            <div className='col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative'>
-                                <img
-                                    alt={intro.frontmatter.title}
-                                    className={introImageClasses}
-                                    src={intro.frontmatter.intro_image}
-                                />
-                            </div>
-                        )}
+            <div className='container pt-6'>
+                <div className='row'>
+                    <div className='col-12'>
+                        <EventosProximos eventosProximos={eventosProximos} />
                     </div>
                 </div>
             </div>
 
             <div className='container pb-6'>
+                <h1>Eventos Pasados</h1>
                 <div className='row'>
-                    {eventos.map((edge) => (
-                        <div
-                            key={edge.node.id}
-                            className='col-12 col-md-4 mb-1'
-                        >
-                            <div className='card service service-teaser'>
-                                <div className='card-content'>
-                                    <h2>
-                                        <Link to={edge.node.fields.slug}>
-                                            {edge.node.frontmatter.title}
-                                        </Link>
-                                    </h2>
-                                    <p>{edge.node.excerpt}</p>
-                                </div>
-                            </div>
+                    {eventosPasados.map((edge) => (
+                        <div key={edge.node.id} className='col-12 col-md-4 mb-1'>
+                            <h2>
+                                <Link to={edge.node.fields.slug}>
+                                    {edge.node.frontmatter.title}
+                                </Link>
+                            </h2>
+                            <p>{edge.node.excerpt}</p>
                         </div>
                     ))}
                 </div>
@@ -65,8 +41,8 @@ const Eventos = (props) => {
 
 export const query = graphql`
     query EventosQuery {
-        eventos: allMarkdownRemark(
-            filter: { fileAbsolutePath: { regex: "/eventos/.*/" } }
+        eventosProximos: allMarkdownRemark(
+            filter: { fileAbsolutePath: { regex: "/eventos/.*/" }, frontmatter: { featured: {eq: true}} }
             sort: { fields: [frontmatter___date], order: DESC }
         ) {
             edges {
@@ -78,18 +54,32 @@ export const query = graphql`
                     }
                     frontmatter {
                         title
+                        featured
+                        image
+                        date(formatString: "DD MMMM YYYY")
+                        logo
                     }
                 }
             }
         }
-        intro: markdownRemark(fileAbsolutePath: { regex: "/(services.md)/" }) {
-            html
-            frontmatter {
-                title
-                image
-                intro_image
-                intro_image_absolute
-                intro_image_hide_on_mobile
+        eventosPasados: allMarkdownRemark(
+            filter: { fileAbsolutePath: { regex: "/eventos/.*/" }, frontmatter: { featured: {eq: false}} }
+            sort: { fields: [frontmatter___date], order: DESC }
+        ) {
+            edges {
+                node {
+                    id
+                    excerpt
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        title
+                        featured
+                        image
+                        date(formatString: "DD MMMM YYYY")
+                    }
+                }
             }
         }
     }

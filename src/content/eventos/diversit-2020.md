@@ -1,10 +1,9 @@
 ---
-title: "PyConES 2021"
+title: "DiversIT 2020"
 date: 2018-11-18T12:33:46+10:00
-featured: true
+featured: false
 weight: 1
 image: "/images/eventos/pycones-2021.jpg"
-logo: "/images/eventos/pycones-2021-logo.png"
 ---
 
 Financial accounting (or financial accountancy) is the field of accounting concerned with the **summary, analysis and reporting** of financial transactions related to a business.

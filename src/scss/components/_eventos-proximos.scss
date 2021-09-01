@@ -1,0 +1,57 @@
+.eventos-proximos {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.eventos-proximos-box{
+    /* background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0)); */
+    height: 400px;
+    /* padding: 2rem; */
+    display: flex;
+    align-items: flex-end;
+}
+
+.eventos-proximos-content{
+    background: rgba(0,0,0, 0.5);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 35%;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.eventos-proximos-title {
+    text-align: left;
+    margin-left: 2rem;
+    text-shadow: 1px 1px rgba(0,0,0);
+}
+
+.eventos-proximos-title h1 {
+    color: #ffd343;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+.eventos-proximos-title h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.eventos-proximos-logo{
+    width: 6rem;
+    height: 6rem;
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40%;
+    background: radial-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.0));
+}
+
+.eventos-proximos-logo img{
+    width: auto;
+    height: auto;
+}
+  
