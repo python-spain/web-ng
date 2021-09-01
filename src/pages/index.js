@@ -7,7 +7,7 @@ import Call from '../components/Call';
 import Twitter from '../components/Twitter';
 import LastPosts from '../components/LastPosts';
 import Image from "../components/Image";
-import { StaticImage } from "gatsby-plugin-image"
+
 
 
 const Home = props => {
@@ -37,7 +37,7 @@ const Home = props => {
                 />
             </Helmet>
 
-            <div className='intro'>
+            {/* <div className='intro'>
                 <div className='container'>
                     <div className='row justify-content-start'>
                         <div className='col-12 col-md-7 col-lg-6 order-2 order-md-1'>
@@ -57,11 +57,11 @@ const Home = props => {
                         )}
                     </div>
                 </div>
-            </div>
+            </div> */}
 
-            {services.length > 0 && (
-                <div className='strip'>
-                    <div className='container pt-6 pb-6 pb-md-10'>
+            {/* {services.length > 0 && (
+                <div className='strip'> */}
+                    {/* <div className='container pt-6 pb-6 pb-md-10'>
                         <div className='row justify-content-start'>
                             {services.map(({ node }) => (
                                 <div
@@ -88,18 +88,18 @@ const Home = props => {
                                     to='/services/'
                                 >
                                     View All Services
-                                </Link>
+                                </Link> */}
+                                {/*------ cortar desde aquí----------------------------------------------------------------------------------- */}
                                 
-                                
-                            </div>
+                            {/* </div>
                         </div>
                         
-                    </div>
-                    <Image/>
-                </div>
-            )}
+                    </div> */}
+                    {/* <Image/> */}
+                {/* </div>
+            )} */}
 
-            {features.length > 0 && (
+            {/* {features.length > 0 && (
                 <div className='strip strip-grey'>
                     <div className='container pt-6 pb-6 pt-md-10 pb-md-10'>
                         <div className='row justify-content-center'>
@@ -126,8 +126,12 @@ const Home = props => {
                         </div>
                     </div>
                 </div>
-            )}
+            )} */}
+            <div>
+                <Image/>
+            </div>
             <div className='d-flex justify-content pt-2 px-4'>
+            
                 <div className='flex-grow-1 pr-4'>
                     <LastPosts posts={lastPosts} />
                 </div>
