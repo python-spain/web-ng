@@ -5,11 +5,11 @@ import '../scss/style.scss';
 const Image = () => {
 
     return <StaticImage
-            src="../images/python-únete.jpg"
+            src="../images/python.jpg"
             alt="Python"
             placeholder="blurred"
             layout="fixed"
-            style={{ width: '100%', height: '40rem', opacity: 0.9, maxHeight: 600, zoom:'150%' }}
+            style={{ width: '100%', height: '100%',  zoom:'80%', paddingTop:'50rem' }}
             imgStyle={{ objectFit: 'cover' }} />
 
 }
