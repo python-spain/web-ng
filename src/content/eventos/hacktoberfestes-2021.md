@@ -1,9 +1,9 @@
 ---
 title: "HacktoberfestES 2021"
-date: 2018-11-18T12:33:46+10:00
+date: 2021-10-01T12:33:46+10:00
 featured: true
 weight: 1
-image: "/images/eventos/hacktoberfestes-2021.jpg"
+image: "/images/eventos/hacktoberfestes-2021.png"
 logo: "/images/eventos/hacktoberfestes-2021-logo.png"
 ---
 

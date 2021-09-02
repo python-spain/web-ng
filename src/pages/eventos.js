@@ -12,16 +12,12 @@ const Eventos = (props) => {
         <Layout bodyClass='page-services'>
             <SEO title='Eventos' />
 
-            <div className='container pt-6'>
-                <div className='row'>
-                    <div className='col-12'>
-                        <EventosProximos eventosProximos={eventosProximos} />
-                    </div>
-                </div>
+            <div className='container pt-3'>
+                <EventosProximos eventosProximos={eventosProximos} />
             </div>
 
             <div className='container pb-6'>
-                <h1>Eventos Pasados</h1>
+                {/* <h1>Eventos Pasados</h1> */}
                 <div className='row'>
                     {eventosPasados.map((edge) => (
                         <div key={edge.node.id} className='col-12 col-md-4 mb-1'>
@@ -43,7 +39,7 @@ export const query = graphql`
     query EventosQuery {
         eventosProximos: allMarkdownRemark(
             filter: { fileAbsolutePath: { regex: "/eventos/.*/" }, frontmatter: { featured: {eq: true}} }
-            sort: { fields: [frontmatter___date], order: DESC }
+            sort: { fields: [frontmatter___date], order: ASC }
         ) {
             edges {
                 node {
