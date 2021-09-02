@@ -19,16 +19,16 @@ const Blog = props => {
 
     return (
         <Layout bodyClass='page-default-single'>
-            <div className='px-8 pb-6 pt-6 pt-md-10 pb-md-10'>
+            <div className='container pb-6 pt-6'>
                 <div className='justify-content-start'>
                     <h1 className='title'>Blog</h1>
                     <div className='row'>
                         <div className='col'>
-                            <PostList posts={posts} twoColumns />
+                            <PostList posts={posts} />
                         </div>
-                        <div className='col-auto'>
+                        {/*     <div className='col-auto'>
                             <Twitter />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
