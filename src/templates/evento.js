@@ -1,30 +1,34 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
-import FeaturedEvent from '../components/FeaturedEvent'
 
 const Evento = ({ data }) => {
   const { title } = data.markdownRemark.frontmatter;
   const { subtitle } = data.markdownRemark.frontmatter;
   const { logo } = data.markdownRemark.frontmatter;
+  const { image } = data.markdownRemark.frontmatter;
   const { date } = data.markdownRemark.frontmatter;
+  const { slug } = data.markdownRemark.fields;
   const { html } = data.markdownRemark;
   
 
   return (
     <Layout bodyClass="page-eventos-single">
-      
-      <div className="container pb-6 pt-6 pt-md-10 pb-md-10">
+  
+      {image && (<div className='container pt-3 image-container' style={{ backgroundImage: `url(${image})` }}></div>)}
+      <div className="container py-3">
         <div className="row justify-content-start">
-          <div className="logo-container col-12 col-md-2">
+          <div className="col-12 col-md-4">
+            <div className="logo-container">
               <img src={logo} alt={title}></img>
+            </div>
           </div>
           <div className="col-12 col-md-8">
-              <h1 className="title">{title}</h1>
-              <h2>{subtitle}</h2>
-              <h3>{date}</h3>
-              <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
+            <h1 className="title">{title}</h1>
+            <h2 >{subtitle}</h2>
+            <h3>{date}</h3>
+            <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
         </div>
       </div>
@@ -39,6 +43,7 @@ export const query = graphql`
         title
         subtitle
         logo
+        image
         date(formatString: "DD MMMM YYYY")
       }
       fields {
