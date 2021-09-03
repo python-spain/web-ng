@@ -26,7 +26,6 @@ const Evento = ({ data }) => {
           </div>
           <div className="col-12 col-md-8">
             <h1 className="title">{title}</h1>
-            <h2 >{subtitle}</h2>
             <h3>{date}</h3>
             <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
@@ -41,7 +40,6 @@ export const query = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
-        subtitle
         logo
         image
         date(formatString: "DD MMMM YYYY")

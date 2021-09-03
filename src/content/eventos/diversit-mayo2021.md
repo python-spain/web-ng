@@ -1,6 +1,5 @@
 ---
-title: "DiversIT"
-subtitle: "Construyendo diversidad cultural y tecnológica en el mundo tech"
+title: "DiversIT: Construyendo diversidad cultural y tecnológica en el mundo tech"
 date: 2021-05-20T12:33:46+10:00
 featured: false
 weight: 1

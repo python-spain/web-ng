@@ -1,6 +1,5 @@
 ---
-title: "DiversIT"
-subtitle: "Fomento de la diversidad en empresas tecnológicas"
+title: "DiversIT: Fomento de la diversidad en empresas tecnológicas"
 date: 2021-03-23T12:33:46+10:00
 featured: false
 weight: 1

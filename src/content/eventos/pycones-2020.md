@@ -1,6 +1,5 @@
 ---
-title: "PyConES 2020"
-subtitle: "Pandemic Edition"
+title: "PyConES 2020: Pandemic Edition"
 date: 2020-10-02T12:33:46+10:00
 featured: false
 weight: 1

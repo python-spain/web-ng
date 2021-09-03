@@ -1,6 +1,5 @@
 ---
-title: "DiversIT"
-subtitle: "Accesibilidad y diversidad funcional en el mundo tech"
+title: "DiversIT: Accesibilidad y diversidad funcional en el mundo tech"
 date: 2021-03-23T12:33:46+10:00
 featured: false
 weight: 1

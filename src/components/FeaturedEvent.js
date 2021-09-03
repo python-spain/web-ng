@@ -14,9 +14,6 @@ const FeaturedEvent = ({ evento }) => {
               </div>
               <div className='title'>
                 <h1>{evento.node.frontmatter.title}</h1>
-                {evento.node.frontmatter.subtitle &&(
-                  <h2>{evento.node.frontmatter.subtitle}</h2>
-                )} 
                 <h3>{evento.node.frontmatter.date}</h3>
               </div>
             </div>

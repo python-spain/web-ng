@@ -1,6 +1,5 @@
 ---
-title: "TabularConf"
-subtitle: "On the edge of Data Science"
+title: "TabularConf 2021: On the edge of Data Science"
 date: 2021-01-30T12:33:46+10:00
 featured: false
 weight: 1
