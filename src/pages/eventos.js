@@ -50,6 +50,7 @@ export const query = graphql`
                     }
                     frontmatter {
                         title
+                        subtitle
                         featured
                         image
                         date(formatString: "DD MMMM YYYY")

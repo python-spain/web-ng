@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
+import FeaturedEvent from '../components/FeaturedEvent'
 
 const Evento = ({ data }) => {
   const { title } = data.markdownRemark.frontmatter;
@@ -9,9 +10,11 @@ const Evento = ({ data }) => {
   const { logo } = data.markdownRemark.frontmatter;
   const { date } = data.markdownRemark.frontmatter;
   const { html } = data.markdownRemark;
+  
 
   return (
     <Layout bodyClass="page-eventos-single">
+      
       <div className="container pb-6 pt-6 pt-md-10 pb-md-10">
         <div className="row justify-content-start">
           <div className="logo-container col-12 col-md-2">

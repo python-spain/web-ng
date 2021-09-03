@@ -1,5 +1,6 @@
 ---
 title: "PyConES 2021"
+subtitle: "Pandemic Edition"
 date: 2021-10-02T12:33:46+10:00
 featured: true
 weight: 1
