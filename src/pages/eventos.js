@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
-import EventosProximos from '../components/EventosProximos';
+import FeaturedEventsList from '../components/FeaturedEventsList';
 
 const Eventos = (props) => {
     const eventosProximos = props.data.eventosProximos.edges;
@@ -13,10 +13,10 @@ const Eventos = (props) => {
             <SEO title='Eventos' />
 
             <div className='container pt-3'>
-                <EventosProximos eventosProximos={eventosProximos} />
+                <FeaturedEventsList eventos={eventosProximos} />
             </div>
 
-            <div className='container pb-6'>
+            <div className='container pt-6'>
                 {/* <h1>Eventos Pasados</h1> */}
                 <div className='row'>
                     {eventosPasados.map((edge) => (
