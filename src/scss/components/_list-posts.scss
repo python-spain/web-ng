@@ -1,0 +1,20 @@
+  .list-post {
+    height: 100%;
+    border: 1px solid #844abd67;
+    border-radius: 4px;
+    padding: 1.4em;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.08);
+
+    .post-content {
+      text-align: left;
+      margin-bottom: 0;
+    }
+    .cover-img {
+        border-radius: 3px;
+    }
+  }
