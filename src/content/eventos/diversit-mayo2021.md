@@ -7,9 +7,7 @@ image: ""
 logo: "/images/eventos/diversit-2020.png"
 ---
 
-¡Ya tenemos aquí el segundo evento de la serie DiversIT!
-
-En esta ocasión hablaremos sobre otro tipo de diversidad: racial, cultural y migratoria. 
+¡Ya tenemos aquí el segundo evento de la serie DiversIT! En esta ocasión hablaremos sobre otro tipo de diversidad: racial, cultural y migratoria. 
 
 ¿Qué problemas encuentran las personas migrantes a la hora de integrarse y buscar trabajo? ¿Existe xenofobia y racismo en el sector tecnológico y nuestra sociedad en general? ¿Qué ventajas tiene la diversidad cultural en las empresas? ¿Cómo podemos fomentarla?
 

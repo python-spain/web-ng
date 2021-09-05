@@ -8,11 +8,9 @@ logo: "/images/eventos/diversit-logo.png"
 ---
 
 Primer evento de la serie DiversIT organizada por un conjunto de comunidades tecnológicas con el objetivo de divulgar y promover la inclusión y la diversidad en el sector IT. 
-
 Este primer evento será una Mesa Redonda donde expertas en RRHH, así como programadoras que han vivido todo el proceso de selección e inclusión en estos departamentos, comentarán acerca de la situación actual de esta realidad. 
 
 Se tratarán temas como el papel de la mujer y otros colectivos infrarrepresentados en las empresas del sector IT, la importancia de la diversidad para el crecimiento empresarial, las best practices en la gestión de la Diversidad en las empresas, ruptura de estereotipos... También podremos conocer nuevos e innovadores modelos para garantizar la igualdad de oportunidades en los procesos de selección y las políticas de retención de talento femenino y otras minorías. 
-
 Además de todo ello, este evento busca ser una referencia e inspiración para continuar con la inclusión de estos perfiles en las empresas. 
 
 No lo pienses más y únete a esta mesa redonda donde podrás compartir tus opiniones y dudas al respecto, ¡te esperamos! 

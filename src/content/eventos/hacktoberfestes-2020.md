@@ -11,8 +11,6 @@ https://hacktoberfest.es.python.org/
 
 Financial accounting (or financial accountancy) is the field of accounting concerned with the **summary, analysis and reporting** of financial transactions related to a business.
 
-![Accounting Services](/images/eventos/hacktoberfestes-2021.png)
-
 # Objectives
 
 Financial accounting and financial reporting are often used as synonyms.
