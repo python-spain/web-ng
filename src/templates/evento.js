@@ -16,10 +16,14 @@ const Evento = ({ data }) => {
   return (
     <Layout bodyClass="page-eventos-single">
   
-      {image && (<div className='container pt-3 image-container' style={{ backgroundImage: `url(${image})` }}></div>)}
       <div className="container py-3">
         <div className="row justify-content-start">
-          <div className="col-12 col-md-4">
+          <div className="image-container col-12 col-md-8 offset-md-2 mb-2">
+              <img src={image} alt={title}></img>
+          </div>
+        </div>
+        <div className="row justify-content-start">
+          <div className="col-12 col-md-2">
             <div className="logo-container">
               <img src={logo} alt={title}></img>
             </div>
