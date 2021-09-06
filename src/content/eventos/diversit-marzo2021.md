@@ -1,9 +1,9 @@
 ---
-title: "DiversIT: Fomento de la diversidad en empresas tecnológicas"
+title: "Fomento de la diversidad en empresas tecnológicas"
 date: 2021-03-23T12:33:46+10:00
 featured: false
 weight: 1
-image: ""
+image: "/images/eventos/diversit-marzo2021.png"
 logo: "/images/eventos/diversit-logo.png"
 ---
 

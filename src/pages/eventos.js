@@ -2,32 +2,48 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
-import FeaturedEventsList from '../components/FeaturedEventsList';
+import FeaturedEvent from '../components/FeaturedEvent';
+import PastEvent from '../components/PastEvent';
 
 const Eventos = (props) => {
-    const eventosProximos = props.data.eventosProximos.edges;
-    const eventosPasados = props.data.eventosPasados.edges;
+    const eventosProximos = props.data.eventosProximos.edges.map(({ node }) => {
+        return {
+            id: node.id,
+            image: node.frontmatter.image,
+            slug: node.fields.slug,
+            title: node.frontmatter.title,
+            date: node.frontmatter.date,
+            logo: node.frontmatter.logo,
+        };
+    });
+    const eventosPasados = props.data.eventosPasados.edges.map(({ node }) => {
+        return {
+            id: node.id,
+            image: node.frontmatter.image,
+            link: node.fields.slug,
+            title: node.frontmatter.title,
+            date: node.frontmatter.date,
+            logo: node.frontmatter.logo,
+        };
+    });
 
     return (
-        <Layout bodyClass='page-services'>
+        <Layout bodyClass='page-default-single'>
             <SEO title='Eventos' />
 
             <div className='container pt-3'>
-                <FeaturedEventsList eventos={eventosProximos} />
+                <div className='row row-cols-1'>
+                    {eventosProximos.map(evento => (
+                        <FeaturedEvent evento={evento} key={evento.id}/>
+                    ))}
+                </div>
             </div>
 
             <div className='container pt-6'>
-                {/* <h1>Eventos Pasados</h1> */}
-                <div className='row'>
-                    {eventosPasados.map((edge) => (
-                        <div key={edge.node.id} className='col-12 col-md-4 mb-1'>
-                            <h2>
-                                <Link to={edge.node.fields.slug}>
-                                    {edge.node.frontmatter.title}
-                                </Link>
-                            </h2>
-                            <p>{edge.node.excerpt}</p>
-                        </div>
+                {<h1 class='title'>Eventos Pasados</h1>}
+                <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3'>
+                    {eventosPasados.map(evento => (
+                    <PastEvent evento={evento} key={evento.id}/>
                     ))}
                 </div>
             </div>
@@ -65,7 +81,7 @@ export const query = graphql`
             edges {
                 node {
                     id
-                    excerpt
+                    excerpt (pruneLength: 500)
                     fields {
                         slug
                     }
@@ -74,6 +90,10 @@ export const query = graphql`
                         featured
                         image
                         date(formatString: "DD MMMM YYYY")
+                        logo
+                    }
+                    internal {
+                        content
                     }
                 }
             }

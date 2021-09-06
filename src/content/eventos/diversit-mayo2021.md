@@ -1,10 +1,10 @@
 ---
-title: "DiversIT: Construyendo diversidad cultural y tecnológica en el mundo tech"
+title: "Construyendo diversidad cultural y tecnológica en el mundo tech"
 date: 2021-05-20T12:33:46+10:00
 featured: false
 weight: 1
-image: ""
-logo: "/images/eventos/diversit-2020.png"
+image: "/images/eventos/diversit-mayo2021.png"
+logo: "/images/eventos/diversit-logo.png"
 ---
 
 ¡Ya tenemos aquí el segundo evento de la serie DiversIT! En esta ocasión hablaremos sobre otro tipo de diversidad: racial, cultural y migratoria. 

@@ -5,16 +5,16 @@ import Eventos from '../pages/eventos';
 const FeaturedEvent = ({ evento }) => {
 
   return(
-      <div key={evento.node.id} className='mb-0'>
-        <div className='featured-event align-items-start'  style={{ backgroundImage: `url(${evento.node.frontmatter.image})` }}>
-          <Link className='box' to={evento.node.fields.slug}>
+      <div key={evento.id} className='mb-0'>
+        <div className='featured-event align-items-start'  style={{ backgroundImage: `url(${evento.image})` }}>
+          <Link className='box' to={evento.slug}>
             <div className='content'>
               <div className='logo'>
-                <img src={evento.node.frontmatter.logo} alt={evento.node.frontmatter.title}/>
+                <img src={evento.logo} alt={evento.title}/>
               </div>
               <div className='title'>
-                <h1>{evento.node.frontmatter.title}</h1>
-                <h3>{evento.node.frontmatter.date}</h3>
+                <h1>{evento.title}</h1>
+                <h3>{evento.date}</h3>
               </div>
             </div>
           </Link>

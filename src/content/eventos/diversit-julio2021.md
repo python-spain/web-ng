@@ -1,10 +1,10 @@
 ---
-title: "DiversIT: Accesibilidad y diversidad funcional en el mundo tech"
-date: 2021-03-23T12:33:46+10:00
+title: "Accesibilidad y diversidad funcional en el mundo tech"
+date: 2021-07-29T12:33:46+10:00
 featured: false
 weight: 1
-image: ""
-logo: "/images/eventos/diversit-2020.png"
+image: "/images/eventos/diversit-julio2021.png"
+logo: "/images/eventos/diversit-logo.png"
 ---
 
 En el tercer evento de la serie DiversIT no preguntamos: ¿Cómo poder aumentar y facilitar la accesibilidad a personas con diversidad funcional? ¿Cómo las personas con diversidad funcional se enfrentan a los retos tecnológicos?
