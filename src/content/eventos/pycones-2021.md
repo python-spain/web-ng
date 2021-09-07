@@ -1,7 +1,7 @@
 ---
 title: "PyConES 2021"
 date: 2021-10-02T12:33:46+10:00
-featured: false
+featured: true
 weight: 1
 image: "/images/eventos/pycones-2021.png"
 logo: "/images/eventos/pycones-2021-logo.png"

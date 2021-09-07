@@ -1,0 +1,42 @@
+.events-slider{
+    .carousel-control-prev, .carousel-control-next{
+        top: 32rem;
+    }
+    .carousel-item img{
+        display: block;
+        width: 100%;
+    }
+
+    .carousel-caption{
+        display: flex;
+        background-color: rgba(0,0,0, 0.8);
+        left: 0;
+        right: 0;        
+        justify-content: center;
+        align-items: center;
+        padding: 3rem 9rem;
+        bottom: 0;
+    }
+   
+    .carousel-caption img {
+       height: 8rem; 
+       width: auto;
+    }
+
+    .carousel-caption .text{
+        text-align: left;
+        text-shadow: 1px 1px rgba(0,0,0);
+        margin-left: 1rem;
+    }
+
+    .carousel-caption h1 {
+        color: #ffd343;
+        margin: inherit;
+        margin-bottom: 0.5rem;
+    }
+    
+    .carousel-caption  h4 {
+        color: #ffffff;
+        margin: inherit;
+    }
+}

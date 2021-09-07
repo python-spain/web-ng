@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
-import FeaturedEvent from '../components/FeaturedEvent';
+import EventsSlider from '../components/EventsSlider';
 import PastEvent from '../components/PastEvent';
 
 const Eventos = (props) => {
@@ -33,14 +33,12 @@ const Eventos = (props) => {
 
             <div className='container pt-3'>
                 <div className='row row-cols-1'>
-                    {eventosProximos.map(evento => (
-                        <FeaturedEvent evento={evento} key={evento.id}/>
-                    ))}
+                    <EventsSlider slides={eventosProximos}></EventsSlider>
                 </div>
             </div>
 
             <div className='container pt-6'>
-                {<h1 class='title'>Eventos Pasados</h1>}
+                <h1 className='title'>Eventos Pasados</h1>
                 <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3'>
                     {eventosPasados.map(evento => (
                     <PastEvent evento={evento} key={evento.id}/>
