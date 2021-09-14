@@ -52,8 +52,9 @@ $sub-footer-text-color: $white;
 @import 'components/social';
 @import 'components/last-posts';
 @import 'components/list-posts';
-@import 'components/events-slider';
-@import 'components/past-event';
+@import 'components/event-post';
+@import 'components/event-slide';
+@import 'components/featured-events';
 
 // Pages
 @import 'pages/home';

@@ -1,0 +1,49 @@
+.event-slide{
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+
+    .event-image {
+        margin: 35px 20px 35px 35px;
+        border-radius: 2rem;
+        /* filter: saturate(0.5); */
+        width: 70%;
+        box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.08);
+
+    }
+
+    .content{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 35px 35px 75px 20px;
+    }
+    
+    .title h1 {
+        margin: inherit;
+    }
+    
+    .title h3 {
+        margin: inherit;
+    }
+    
+    .logo{
+        width: auto;
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-bottom: 1.5rem;
+    }
+    
+    .logo img{
+        height: 100%;
+    }
+    
+}
+
+
+  
