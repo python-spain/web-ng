@@ -10,7 +10,7 @@ const EventPost = ({ evento, featured }) => {
                     <div className='mb-1' style={{ width: '100%', height: 'auto' }}>
                         <img src={evento.image ?? evento.logo} className='img-fluid' alt={evento.title}/>
                     </div>
-                    <h2 className='text-dark'>{evento.title}</h2>
+                    <h2>{evento.title}</h2>
                     <p>{evento.date}</p>
                 </div>
             </Link>

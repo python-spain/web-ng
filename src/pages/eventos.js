@@ -30,12 +30,15 @@ const Eventos = (props) => {
 
     return (
         <Layout bodyClass='page-default-single'>
-            <SEO title='Eventos' />            
+            <SEO title='Eventos' />           
 
-            <FeaturedEvents eventos={eventosProximos}></FeaturedEvents>
+            <div className='pt-3'>
+                <FeaturedEvents eventos={eventosProximos}></FeaturedEvents>
+            </div>
 
-            <div className='container pt-6'>
-                <h1 className='title'>Eventos Pasados</h1>
+
+            <div className='container pt-5'>
+                <h2 className='title'>Eventos Pasados</h2>
                 <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3'>
                     {eventosPasados.map(evento => (
                     <EventPost evento={evento} key={evento.id}/>
