@@ -30,7 +30,7 @@ const Evento = ({ data }) => {
               <h3>{date}</h3>
               <a className="button" href={website} target="_blank">Enlace a la web</a>
               <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
-            </div>
+              </div>
           </div>
       </div>
     </Layout>

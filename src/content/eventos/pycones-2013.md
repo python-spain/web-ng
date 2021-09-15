@@ -1,0 +1,8 @@
+---
+title: "PyConES 2013: Madrid"
+date: 2013-11-23T12:33:46+10:00
+featured: false
+image: "/images/eventos/pycones-2013.png"
+logo: "/images/eventos/pycones-2013-logo.png"
+website: "https://2013.es.pycon.org/es/"
+---

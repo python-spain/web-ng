@@ -1,0 +1,8 @@
+---
+title: "PyConES 2017: Cáceres"
+date: 2017-09-22T12:33:46+10:00
+featured: false
+image: "/images/eventos/pycones-2017.png"
+logo: "/images/eventos/pycones-2017-logo.png"
+website: "https://2017.es.pycon.org/es/"
+---
