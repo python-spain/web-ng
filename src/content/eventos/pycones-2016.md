@@ -1,6 +1,7 @@
 ---
 title: "PyConES 2016: Almería"
 date: 2016-10-07T12:33:46+10:00
+fullDate: 7-9 Octubre 2016
 featured: false
 image: "/images/eventos/pycones-2016.png"
 logo: "/images/eventos/pycones-2016-logo.png"

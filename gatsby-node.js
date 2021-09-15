@@ -121,7 +121,8 @@ exports.createPages = ({ graphql, actions }) => {
                                     excerpt
                                     frontmatter {
                                         title
-                                        date(formatString: "DD MMMM YYYY")
+                                        date
+                                        fullDate
                                         featured
                                         image
                                         logo

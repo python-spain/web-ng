@@ -1,6 +1,7 @@
 ---
 title: "Construyendo diversidad cultural y tecnológica en el mundo tech"
 date: 2021-05-20T12:33:46+10:00
+fullDate: 20 Mayo 2021
 featured: false
 image: "/images/eventos/diversit-mayo2021.png"
 logo: "/images/eventos/diversit-logo.png"

@@ -13,7 +13,7 @@ const Eventos = (props) => {
             image: node.frontmatter.image,
             link: node.fields.slug,
             title: node.frontmatter.title,
-            date: node.frontmatter.date,
+            date: node.frontmatter.fullDate,
             logo: node.frontmatter.logo,
         };
     });
@@ -23,7 +23,7 @@ const Eventos = (props) => {
             image: node.frontmatter.image,
             link: node.fields.slug,
             title: node.frontmatter.title,
-            date: node.frontmatter.date,
+            date: node.frontmatter.fullDate,
             logo: node.frontmatter.logo,
         };
     });
@@ -38,7 +38,7 @@ const Eventos = (props) => {
 
 
             <div className='container pt-5'>
-                <h2 className='title'>Eventos Pasados</h2>
+                {<h2 className='title ml-1'>Eventos Pasados</h2>}
                 <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3'>
                     {eventosPasados.map(evento => (
                     <EventPost evento={evento} key={evento.id}/>
@@ -66,7 +66,7 @@ export const query = graphql`
                         title
                         featured
                         image
-                        date(formatString: "DD MMMM YYYY")
+                        fullDate
                         logo
                     }
                 }
@@ -87,7 +87,7 @@ export const query = graphql`
                         title
                         featured
                         image
-                        date(formatString: "DD MMMM YYYY")
+                        fullDate
                         logo
                     }
                     internal {

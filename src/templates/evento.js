@@ -6,7 +6,7 @@ const Evento = ({ data }) => {
   const { title } = data.markdownRemark.frontmatter;
   const { logo } = data.markdownRemark.frontmatter;
   const { image } = data.markdownRemark.frontmatter;
-  const { date } = data.markdownRemark.frontmatter;
+  const { fullDate } = data.markdownRemark.frontmatter;
   const { website } = data.markdownRemark.frontmatter;
   const { html } = data.markdownRemark;
   
@@ -27,7 +27,7 @@ const Evento = ({ data }) => {
           </div>
           <div className="col-12 col-md-8">
               <h1 className="title">{title}</h1>
-              <h3>{date}</h3>
+              <h3>{fullDate}</h3>
               <a className="button" href={website} target="_blank">Enlace a la web</a>
               <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
               </div>
@@ -44,7 +44,8 @@ export const query = graphql`
         title
         logo
         image
-        date(formatString: "DD MMMM YYYY")
+        date
+        fullDate
         website
       }
       fields {

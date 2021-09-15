@@ -1,6 +1,7 @@
 ---
 title: "Fomento de la diversidad en empresas tecnológicas"
 date: 2021-03-23T12:33:46+10:00
+fullDate: 23 Marzo 2021
 featured: false
 image: "/images/eventos/diversit-marzo2021.png"
 logo: "/images/eventos/diversit-logo.png"
