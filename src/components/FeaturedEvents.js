@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import Carousel from 'react-bootstrap/Carousel';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Carousel } from 'react-bootstrap';
 import EventSlide from './EventSlide';
 import EventPost from './EventPost';
 

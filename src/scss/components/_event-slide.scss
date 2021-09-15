@@ -22,12 +22,14 @@
         margin: 35px 35px 75px 20px;
     }
     
-    .title h1 {
-        margin: inherit;
+    .content h1 {
+        margin: 0;
+        line-height: 1.1;
+        font-weight: bold;
     }
     
-    .title h3 {
-        margin: inherit;
+    .content h3 {
+        margin: 0;
     }
     
     .logo{
@@ -36,11 +38,12 @@
         display: flex;
         align-items: center;
         justify-content: left;
-        margin-bottom: 1.5rem;
+        
     }
     
     .logo img{
         height: 100%;
+        margin-bottom: 3rem;
     }
     
 }
