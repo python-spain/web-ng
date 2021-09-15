@@ -2,9 +2,9 @@
 title: "Fomento de la diversidad en empresas tecnológicas"
 date: 2021-03-23T12:33:46+10:00
 featured: false
-weight: 1
 image: "/images/eventos/diversit-marzo2021.png"
 logo: "/images/eventos/diversit-logo.png"
+website: "https://www.youtube.com/watch?v=et5k0eGQmGs"
 ---
 
 Primer evento de la serie DiversIT organizada por un conjunto de comunidades tecnológicas con el objetivo de divulgar y promover la inclusión y la diversidad en el sector IT. 

@@ -121,9 +121,11 @@ exports.createPages = ({ graphql, actions }) => {
                                     excerpt
                                     frontmatter {
                                         title
+                                        date(formatString: "DD MMMM YYYY")
+                                        featured
                                         image
                                         logo
-                                        date(formatString: "DD MMMM YYYY")
+                                        website
                                     }
                                     fields {
                                         slug

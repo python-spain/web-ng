@@ -1,10 +1,10 @@
 ---
-title: "TabularConf 2021: On the edge of Data Science"
+title: "TabularConf: On the edge of Data Science"
 date: 2021-01-30T12:33:46+10:00
 featured: false
-weight: 1
 image: "/images/eventos/tabularconf-2021.png"
 logo: "/images/eventos/tabularconf-logo.png"
+website: "https://tabularconf.es/"
 ---
 
 [TabularConf](https://tabularconf.es/) es una conferencia que durante un día y en un evento online unirá a múltiples comunidades y apasionados del Data Science en España y que gira en torno a temáticas de Análisis de Datos e Inteligencia Artificial.
