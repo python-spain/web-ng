@@ -20,8 +20,8 @@ const FeaturedEvents = ({ eventos }) => {
                 </div>
             </div>
             <div className='featured-events-mobile'>
-                <div className='container pt-4'>
-                    <div className='row row-cols-1'>
+                <div className='container py-4'>
+                    <div className='row row-cols-1 mx-n2'>
                         {eventos.map(evento => (
                             <EventPost evento={evento} key={evento.id} featured={true}/>
                         ))}
