@@ -69,9 +69,23 @@ body {
 @media only screen and (max-width: 500px) {
   body {
     width: 40rem;
-  }
+      .div-background-image{
+       height: 22rem;
+      }
+    } 
 }
-
+.background-image{
+  background-image: url("../images/fotopython2.jpg");
+  width: 100%;
+  height: 100%;
+  zoom:80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.div-background-image{
+width: 100%;
+height: 42rem;
+}
 .min-w-max {
   min-width: max-content;
 }
