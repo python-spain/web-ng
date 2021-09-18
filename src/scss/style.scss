@@ -25,8 +25,9 @@ $sub-footer-text-color: $white;
 // Bootstrap
 @import 'bootstrap-variables';
 @import 'bootstrap/bootstrap-reboot';
+@import 'bootstrap/bootstrap-utilities';
 @import 'bootstrap/bootstrap-grid';
-@import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap/carousel';
 // @import 'bootstrap/bootstrap'; // Uncomment this line to import the entire Bootstrap library
 
 // Libraries
