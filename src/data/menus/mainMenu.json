@@ -23,7 +23,13 @@
         "name": "Blog",
         "url": "/blog/",
         "weight": 5
+    },
+    {
+        "name": "Eventos",
+        "url": "/eventos/",
+        "weight": 6
     }
+    
     
     
    
