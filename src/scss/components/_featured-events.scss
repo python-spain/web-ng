@@ -1,0 +1,30 @@
+.featured-events{
+
+  background-color: #e0e0e0;
+
+    .featured-events-slider{
+
+      display: none;
+      @include media-breakpoint-up(lg) {
+        display: block;
+      }
+      .carousel-control-prev, .carousel-control-next{
+        width: 0;
+      }
+      .carousel-control-prev-icon, .carousel-control-next-icon{
+        padding: 1.5rem;
+      }
+
+      .carousel-indicators{
+        display: none;
+      }
+
+    }
+
+    .featured-events-mobile {
+      display: block;
+      @include media-breakpoint-up(lg) {
+        display: none; 
+      }
+    }
+}

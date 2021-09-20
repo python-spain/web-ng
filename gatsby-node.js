@@ -107,6 +107,33 @@ exports.createPages = ({ graphql, actions }) => {
                                 }
                             }
                         }
+                        eventos: allMarkdownRemark(
+                            filter: {
+                                fileAbsolutePath: {
+                                    regex: "content/eventos/.*/"
+                                }
+                            }
+                            sort: { fields: [frontmatter___date], order: DESC }
+                        ) {
+                            edges {
+                                node {
+                                    id
+                                    excerpt
+                                    frontmatter {
+                                        title
+                                        date
+                                        fullDate
+                                        featured
+                                        image
+                                        logo
+                                        website
+                                    }
+                                    fields {
+                                        slug
+                                    }
+                                }
+                            }
+                        }
                     }
                 `
             ).then((result) => {
@@ -153,6 +180,18 @@ exports.createPages = ({ graphql, actions }) => {
                 });
                 result.data.posts.edges.forEach(({ node }) => {
                     const component = path.resolve('src/templates/posts.js');
+                    createPage({
+                        path: node.frontmatter.path
+                            ? node.frontmatter.path
+                            : node.fields.slug,
+                        component,
+                        context: {
+                            id: node.id,
+                        },
+                    });
+                });
+                result.data.eventos.edges.forEach(({ node }) => {
+                    const component = path.resolve('src/templates/evento.js');
                     createPage({
                         path: node.frontmatter.path
                             ? node.frontmatter.path
