@@ -1,6 +1,6 @@
 .event-post {
     height: 100%;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -8,11 +8,12 @@
     text-align: left;
     text-decoration: none;
 
-    .featured {
+/*     .featured {
       box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.08);
       padding: 0.8rem;
+      border: 1px solid $primary;
     }
-
+ */
     img {
       /* border-radius: 5px; */
     }

@@ -1,12 +1,12 @@
 .event-slide{
-    background-color: #e0e0e0;
+    /* background-color: #e0e0e0; */
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     text-decoration: none;
 
     .event-image {
-        margin: 35px 20px 35px 35px;
-        border-radius: 2rem;
+        /* margin: 35px 20px 35px 35px; */
+        /* border-radius: 2rem; */
         /* filter: saturate(0.5); */
         width: 70%;
         box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.08);
@@ -17,9 +17,10 @@
         width: 30%;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        margin: 35px 35px 75px 20px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 0 35px;
+        text-align: center;
     }
     
     .content h1 {
@@ -31,19 +32,23 @@
     .content h3 {
         margin: 0;
     }
+
+    .content p {
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
     
     .logo{
         width: auto;
-        height: 8rem;
+        height: 5rem;
         display: flex;
         align-items: center;
-        justify-content: left;
+        justify-content: center;
         
     }
     
     .logo img{
         height: 100%;
-        margin-bottom: 3rem;
     }
     
 }

@@ -15,9 +15,10 @@ const Eventos = (props) => {
             title: node.frontmatter.title,
             date: node.frontmatter.fullDate,
             logo: node.frontmatter.logo,
+            text: node.excerpt,
         };
     });
-    const allEvents = props.data.allEvents.edges.map(({ node }) => {
+    const nonFeaturedEvents = props.data.nonFeaturedEvents.edges.map(({ node }) => {
         return {
             id: node.id,
             image: node.frontmatter.image,
@@ -38,9 +39,9 @@ const Eventos = (props) => {
 
 
             <div className='container pt-5'>
-                {/* {<h2 className='title'>Eventos Pasados</h2>} */}
+                <h2 className='title'>Eventos Pasados</h2>
                 <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 mx-n2'>
-                    {allEvents.map(evento => (
+                    {nonFeaturedEvents.map(evento => (
                     <EventPost evento={evento} key={evento.id}/>
                     ))}
                 </div>
@@ -72,8 +73,8 @@ export const query = graphql`
                 }
             }
         }
-        allEvents: allMarkdownRemark(
-            filter: { fileAbsolutePath: { regex: "/eventos/.*/" } }
+        nonFeaturedEvents: allMarkdownRemark(
+            filter: { fileAbsolutePath: { regex: "/eventos/.*/" }, frontmatter: { featured: {eq: false}} }
             sort: { fields: [frontmatter___date], order: DESC }
         ) {
             edges {
