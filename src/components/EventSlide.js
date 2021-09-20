@@ -12,9 +12,10 @@ const EventSlide = ({ evento }) => {
           <div className='logo'>
             <img src={evento.logo} alt={evento.title}/>
           </div>
-          <div>
-            <h1>{evento.title}</h1>
+          <div className="mt-1">
             <h3>{evento.date}</h3>
+            <h1>{evento.title}</h1>
+            <p>{evento.text}</p>
           </div>
         </div>
       </Link>
