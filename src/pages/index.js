@@ -122,8 +122,8 @@ const Home = props => {
                     </div>
                 </div>
             )}
-            <div className='container d-md-flex justify-content pt-2 px-4'>
-                <div className='flex-grow-1 pr-md-4'>
+            <div className='container d-lg-flex justify-content py-2'>
+                <div className='pr-lg-4'>
                     <LastPosts posts={lastPosts} />
                 </div>
                 <div className='w-100'>
