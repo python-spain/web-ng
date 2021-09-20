@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 import Call from '../components/Call';
 import Twitter from '../components/Twitter';
 import LastPosts from '../components/LastPosts';
-import Image from "../components/Image";
+import ImageHome from "../components/ImageHome";
 
 
 
@@ -39,7 +39,7 @@ const Home = props => {
 
             
             <div>
-                <Image/>
+                <ImageHome/>
             </div>
             <div className='d-flex justify-content pt-2 px-4'>
             
