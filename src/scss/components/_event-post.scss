@@ -1,6 +1,5 @@
 .event-post {
     height: 100%;
-    /* background-color: #ffffff; */
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -8,17 +7,7 @@
     text-align: left;
     text-decoration: none;
 
-/*     .featured {
-      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.08);
-      padding: 0.8rem;
-      border: 1px solid $primary;
-    }
- */
-    img {
-      /* border-radius: 5px; */
-    }
     h2 {
-      /* margin-top: 0.3rem; */
       margin-bottom: 0.3rem;
       line-height: 1.1;
       font-weight: bold;
