@@ -7,7 +7,7 @@ import EventPost from '../components/EventPost';
 import EventSlide from '../components/EventSlide';
 
 const Eventos = (props) => {
-    const eventosProximos = props.data.eventosProximos.edges.map(({ node }) => {
+    const featuredEvents = props.data.featuredEvents.edges.map(({ node }) => {
         return {
             id: node.id,
             image: node.frontmatter.image,
@@ -17,7 +17,7 @@ const Eventos = (props) => {
             logo: node.frontmatter.logo,
         };
     });
-    const eventosPasados = props.data.eventosPasados.edges.map(({ node }) => {
+    const allEvents = props.data.allEvents.edges.map(({ node }) => {
         return {
             id: node.id,
             image: node.frontmatter.image,
@@ -33,14 +33,14 @@ const Eventos = (props) => {
             <SEO title='Eventos' />           
 
             <div className='pt-3'>
-                <FeaturedEvents eventos={eventosProximos}></FeaturedEvents>
+                <FeaturedEvents eventos={featuredEvents}></FeaturedEvents>
             </div>
 
 
             <div className='container pt-5'>
-                {<h2 className='title'>Eventos Pasados</h2>}
+                {/* {<h2 className='title'>Eventos Pasados</h2>} */}
                 <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 mx-n2'>
-                    {eventosPasados.map(evento => (
+                    {allEvents.map(evento => (
                     <EventPost evento={evento} key={evento.id}/>
                     ))}
                 </div>
@@ -51,7 +51,7 @@ const Eventos = (props) => {
 
 export const query = graphql`
     query EventosQuery {
-        eventosProximos: allMarkdownRemark(
+        featuredEvents: allMarkdownRemark(
             filter: { fileAbsolutePath: { regex: "/eventos/.*/" }, frontmatter: { featured: {eq: true}} }
             sort: { fields: [frontmatter___date], order: ASC }
         ) {
@@ -72,8 +72,8 @@ export const query = graphql`
                 }
             }
         }
-        eventosPasados: allMarkdownRemark(
-            filter: { fileAbsolutePath: { regex: "/eventos/.*/" }, frontmatter: { featured: {eq: false}} }
+        allEvents: allMarkdownRemark(
+            filter: { fileAbsolutePath: { regex: "/eventos/.*/" } }
             sort: { fields: [frontmatter___date], order: DESC }
         ) {
             edges {
