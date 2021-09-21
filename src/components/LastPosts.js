@@ -6,7 +6,7 @@ const LastPosts = props => (
     <h2 className='text-center subHeader mb-2'>ÚLTIMOS POSTS</h2>
     {props.posts.length > 0 && (
       <div>
-        <div className='pb-6'>
+        <div className='pb-2'>
           <div>
             {props.posts.map(({ node }) => (
               <div key={node.id} className='mb-3'>

@@ -65,17 +65,17 @@ $sub-footer-text-color: $white;
 @import 'pages/eventos/page-eventos-single';
 
 body {
-  font-size: 16px;
-  line-height: 1.2;
-  font-family: $font-family-base;
-  @include media-breakpoint-up(md) {
     font-size: 16px;
-    line-height: 1.3;
-  }
+    line-height: 1.2;
+    font-family: $font-family-base;
+    @include media-breakpoint-up(md) {
+        font-size: 16px;
+        line-height: 1.3;
+    }
 }
-.min-w-max {
-  min-width: max-content;
+.w-100 {
+    width: 100%;
 }
 .text-center {
-  text-align: center;
+    text-align: center;
 }
