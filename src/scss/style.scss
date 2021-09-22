@@ -1,10 +1,10 @@
 // Colors
-$primary: #8036ca;
+$primary: #326994;
 $secondary: #ffe55f;
-$black: #2f2f41;
+$black: #333333;
 $white: #ffffff;
-$white-offset: #f6f7ff;
-$steel: #5c5a5a;
+$white-offset: #ababab;
+$steel: #666666;
 
 // Links
 $link-color: $primary;
@@ -17,9 +17,9 @@ $font-family-base: Helvetica, Arial, sans-serif, -apple-system;
 $font-family-heading: 'Playfair Display', serif, -apple-system;
 
 // Footer
-$footer-background-color: $primary;
+$footer-background-color: $black;
 $footer-text-color: $white;
-$sub-footer-background-color: darken($primary, 10%);
+$sub-footer-background-color: $black;/* darken($black, 10%); */
 $sub-footer-text-color: $white;
 
 // Bootstrap

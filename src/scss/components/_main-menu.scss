@@ -11,13 +11,15 @@
       list-style: none;
       font-size: 1rem;
       > a {
-        padding: 10px 12px 10px 12px;
+        border-left: 1px solid $white;
+        padding: 5px 20px;
         display: inline-block;
         font-weight: normal;
         text-decoration: none;
-        color: $primary;
+        color: $white;
         &:hover {
-          text-decoration: underline;
+          background-color: $white-offset;
+          color: $black;
         }
         &.active {
           font-weight: bold;
