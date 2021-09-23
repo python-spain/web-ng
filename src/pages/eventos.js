@@ -33,10 +33,7 @@ const Eventos = (props) => {
         <Layout bodyClass='page-default-single'>
             <SEO title='Eventos' />           
 
-            <div className='pt-3'>
-                <FeaturedEvents eventos={featuredEvents}></FeaturedEvents>
-            </div>
-
+            <FeaturedEvents eventos={featuredEvents}></FeaturedEvents>
 
             <div className='container pt-5'>
                 <h2 className='title'>Eventos Pasados</h2>

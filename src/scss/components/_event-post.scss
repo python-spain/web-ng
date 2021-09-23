@@ -5,16 +5,20 @@
     flex-direction: column;
     justify-content: flex-start;
     text-align: left;
-    text-decoration: none;
 
     h2 {
       margin-bottom: 0.3rem;
       line-height: 1.1;
-      font-weight: bold;
+      color: $black;
     }
     p{
       margin-bottom: 0;
     }
+}
+
+.event-post:hover {
+  text-decoration: none;
+  outline: 10px solid $secondary;
 }
 
 
