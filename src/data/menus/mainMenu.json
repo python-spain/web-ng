@@ -20,15 +20,21 @@
         "weight": 4
     },
     {
+        "name": "¡Hazte socio!",
+        "url": "/hazte-socio/",
+        "weight": 5
+    },
+    {
         "name": "Blog",
         "url": "/blog/",
-        "weight": 5
+        "weight": 6
     },
     {
         "name": "Eventos",
         "url": "/eventos/",
-        "weight": 6
+        "weight": 7
     }
+    
     
     
     

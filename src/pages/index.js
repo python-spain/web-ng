@@ -6,18 +6,19 @@ import Layout from '../components/Layout';
 import Call from '../components/Call';
 import Twitter from '../components/Twitter';
 import LastPosts from '../components/LastPosts';
+import ImageHome from "../components/ImageHome";
+
+
 
 const Home = props => {
     const intro = props.data.intro;
     const site = props.data.site.siteMetadata;
     const services = props.data.services.edges;
     const features = props.data.features.edges;
-    const introImageClasses = `intro-image ${
-        intro.frontmatter.intro_image_absolute && 'intro-image-absolute'
-    } ${
-        intro.frontmatter.intro_image_hide_on_mobile &&
+    const introImageClasses = `intro-image ${intro.frontmatter.intro_image_absolute && 'intro-image-absolute'
+        } ${intro.frontmatter.intro_image_hide_on_mobile &&
         'intro-image-hide-mobile'
-    }`;
+        }`;
     const lastPosts = props.data.posts.edges;
 
     useEffect(() => {
@@ -36,97 +37,16 @@ const Home = props => {
                 />
             </Helmet>
 
-            <div className='intro'>
-                <div className='container'>
-                    <div className='row justify-content-start'>
-                        <div className='col-12 col-md-7 col-lg-6 order-2 order-md-1'>
-                            <div
-                                dangerouslySetInnerHTML={{ __html: intro.html }}
-                            />
-                            <Call showButton />
-                        </div>
-                        {intro.frontmatter.intro_image && (
-                            <div className='col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative'>
-                                <img
-                                    alt={intro.frontmatter.title}
-                                    className={introImageClasses}
-                                    src={intro.frontmatter.intro_image}
-                                />
-                            </div>
-                        )}
-                    </div>
-                </div>
+            
+            <div>
+                <ImageHome/>
             </div>
-
-            {services.length > 0 && (
-                <div className='strip'>
-                    <div className='container pt-6 pb-6 pb-md-10'>
-                        <div className='row justify-content-start'>
-                            {services.map(({ node }) => (
-                                <div
-                                    key={node.id}
-                                    className='col-12 col-md-4 mb-1'
-                                >
-                                    <div className='service service-summary'>
-                                        <div className='service-content'>
-                                            <h2 className='service-title'>
-                                                <Link to={node.fields.slug}>
-                                                    {node.frontmatter.title}
-                                                </Link>
-                                            </h2>
-                                            <p>{node.excerpt}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        <div className='row justify-content-center'>
-                            <div className='col-auto'>
-                                <Link
-                                    className='button button-primary'
-                                    to='/services/'
-                                >
-                                    View All Services
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            )}
-
-            {features.length > 0 && (
-                <div className='strip strip-grey'>
-                    <div className='container pt-6 pb-6 pt-md-10 pb-md-10'>
-                        <div className='row justify-content-center'>
-                            {features.map(({ node }) => (
-                                <div
-                                    key={node.id}
-                                    className='col-12 col-md-6 col-lg-4 mb-2'
-                                >
-                                    <div className='feature'>
-                                        {node.image && (
-                                            <div className='feature-image'>
-                                                <img src={node.image} />
-                                            </div>
-                                        )}
-                                        <h2 className='feature-title'>
-                                            {node.title}
-                                        </h2>
-                                        <div className='feature-content'>
-                                            {node.description}
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            )}
-            <div className='container d-lg-flex justify-content py-2'>
-                <div className='pr-lg-4'>
+            <div className='d-flex justify-content pt-2 px-4'>
+            
+                <div className='flex-grow-1 pr-4'>
                     <LastPosts posts={lastPosts} />
                 </div>
-                <div className='w-100'>
+                <div className='min-w-max'>
                     <Twitter />
                 </div>
             </div>
