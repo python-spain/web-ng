@@ -54,11 +54,11 @@
       a {
         display: block;
         position: relative;
-        color: #ffffff;
+        color: $white;
         text-decoration: none;
         overflow: hidden;
         &:hover {
-          opacity: 0.8;
+          color: $secondary;
         }
       }
     }
