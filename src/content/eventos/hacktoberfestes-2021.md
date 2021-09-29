@@ -8,6 +8,8 @@ logo: "/images/eventos/hacktoberfestes-2021-logo.png"
 website: "https://hacktoberfestes.dev"
 ---
 
-El Hacktoberfest es un evento anual organizado por DigitalOcean para promover el código abierto.
+Al igual que el año pasado, éste también celebraremos el HacktoberfestES :D
 
-Con HacktoberfestES queremos adaptar el evento global a la comunidad de habla hispana y facilitar la participación seleccionado algunos proyectos y creando espacios y actividades donde la gente se conozca y pueda aprender.
+Se trata de contribuir a repositorios de código abierto en Github o Gitlab durante mes de octubre. Hemos preparado una web chula y seleccionado algunos proyectos fáciles para principiantes. También tenemos un servidor de Discord y varios eventos sobre código abierto.
+
+¡Diviértete y aprende contribuyendo al código abierto!
