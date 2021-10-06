@@ -10,7 +10,7 @@ const FeaturedEvents = ({ eventos }) => {
         <div className='featured-events'>
             <div className='container'>
                 <div className='row row-cols-1'>
-                    <Carousel variant='dark' className='featured-events-slider'>            
+                    <Carousel className='featured-events-slider'>            
                     {eventos.map(evento => (
                     <Carousel.Item>  
                         <EventSlide evento={evento} key={evento.id}/>

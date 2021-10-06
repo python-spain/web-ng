@@ -1,27 +1,19 @@
 .featured-events{
 
     .featured-events-slider{
-
       display: none;
       @include media-breakpoint-up(lg) {
         display: block;
+        margin-top: 2rem;
       }
       .carousel-control-prev, .carousel-control-next{
         display: none
       }
-      .carousel-control-prev-icon, .carousel-control-next-icon{
-        
-      }
-
-      .carousel-indicators{
-        
-      }
-
     }
 
     .featured-events-mobile {
       display: block;
-      background-color: #e0e0e0;
+      background-color: $white-offset;
       @include media-breakpoint-up(lg) {
         display: none; 
       }

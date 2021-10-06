@@ -37,6 +37,7 @@ const Footer = props => {
             </div>
           </div>
         </div>
+        <hr className='footer-line' />
       </div>
     </div>
   );

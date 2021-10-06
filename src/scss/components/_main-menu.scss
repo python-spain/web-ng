@@ -11,17 +11,24 @@
       list-style: none;
       font-size: 1rem;
       > a {
-        padding: 10px 12px 10px 12px;
+        /* border-left: 1px solid $white-offset; */
+        padding: 15px;
         display: inline-block;
         font-weight: normal;
         text-decoration: none;
-        color: $primary;
+        color: $white;
         &:hover {
-          text-decoration: underline;
+          background-color: $secondary;
+          color: $primary;
+          border-radius: 25px;
+
         }
         &.active {
+          background-color: $primary-offset;
           font-weight: bold;
           text-decoration: none;
+          color: $primary;
+          border-radius: 25px;
           &:hover {
             text-decoration: none;
             transition: all 225ms ease-in 0s;

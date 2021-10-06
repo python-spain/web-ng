@@ -1,6 +1,9 @@
 .content {
   a {
-    text-decoration: underline;
+    text-decoration: $link-decoration;
+  }
+  a:hover{
+    text-decoration: $link-hover-decoration;
   }
   img {
     max-width: 100%;
