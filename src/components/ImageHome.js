@@ -4,12 +4,11 @@ import { Link } from 'gatsby';
 
 const ImageHome = () => (
     <div className="image-home">
-        <div className="background-image" style={{backgroundImage: `url(${backgroundImage})`}}>
-            <div className="content">
-                <Link className="btn" to="/hazte-socio/"><h1>¡HAZTE SOCIO!</h1></Link>
-            </div>
+        <div className="container content">
+            <img src={backgroundImage}/>
+            <Link className="button" to="/hazte-socio/">¡HAZTE SOCIO!</Link>
         </div>
     </div>
 );
 
-export default ImageHome
+export default ImageHome;

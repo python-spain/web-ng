@@ -9,10 +9,8 @@ import ImageHome from "../components/ImageHome";
 import FeaturedEvents from "../components/FeaturedEvents";
 
 
-
 const Home = props => {
     const site = props.data.site.siteMetadata;
-    const features = props.data.features.edges;
     const lastPosts = props.data.posts.edges.map(({ node }) => {
         return {
             id: node.id,
@@ -53,35 +51,6 @@ const Home = props => {
 
             <ImageHome/>
 
-{/*             {features.length > 0 && (
-                <div className='strip strip-grey'>
-                    <div className='container pt-6 pb-6 pt-md-10 pb-md-10'>
-                        <div className='row justify-content-center'>
-                            {features.map(({ node }) => (
-                                <div
-                                    key={node.id}
-                                    className='col-12 col-md-6 col-lg-4 mb-2'
-                                >
-                                    <div className='feature'>
-                                        {node.image && (
-                                            <div className='feature-image'>
-                                                <img src={node.image} />
-                                            </div>
-                                        )}
-                                        <h2 className='feature-title'>
-                                            {node.title}
-                                        </h2>
-                                        <div className='feature-content'>
-                                            {node.description}
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            )} */}
-
             <div className="">
                 <div className="container pt-5">
                     <h1 className='title mb-0'>Eventos destacados</h1>
@@ -96,13 +65,10 @@ const Home = props => {
                     <div className='col-12 col-lg-8'>
                         <h1 className='title'>Últimos posts</h1>
                         <PostList posts={lastPosts} twoColumns/>
-                        
                     </div>
                     <div className="col-12 col-lg-4">
                         <Twitter/>
-
                     </div>
-
                 </div>    
             </div>
         </Layout>
