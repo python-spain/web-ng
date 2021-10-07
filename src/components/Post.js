@@ -6,7 +6,7 @@ const Post = ({ post }) => {
     return (
         <div key={post.id} className='mb-3 col'>
             <div className='list-post align-items-start '>
-                <div
+{/*                 <div
                     className='mb-1 d-flex justify-content-center align-items-center'
                     style={{ width: '100%', height: '100%' }}
                 >
@@ -16,7 +16,7 @@ const Post = ({ post }) => {
                         alt={`picture-${post.id}`}
                     />
                 </div>
-
+ */}
                 <h2 className='text-dark mt-auto'>
                     <Link to={post.link} className='post-title'>
                         {post.title}
