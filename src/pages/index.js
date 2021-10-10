@@ -53,9 +53,9 @@ const Home = props => {
 
             <div className="">
                 <div className="container pt-5">
-                    <h1 className='title mb-0'>Eventos destacados</h1>
+                    <h1 className='title'>Eventos destacados</h1>
                 </div>
-                <div className="pb-5">
+                <div className="mb-5">
                     <FeaturedEvents eventos={featuredEvents}></FeaturedEvents>
                 </div>
             </div>

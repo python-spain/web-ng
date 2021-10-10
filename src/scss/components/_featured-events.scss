@@ -4,7 +4,6 @@
       display: none;
       @include media-breakpoint-up(lg) {
         display: block;
-        margin-top: 2rem;
       }
       .carousel-control-prev, .carousel-control-next{
         display: none
