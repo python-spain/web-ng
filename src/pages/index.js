@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import Twitter from '../components/Twitter';
 import PostList from '../components/PostList';
-import ImageHome from "../components/ImageHome";
+import HeroImage from "../components/HeroImage";
+import FeaturesHome from "../components/FeaturesHome"
 import FeaturedEvents from "../components/FeaturedEvents";
+import imagenSocios from "../../static/images/inicio/socios.jpg";
 
 
 const Home = props => {
@@ -49,7 +51,9 @@ const Home = props => {
                 />
             </Helmet>
 
-            <ImageHome/>
+            <HeroImage image={imagenSocios}/>
+
+            <FeaturesHome/>
 
             <div className="mt-8">
                 <div className="container">

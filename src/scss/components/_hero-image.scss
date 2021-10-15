@@ -1,0 +1,10 @@
+.hero-image {
+
+    background: linear-gradient($primary 60%, $white 40%);
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+        margin: 0;
+    }  
+}
