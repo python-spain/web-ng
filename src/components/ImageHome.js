@@ -3,6 +3,8 @@ import { Link } from 'gatsby';
 import imagenSocios from "../../static/images/inicio/socios.jpg";
 import imagenAprende from "../../static/images/inicio/aprende-python.jpg";
 import imagenNewsletter from "../../static/images/inicio/newsletter.jpg";
+import imagenComunidades from "../../static/images/inicio/comunidades.png";
+
 
 
 const ImageHome = () => (
@@ -18,16 +20,22 @@ const ImageHome = () => (
         </div>
         <div className="container">
             <div className="row">
-                <div className="content col-6">
+                <div className="content col-4">
                     <img src={imagenNewsletter}/>
                     <div className="text">
                         <h3>Si te gusta el contenido de lo que lees no te olvides de subscribirte a nuestra NEWSLETTER.</h3>
                     </div>
                 </div>
-                <div className="content col-6">
+                <div className="content col-4">
                     <img src={imagenAprende}/>
                     <div className="text">
                         <h3>¿Quieres aprender Python? En nuestra web encontrarás todos los recursos.</h3>
+                    </div>
+                </div>
+                <div className="content col-4">
+                    <img class="img-border" src={imagenComunidades}/>
+                    <div className="text">
+                        <h3>Comunidades</h3>
                     </div>
                 </div>
 
