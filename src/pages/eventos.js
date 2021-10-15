@@ -31,12 +31,12 @@ const Eventos = (props) => {
     return (
         <Layout bodyClass='page-default-single'>
             <SEO title='Eventos' />           
-            <div className='container pt-6'>
+            <div className='container mt-6'>
                  <h1 className='title'>Eventos</h1>
             </div>
                 <FeaturedEvents eventos={featuredEvents} />
 
-            <div className='container pt-5'>
+            <div className='container mt-3'>
                 <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 mx-n2'>
                     {nonFeaturedEvents.map(evento => (
                     <EventPost evento={evento} key={evento.id}/>

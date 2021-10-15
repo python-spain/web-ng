@@ -24,12 +24,12 @@
 
         }
         &.active {
-          background-color: $primary-offset;
+          color: $secondary;
           font-weight: bold;
           text-decoration: none;
-          color: $primary;
           border-radius: 25px;
           &:hover {
+            color: $primary;
             text-decoration: none;
             transition: all 225ms ease-in 0s;
           }

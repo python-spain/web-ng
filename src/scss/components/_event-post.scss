@@ -6,6 +6,10 @@
     justify-content: flex-start;
     text-align: left;
 
+    img {
+      border-radius: 10px;
+    }
+
     h2 {
       margin-bottom: 0.3rem;
       line-height: 1.1;
@@ -18,7 +22,17 @@
 
 .event-post:hover {
   text-decoration: none;
-  outline: 10px solid $secondary;
+  animation: 0.5s scaleUp ease;
+  transform: scale(1.1);
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }
 
 
