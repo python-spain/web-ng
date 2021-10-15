@@ -51,13 +51,11 @@ const Home = props => {
 
             <ImageHome/>
 
-            <div className="">
-                <div className="container pt-5">
+            <div className="mt-8">
+                <div className="container">
                     <h1 className='title'>Eventos destacados</h1>
                 </div>
-                <div className="mb-5">
-                    <FeaturedEvents eventos={featuredEvents}></FeaturedEvents>
-                </div>
+                <FeaturedEvents eventos={featuredEvents}></FeaturedEvents>
             </div>
 
             <div className='container mt-8'>

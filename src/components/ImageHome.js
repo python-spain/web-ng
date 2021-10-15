@@ -11,31 +11,31 @@ const ImageHome = () => (
     <div className="image-home">
         <div className="image-top">
             <div className="container content mb-3">
-                <img src={imagenSocios}/>
-                <div className="text">
-                    <h1>Ya somos 1000 socios, te estamos esperando. </h1>
-                    <Link className="button" to="/hazte-socio">Hazte socio</Link>
+                <img className="mt-1" src={imagenSocios}/>
+                <div className="text mt-2">
+                    <h1>Te estamos esperando ¡Hazte socio! </h1>
+                    {/* <Link className="button" to="/hazte-socio"></Link> */}
                 </div>
             </div>
         </div>
         <div className="container">
             <div className="row">
                 <div className="content col-4">
-                    <img src={imagenNewsletter}/>
+                    <img src={imagenComunidades}/>
                     <div className="text">
-                        <h3>Si te gusta el contenido de lo que lees no te olvides de subscribirte a nuestra NEWSLETTER.</h3>
+                        <h3>¿Conoces las comunidades locales de Python? Encuentra la tuya</h3>
                     </div>
                 </div>
                 <div className="content col-4">
                     <img src={imagenAprende}/>
                     <div className="text">
-                        <h3>¿Quieres aprender Python? En nuestra web encontrarás todos los recursos.</h3>
+                        <h3>¿Quieres aprender Python? Aquí encontrarás todos los recursos</h3>
                     </div>
                 </div>
                 <div className="content col-4">
-                    <img class="img-border" src={imagenComunidades}/>
+                    <img src={imagenNewsletter}/>
                     <div className="text">
-                        <h3>Comunidades</h3>
+                        <h3>No te olvides de subscribirte a nuestra newsletter</h3>
                     </div>
                 </div>
 
