@@ -1,7 +1,6 @@
 .event-slide{
     display: flex;
     align-items: center;
-    text-decoration: none;
 
     .event-image {
         width: 70%;
@@ -19,9 +18,8 @@
         text-align: center;
     }
     
-    .content h1 {
+    .content h2 {
         margin: 0;
-        line-height: 1.1;
         font-weight: bold;
     }
     

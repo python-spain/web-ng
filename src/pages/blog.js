@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import Twitter from '../components/Twitter';
 import { graphql, Link } from 'gatsby';
 import PostList from '../components/PostList';
 
@@ -26,9 +25,6 @@ const Blog = props => {
                         <div className='col'>
                             <PostList posts={posts} />
                         </div>
-                        {/*     <div className='col-auto'>
-                            <Twitter />
-                        </div> */}
                     </div>
                 </div>
             </div>

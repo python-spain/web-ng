@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import FeaturedEvents from '../components/FeaturedEvents';
 import EventPost from '../components/EventPost';
-import EventSlide from '../components/EventSlide';
 
 const Eventos = (props) => {
     const featuredEvents = props.data.featuredEvents.edges.map(({ node }) => {
