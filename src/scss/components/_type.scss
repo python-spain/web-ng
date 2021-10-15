@@ -19,7 +19,7 @@ h1 {
 }
 h2 {
   font-size: 24px;
-  font-family: $font-family-heading;
+  font-family: $font-family-subheading;
   line-height: 1.4;
   margin-bottom: 10px;
   @include media-breakpoint-up(md) {
