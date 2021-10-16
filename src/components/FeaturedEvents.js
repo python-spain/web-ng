@@ -16,7 +16,7 @@ const FeaturedEvents = ({ eventos }) => {
                 ))}
             </Carousel>
             <div className='featured-events-mobile'>
-                <div className="row cols-1">
+                <div className="row cols-1 row-cols-sm-2 g-3">
                     {eventos.map(evento => (
                         <EventPost evento={evento} key={evento.id} featured={true}/>
                     ))}

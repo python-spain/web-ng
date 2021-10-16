@@ -22,7 +22,10 @@
         padding: 1rem 0;
     }
 
-    @include media-breakpoint-up(sm) {
+
+
+
+    @include media-breakpoint-up(md) {
         .image-mobile {
             display: none;
         }
@@ -36,6 +39,10 @@
         h1 {
             color: inherit;
             font-size: 30px;
+        }
+        a:hover {
+            text-decoration: none;
+            color: $secondary;
         }
     }
 }

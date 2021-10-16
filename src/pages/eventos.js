@@ -34,9 +34,7 @@ const Eventos = (props) => {
             <div className='container mt-6'>
                  <h1 className='title'>Eventos</h1>
                 <FeaturedEvents eventos={featuredEvents} />
-
-                {/* <h1 className='title'>Y también...</h1> */}
-                <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-3'>
+                <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-3 g-3'>
                     {nonFeaturedEvents.map(evento => (
                     <EventPost evento={evento} key={evento.id}/>
                     ))}
