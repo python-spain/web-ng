@@ -8,24 +8,18 @@ const FeaturedEvents = ({ eventos }) => {
     return(
         
         <div className='featured-events'>
-            <div className='container'>
-                <div className='row row-cols-1'>
-                    <Carousel className='featured-events-slider'>            
-                    {eventos.map(evento => (
-                    <Carousel.Item>  
-                        <EventSlide evento={evento} key={evento.id}/>
-                    </Carousel.Item>
-                    ))}
-                    </Carousel>
-                </div>
-            </div>
+            <Carousel className='featured-events-slider'>            
+                {eventos.map(evento => (
+                <Carousel.Item>  
+                    <EventSlide evento={evento} key={evento.id}/>
+                </Carousel.Item>
+                ))}
+            </Carousel>
             <div className='featured-events-mobile'>
-                <div className='container py-4'>
-                    <div className='row row-cols-1 mx-n2'>
-                        {eventos.map(evento => (
-                            <EventPost evento={evento} key={evento.id} featured={true}/>
-                        ))}
-                    </div>
+                <div className="row cols-1">
+                    {eventos.map(evento => (
+                        <EventPost evento={evento} key={evento.id} featured={true}/>
+                    ))}
                 </div>
             </div>
         </div>

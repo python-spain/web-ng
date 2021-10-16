@@ -40,7 +40,7 @@ const Home = props => {
             title: node.frontmatter.title,
             date: node.frontmatter.fullDate,
             logo: node.frontmatter.logo,
-            text: node.excerpt,
+            text: node.frontmatter.description,
         };
     });
 
@@ -62,25 +62,25 @@ const Home = props => {
 
             <HeroImage image={introImage} imageMobile={introImageMobile}/>
 
-            <FeaturesHome features={features}/>
+            <div className="container">
+                <FeaturesHome features={features}/>
 
-            <div className="mt-8">
-                <div className="container">
+                <div className="mt-8">
                     <h1>Eventos destacados</h1>
+                    <FeaturedEvents eventos={featuredEvents}></FeaturedEvents>
                 </div>
-                <FeaturedEvents eventos={featuredEvents}></FeaturedEvents>
-            </div>
 
-            <div className='container mt-8'>
-                <div className='row'>
-                    <div className='col-12 col-lg-8'>
-                        <h1>Últimos posts</h1>
-                        <PostList posts={lastPosts} twoColumns/>
-                    </div>
-                    <div className="col-12 col-lg-4">
-                        <Twitter/>
-                    </div>
-                </div>    
+                <div className='mt-8'>
+                    <div className='row'>
+                        <div className='col-12 col-lg-8'>
+                            <h1>Últimos posts</h1>
+                            <PostList posts={lastPosts} twoColumns/>
+                        </div>
+                        <div className="col-12 col-lg-4">
+                            <Twitter/>
+                        </div>
+                    </div>    
+                </div>
             </div>
         </Layout>
     );
@@ -125,6 +125,7 @@ export const query = graphql`
                         image
                         fullDate
                         logo
+                        description
                     }
                 }
             }

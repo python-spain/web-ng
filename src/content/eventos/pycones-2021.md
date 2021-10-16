@@ -5,6 +5,7 @@ fullDate: 2-3 Octubre 2021
 featured: true
 image: "/images/eventos/pycones-2021.png"
 logo: "/images/eventos/pycones-2021-logo.png"
+description: "La conferencia más grande de la comunidad Python en España, donde se dan cita profesionales y entusiastas del lenguaje para difundir su experiencia y conocimientos."
 website: "https://2021.es.pycon.org"
 ---
 

@@ -18,6 +18,18 @@
     p{
       margin-bottom: 0;
     }
+    .featured{
+      h2 {
+        font-weight: bold;
+        color: $white;
+        background-color: $secondary;
+        border-radius: 10px;
+        padding: 0.5rem;
+      }
+      p {
+        padding-left: 0.5rem;
+      }
+    }
 }
 
 @include media-breakpoint-up(lg) {

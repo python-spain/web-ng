@@ -14,7 +14,7 @@ const Eventos = (props) => {
             title: node.frontmatter.title,
             date: node.frontmatter.fullDate,
             logo: node.frontmatter.logo,
-            text: node.excerpt,
+            text: node.frontmatter.description,
         };
     });
     const nonFeaturedEvents = props.data.nonFeaturedEvents.edges.map(({ node }) => {
@@ -33,11 +33,10 @@ const Eventos = (props) => {
             <SEO title='Eventos' />           
             <div className='container mt-6'>
                  <h1 className='title'>Eventos</h1>
-            </div>
                 <FeaturedEvents eventos={featuredEvents} />
 
-            <div className='container mt-3'>
-                <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 mx-n2'>
+                {/* <h1 className='title'>Y también...</h1> */}
+                <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-3'>
                     {nonFeaturedEvents.map(evento => (
                     <EventPost evento={evento} key={evento.id}/>
                     ))}
@@ -66,6 +65,7 @@ export const query = graphql`
                         image
                         fullDate
                         logo
+                        description
                     }
                 }
             }

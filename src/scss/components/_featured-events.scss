@@ -12,7 +12,6 @@
 
     .featured-events-mobile {
       display: block;
-      background-color: $white-offset;
       @include media-breakpoint-up(lg) {
         display: none; 
       }
