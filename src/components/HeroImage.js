@@ -3,11 +3,12 @@ import { Link } from 'gatsby';
 
 
 
-const HeroImage = ({image}) => (
-    <div className="hero-image mb-5">
+const HeroImage = ({image, imageMobile}) => (
+    <div className="hero-image mb-3">
         <div className="container">
-            <img className="my-1" src={image}/>
-            <Link to="/hazte-socio"><h1 className="text-center mt-1">Te estamos esperando ¡Hazte socio! </h1></Link>
+            <img className="image-pc mt-1" src={image}/>
+            <img className="image-mobile mt-2" src={imageMobile}/>
+            <Link to="/hazte-socio"><h1 className="text-center">Te estamos esperando ¡Hazte socio! </h1></Link>
         </div>
     </div>
 );

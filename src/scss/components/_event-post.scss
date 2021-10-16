@@ -20,13 +20,15 @@
     }
 }
 
-.event-post:hover {
-  text-decoration: none;
-  animation: 0.5s scaleUp ease;
-  opacity: 0.5;
+@include media-breakpoint-up(lg) {
+  .event-post:hover {
+    text-decoration: none;
+    animation: 0.5s hoverEffect ease;
+    opacity: 0.5;
+  }
 }
 
-@keyframes scaleUp {
+@keyframes hoverEffect {
   from {
     opacity: 1;
   }

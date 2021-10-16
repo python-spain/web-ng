@@ -1,8 +1,7 @@
 ---
 title: 'Home'
-intro_image: "/images/illustrations/pointing.svg"
-intro_image_absolute: true
-intro_image_hide_on_mobile: true
+image: "/images/hero-images/socios.jpg"
+image_mobile: "/images/hero-images/socios-movil.jpg"
 ---
 
 # Serif - A Hugo Business Theme.

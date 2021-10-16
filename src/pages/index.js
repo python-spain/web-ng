@@ -8,11 +8,20 @@ import PostList from '../components/PostList';
 import HeroImage from "../components/HeroImage";
 import FeaturesHome from "../components/FeaturesHome"
 import FeaturedEvents from "../components/FeaturedEvents";
-import imagenSocios from "../../static/images/inicio/socios.jpg";
 
 
 const Home = props => {
+    const introImage = props.data.intro.frontmatter.image;
+    const introImageMobile = props.data.intro.frontmatter.image_mobile;
     const site = props.data.site.siteMetadata;
+    const features = props.data.features.edges.map(({ node }) => {
+        return {
+            id: node.id,
+            title: node.title,
+            url: node.url,
+            image: node.image,
+        }
+    });
     const lastPosts = props.data.posts.edges.map(({ node }) => {
         return {
             id: node.id,
@@ -51,13 +60,13 @@ const Home = props => {
                 />
             </Helmet>
 
-            <HeroImage image={imagenSocios}/>
+            <HeroImage image={introImage} imageMobile={introImageMobile}/>
 
-            <FeaturesHome/>
+            <FeaturesHome features={features}/>
 
             <div className="mt-8">
                 <div className="container">
-                    <h1 className='title'>Eventos destacados</h1>
+                    <h1>Eventos destacados</h1>
                 </div>
                 <FeaturedEvents eventos={featuredEvents}></FeaturedEvents>
             </div>
@@ -65,7 +74,7 @@ const Home = props => {
             <div className='container mt-8'>
                 <div className='row'>
                     <div className='col-12 col-lg-8'>
-                        <h1 className='title'>Últimos posts</h1>
+                        <h1>Últimos posts</h1>
                         <PostList posts={lastPosts} twoColumns/>
                     </div>
                     <div className="col-12 col-lg-4">
@@ -79,6 +88,26 @@ const Home = props => {
 
 export const query = graphql`
     query {
+        intro: markdownRemark(
+            fileAbsolutePath: { regex: "/content/index.md/" }
+        ) {
+            html
+            frontmatter {
+                image
+                image_mobile
+                title
+            }
+        }
+        features: allFeaturesJson {
+            edges {
+                node {
+                    id
+                    title
+                    url
+                    image
+                }
+            }
+        }
         featuredEvents: allMarkdownRemark(
             filter: { fileAbsolutePath: { regex: "/eventos/.*/" }, frontmatter: { featured: {eq: true}} }
             sort: { fields: [frontmatter___date], order: ASC }
@@ -117,16 +146,6 @@ export const query = graphql`
                         slug
                     }
                     excerpt(pruneLength: 280)
-                }
-            }
-        }
-        features: allFeaturesJson {
-            edges {
-                node {
-                    id
-                    title
-                    description
-                    image
                 }
             }
         }

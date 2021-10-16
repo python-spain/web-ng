@@ -14,20 +14,21 @@
         margin-top: 0.5rem;
         color: $black;
     }
-    
-    .content:hover {
+          
+    @include media-breakpoint-up(lg) {
+      .content:hover {
         text-decoration: none;
-        animation: 0.5s scaleUp ease;
+        animation: 0.5s hoverEffect ease;
         opacity: 0.5;
       }
-      
-      @keyframes scaleUp {
-        from {
-          opacity: 1;
-        }
-        to {
-          opacity: 0.5;
-        }
+    }
+    
+    @keyframes hoverEffect {
+      from {
+        opacity: 1;
       }
-      
+      to {
+        opacity: 0.5;
+      }
+    }  
 }
