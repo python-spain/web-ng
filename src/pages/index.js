@@ -1,25 +1,48 @@
 import React, { useEffect } from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
-import Call from '../components/Call';
 import Twitter from '../components/Twitter';
-import LastPosts from '../components/LastPosts';
-import ImageHome from "../components/ImageHome";
-
+import PostList from '../components/PostList';
+import HeroImage from "../components/HeroImage";
+import FeaturesHome from "../components/FeaturesHome"
+import FeaturedEvents from "../components/FeaturedEvents";
 
 
 const Home = props => {
-    const intro = props.data.intro;
+    const introImage = props.data.intro.frontmatter.image;
+    const introImageMobile = props.data.intro.frontmatter.image_mobile;
     const site = props.data.site.siteMetadata;
-    const services = props.data.services.edges;
-    const features = props.data.features.edges;
-    const introImageClasses = `intro-image ${intro.frontmatter.intro_image_absolute && 'intro-image-absolute'
-        } ${intro.frontmatter.intro_image_hide_on_mobile &&
-        'intro-image-hide-mobile'
-        }`;
-    const lastPosts = props.data.posts.edges;
+    const features = props.data.features.edges.map(({ node }) => {
+        return {
+            id: node.id,
+            title: node.title,
+            url: node.url,
+            image: node.image,
+        }
+    });
+    const lastPosts = props.data.posts.edges.map(({ node }) => {
+        return {
+            id: node.id,
+            image: node.frontmatter.featuredImage,
+            link: node.fields.slug,
+            title: node.frontmatter.title,
+            date: node.frontmatter.date,
+            summary: node.excerpt,
+        };
+    });
+    const featuredEvents = props.data.featuredEvents.edges.map(({ node }) => {
+        return {
+            id: node.id,
+            image: node.frontmatter.image,
+            link: node.fields.slug,
+            title: node.frontmatter.title,
+            date: node.frontmatter.fullDate,
+            logo: node.frontmatter.logo,
+            text: node.frontmatter.description,
+        };
+    });
 
     useEffect(() => {
         if (typeof twttr.widgets !== 'undefined') {
@@ -37,16 +60,26 @@ const Home = props => {
                 />
             </Helmet>
 
-            
-            <div>
-                <ImageHome/>
-            </div>
-            <div className='container d-lg-flex justify-content py-2'>
-                <div className='pr-lg-4'>
-                    <LastPosts posts={lastPosts} />
+            <HeroImage image={introImage} imageMobile={introImageMobile}/>
+
+            <div className="container">
+                <FeaturesHome features={features}/>
+
+                <div className="mt-8">
+                    <h1>Eventos destacados</h1>
+                    <FeaturedEvents eventos={featuredEvents}></FeaturedEvents>
                 </div>
-                <div className='w-100'>
-                    <Twitter />
+
+                <div className='mt-8'>
+                    <div className='row'>
+                        <div className='col-12 col-lg-8'>
+                            <h1>Últimos posts</h1>
+                            <PostList posts={lastPosts} twoColumns/>
+                        </div>
+                        <div className="col-12 col-lg-4">
+                            <Twitter/>
+                        </div>
+                    </div>    
                 </div>
             </div>
         </Layout>
@@ -55,22 +88,45 @@ const Home = props => {
 
 export const query = graphql`
     query {
-        services: allMarkdownRemark(
-            filter: { fileAbsolutePath: { regex: "/services/.*/" } }
-            sort: { fields: [frontmatter___weight], order: ASC }
-            limit: 6
+        intro: markdownRemark(
+            fileAbsolutePath: { regex: "/content/index.md/" }
+        ) {
+            html
+            frontmatter {
+                image
+                image_mobile
+                title
+            }
+        }
+        features: allFeaturesJson {
+            edges {
+                node {
+                    id
+                    title
+                    url
+                    image
+                }
+            }
+        }
+        featuredEvents: allMarkdownRemark(
+            filter: { fileAbsolutePath: { regex: "/eventos/.*/" }, frontmatter: { featured: {eq: true}} }
+            sort: { fields: [frontmatter___date], order: ASC }
         ) {
             edges {
                 node {
                     id
-                    frontmatter {
-                        title
-                        date(formatString: "DD MMMM YYYY")
-                    }
+                    excerpt
                     fields {
                         slug
                     }
-                    excerpt
+                    frontmatter {
+                        title
+                        featured
+                        image
+                        fullDate
+                        logo
+                        description
+                    }
                 }
             }
         }
@@ -91,28 +147,6 @@ export const query = graphql`
                         slug
                     }
                     excerpt(pruneLength: 280)
-                }
-            }
-        }
-        intro: markdownRemark(
-            fileAbsolutePath: { regex: "/content/index.md/" }
-        ) {
-            html
-            frontmatter {
-                image
-                intro_image
-                intro_image_absolute
-                intro_image_hide_on_mobile
-                title
-            }
-        }
-        features: allFeaturesJson {
-            edges {
-                node {
-                    id
-                    title
-                    description
-                    image
                 }
             }
         }

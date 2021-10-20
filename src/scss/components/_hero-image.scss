@@ -1,0 +1,48 @@
+.hero-image {
+
+    background: $primary 60%;
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+        margin: 0;
+    }  
+
+    .image-pc {
+        display: none;
+    }
+
+    .image-mobile {
+        display: inline;
+    }
+    
+    h1 {
+        color: $white;
+        font-size: 20px;
+        padding: 1rem 0;
+    }
+
+
+
+
+    @include media-breakpoint-up(md) {
+        .image-mobile {
+            display: none;
+        }
+        .image-pc {
+            display: inline;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        background: linear-gradient($primary 60%, $white 40%);
+        h1 {
+            color: inherit;
+            font-size: 30px;
+        }
+        a:hover {
+            text-decoration: none;
+            color: $secondary;
+        }
+    }
+}

@@ -12,7 +12,7 @@
     margin-bottom: 20px;
   }
   strong {
-    font-width: bold;
+    font-weight: bold;
   }
   em {
     font-style: italic;
@@ -23,7 +23,7 @@
     color: $steel;
   }
   h1 {
-    font-family: $font-family-base;
+    font-family: $font-family-heading;
     font-size: 34px;
     line-height: 1.26;
     font-weight: normal;
@@ -31,7 +31,7 @@
     margin-bottom: 20px;
   }
   h2 {
-    font-family: $font-family-base;
+    font-family: $font-family-subheading;
     font-size: 26px;
     font-weight: normal;
     line-height: 1.4;

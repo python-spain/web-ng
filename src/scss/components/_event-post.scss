@@ -6,6 +6,10 @@
     justify-content: flex-start;
     text-align: left;
 
+    img {
+      border-radius: 10px;
+    }
+
     h2 {
       margin-bottom: 0.3rem;
       line-height: 1.1;
@@ -16,9 +20,21 @@
     }
 }
 
-.event-post:hover {
-  text-decoration: none;
-  outline: 10px solid $secondary;
+@include media-breakpoint-up(lg) {
+  .event-post:hover {
+    text-decoration: none;
+    animation: 0.5s hoverEffect ease;
+    opacity: 0.5;
+  }
+}
+
+@keyframes hoverEffect {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
 }
 
 

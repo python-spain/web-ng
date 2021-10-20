@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import FeaturedEvents from '../components/FeaturedEvents';
 import EventPost from '../components/EventPost';
-import EventSlide from '../components/EventSlide';
 
 const Eventos = (props) => {
     const featuredEvents = props.data.featuredEvents.edges.map(({ node }) => {
@@ -15,7 +14,7 @@ const Eventos = (props) => {
             title: node.frontmatter.title,
             date: node.frontmatter.fullDate,
             logo: node.frontmatter.logo,
-            text: node.excerpt,
+            text: node.frontmatter.description,
         };
     });
     const nonFeaturedEvents = props.data.nonFeaturedEvents.edges.map(({ node }) => {
@@ -32,12 +31,10 @@ const Eventos = (props) => {
     return (
         <Layout bodyClass='page-default-single'>
             <SEO title='Eventos' />           
-
-            <FeaturedEvents eventos={featuredEvents}></FeaturedEvents>
-
-            <div className='container pt-5'>
-                <h2 className='title'>Eventos Pasados</h2>
-                <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 mx-n2'>
+            <div className='container mt-6'>
+                 <h1 className='title'>Eventos</h1>
+                <FeaturedEvents eventos={featuredEvents} />
+                <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-3 g-3'>
                     {nonFeaturedEvents.map(evento => (
                     <EventPost evento={evento} key={evento.id}/>
                     ))}
@@ -66,6 +63,7 @@ export const query = graphql`
                         image
                         fullDate
                         logo
+                        description
                     }
                 }
             }

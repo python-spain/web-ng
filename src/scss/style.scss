@@ -1,6 +1,5 @@
 // Colors
 $primary: #5865f2;
-$primary-offset: #4ecdc4;
 $secondary: #eac435;
 $black: #23272a;
 $white: #ffffff;
@@ -15,7 +14,8 @@ $link-hover-decoration: underline;
 
 // Fonts
 $font-family-base: Helvetica, Arial, sans-serif, -apple-system;
-$font-family-heading: 'Playfair Display', serif, -apple-system;
+$font-family-heading: 'Rubik Mono One', sans-serif, -apple-system;
+$font-family-subheading: 'Rubik', sans-serif, -apple-system;
 
 // Footer
 $footer-background-color: $primary;
@@ -58,7 +58,8 @@ $sub-footer-text-color: $white;
 @import 'components/event-post';
 @import 'components/event-slide';
 @import 'components/featured-events';
-@import 'components/image-home';
+@import 'components/hero-image';
+@import 'components/features-home';
 
 // Pages
 @import 'pages/home';

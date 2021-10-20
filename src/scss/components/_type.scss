@@ -8,18 +8,18 @@ p {
   margin-bottom: 20px;
 }
 h1 {
-  font-size: 20px;
+  font-size: 30px;
   font-family: $font-family-heading;
   line-height: 1.2;
   margin-bottom: 20px;
   @include media-breakpoint-up(md) {
-    font-size: 32px;
+    font-size: 34px;
     line-height: 1.2;
   }
 }
 h2 {
   font-size: 24px;
-  font-family: $font-family-heading;
+  font-family: $font-family-subheading;
   line-height: 1.4;
   margin-bottom: 10px;
   @include media-breakpoint-up(md) {

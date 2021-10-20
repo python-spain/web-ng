@@ -1,0 +1,35 @@
+.features-home {
+
+    .content {
+        text-align: center;
+    }  
+
+    .content img {
+        width: 100%;
+        border-radius: 10px;
+        margin: 0;
+    }  
+
+    .content h3 {
+        margin-top: 1rem;
+        font-family: $font-family-subheading;
+        color: $black;
+    }
+          
+    @include media-breakpoint-up(lg) {
+      .content:hover {
+        text-decoration: none;
+        animation: 0.5s hoverEffect ease;
+        opacity: 0.5;
+      }
+    }
+    
+    @keyframes hoverEffect {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0.5;
+      }
+    }  
+}

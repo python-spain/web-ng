@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Eventos from '../pages/eventos';
 
 const EventSlide = ({ evento }) => {
 
@@ -14,7 +13,7 @@ const EventSlide = ({ evento }) => {
           </div>
           <div className="mt-1">
             <h3>{evento.date}</h3>
-            <h1>{evento.title}</h1>
+            <h2 className="title">{evento.title}</h2>
             <p>{evento.text}</p>
             <Link to={evento.link} className="button">Más información</Link>
           </div>

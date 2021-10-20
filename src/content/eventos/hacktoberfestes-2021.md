@@ -5,6 +5,7 @@ fullDate: 1 - 31 Octubre 2021
 featured: true
 image: "/images/eventos/hacktoberfestes-2021.png"
 logo: "/images/eventos/hacktoberfestes-2021-logo.png"
+description: "Al igual que el año pasado, éste también celebraremos el HacktoberfestES :D ¡Diviértete y aprende contribuyendo al código abierto!"
 website: "https://hacktoberfestes.dev"
 ---
 
