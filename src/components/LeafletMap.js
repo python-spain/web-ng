@@ -1,5 +1,5 @@
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
-import React, { Component } from 'react'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import React, { Component } from 'react';
 import Leaflet from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import 'react-leaflet-markercluster/dist/styles.min.css';
@@ -20,13 +20,13 @@ Leaflet.Icon.Default.mergeOptions({
 export default class LeafletMap extends Component {
   state = {
     lat: 36.014,
-    lng: -5.120,
+    lng: -5.120
   }
 
 
 
   render() {
-    const position = [this.state.lat, this.state.lng]
+    const position = [this.state.lat, this.state.lng];
    
 
     return (
@@ -41,7 +41,7 @@ export default class LeafletMap extends Component {
       </MapContainer>
 
 
-    )
+    );
   }
 }
 

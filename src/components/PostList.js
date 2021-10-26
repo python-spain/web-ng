@@ -14,18 +14,16 @@ La prop posts debe ser de type
 twoColumns: es opcional, y en caso de ser True el listado sería de dos columnas.
 */
 
-const PostList = ({ posts, twoColumns }) => {
-    return (
-        <div
-            className={`row row-cols-1 row-cols-md-2  ${
-                twoColumns ? 'row-cols-lg-2' : 'row-cols-lg-3'
-            }`}
-        >
-            {posts.map(post => (
-                <Post post={post} key={post.id} />
-            ))}
-        </div>
-    );
-};
+const PostList = ({ posts, twoColumns }) => (
+  <div
+    className={`row row-cols-1 row-cols-md-2  ${
+      twoColumns ? 'row-cols-lg-2' : 'row-cols-lg-3'
+    }`}
+  >
+    {posts.map(post => (
+      <Post post={post} key={post.id} />
+    ))}
+  </div>
+);
 
 export default PostList;
