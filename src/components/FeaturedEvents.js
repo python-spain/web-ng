@@ -8,6 +8,8 @@ const FeaturedEvents = ({ eventos }) => {
     return(
         
         <div className='featured-events'>
+            { window.innerWidth>991 
+            ?
             <Carousel className='featured-events-slider'>            
                 {eventos.map(evento => (
                 <Carousel.Item>  
@@ -15,6 +17,7 @@ const FeaturedEvents = ({ eventos }) => {
                 </Carousel.Item>
                 ))}
             </Carousel>
+            :
             <div className='featured-events-mobile'>
                 <div className="row cols-1 row-cols-sm-2 g-3">
                     {eventos.map(evento => (
@@ -22,6 +25,7 @@ const FeaturedEvents = ({ eventos }) => {
                     ))}
                 </div>
             </div>
+            }
         </div>
     )
   };
