@@ -5,30 +5,40 @@ import 'leaflet/dist/leaflet.css';
 import 'react-leaflet-markercluster/dist/styles.min.css';
 import { divIcon } from 'leaflet';
 import { renderToStaticMarkup } from 'react-dom/server';
-import { SiPython } from '@react-icons/all-files/si/SiPython';
-import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter';
-import { BiWorld } from '@react-icons/all-files/bi/BiWorld';
-import { FaTelegram } from '@react-icons/all-files/fa/FaTelegram';
-import { FiMail } from '@react-icons/all-files/fi/FiMail';
-import { FaMeetup } from '@react-icons/all-files/fa/FaMeetup';
-import { FaVideo } from '@react-icons/all-files/fa/FaVideo';
-import { FaDiscord } from '@react-icons/all-files/fa/FaDiscord';
-import './LeafletMap.css';
+import { SiPython } from "@react-icons/all-files/si/SiPython"
+import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter"
+import { BiWorld } from "@react-icons/all-files/bi/BiWorld"
+import { FaTelegram } from "@react-icons/all-files/fa/FaTelegram"
+import { FiMail } from "@react-icons/all-files/fi/FiMail"
+import { FaMeetup } from "@react-icons/all-files/fa/FaMeetup"
+import { FaVideo } from "@react-icons/all-files/fa/FaVideo"
+import { FaDiscord } from "@react-icons/all-files/fa/FaDiscord"
+import "./LeafletMap.css"
 
-Leaflet.Icon.Default.mergeOptions({
-    iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
-    iconUrl: require('leaflet/dist/images/marker-icon.png'),
-    shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
-});
+// Utilizamos renderToStaticMarkup() cuando queremos utilizar React como un simple generador de páginas estáticas,
+// en este caso LeafletMap se espera un "string" de markup que tiene que renderizar como icono, 
+// de esta manera convertimos el JSX en un string
+// Si planeas usar React en el cliente para hacer que el marcado sea interactivo, no uses este método. 
+// En su lugar, use renderToString en el servidor y ReactDOM.hydrate() en el cliente.
 
-const iconMarkup = renderToStaticMarkup(
-    <div class='python-logo'>
-        <SiPython />
-    </div>
+let customMarkerIcon;
+if (typeof window !== 'undefined') {
+    Leaflet.Icon.Default.mergeOptions({
+        iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+        iconUrl: require('leaflet/dist/images/marker-icon.png'),
+        shadowUrl: require('leaflet/dist/images/marker-shadow.png')
+    });
+    
+    const iconMarkup = renderToStaticMarkup(
+        <div class="python-logo">
+            <SiPython />
+        </div>
 ); 
-const customMarkerIcon = divIcon({
-    html: iconMarkup, 
-});
+    customMarkerIcon = divIcon({                                                   
+        html: iconMarkup,                                                               
+    }); 
+}
+
 
 const MapData = () => {
     const groups = [
@@ -219,9 +229,8 @@ const MapData = () => {
             twitter: 'https://twitter.com/PyLadies_BCN',
             mail: 'pyladies-bcn@googlegroups.com',
             video: 'https://www.youtube.com/watch?v=JYCcPr4QW_k',
-        },
+        }
     ];
-
     return groups.map((group, index) => {
         return (
             <Marker
