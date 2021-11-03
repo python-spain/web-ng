@@ -13,6 +13,7 @@ const HeroImage = ({ image, imageMobile }) => (
             </Link>
         </div>
     </div>
+  </div>
 );
 
 export default HeroImage;

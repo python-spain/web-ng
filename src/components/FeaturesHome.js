@@ -12,6 +12,7 @@ const FeaturesHome = ({ features }) => (
             ))}
         </div>
     </div>
+  </div>
 );
 
 export default FeaturesHome;

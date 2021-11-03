@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from '../components/Layout';
 import { graphql, Link } from 'gatsby';
+import Layout from '../components/Layout';
 import PostList from '../components/PostList';
 
 const Blog = (props) => {
@@ -16,20 +16,20 @@ const Blog = (props) => {
         };
     });
 
-    return (
-        <Layout bodyClass='page-default-single'>
-            <div className='container pb-6 pt-6'>
-                <div className='justify-content-start'>
-                    <h1 className='title'>Blog</h1>
-                    <div className='row'>
-                        <div className='col'>
-                            <PostList posts={posts} />
-                        </div>
-                    </div>
-                </div>
+  return (
+    <Layout bodyClass='page-default-single'>
+      <div className='container pb-6 pt-6'>
+        <div className='justify-content-start'>
+          <h1 className='title'>Blog</h1>
+          <div className='row'>
+            <div className='col'>
+              <PostList posts={posts} />
             </div>
-        </Layout>
-    );
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
 };
 
 export const query = graphql`
