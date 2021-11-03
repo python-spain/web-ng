@@ -8,12 +8,11 @@ const HeroImage = ({ image, imageMobile }) => (
             <img className='image-mobile mt-2' src={imageMobile} />
             <Link to='/hazte-socio'>
                 <h1 className='text-center'>
-                    Te estamos esperando ¡Hazte socio!{' '}
+                    Te estamos esperando ¡Hazte socio!
                 </h1>
             </Link>
         </div>
     </div>
-  </div>
 );
 
 export default HeroImage;
