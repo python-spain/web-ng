@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import { graphql, Link } from 'gatsby';
 import PostList from '../components/PostList';
 
-const Blog = props => {
+const Blog = (props) => {
     const lastPosts = props.data.posts.edges;
     const posts = lastPosts.map(({ node }) => {
         return {
