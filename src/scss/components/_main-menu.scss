@@ -1,6 +1,6 @@
 .main-menu {
   display: none;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     display: block;
   }
   > ul {
@@ -11,8 +11,7 @@
       list-style: none;
       font-size: 1rem;
       > a {
-        /* border-left: 1px solid $white-offset; */
-        padding: 15px;
+        padding: 0.8rem;
         display: inline-block;
         font-weight: normal;
         text-decoration: none;
