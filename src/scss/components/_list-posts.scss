@@ -1,14 +1,9 @@
   .list-post {
     height: 100%;
-    /* border: 1px solid $primary;
-    border-radius: 4px;
-    padding: 1.4em;
-    background-color: $white; */
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.08);
 
     .post-content {
       text-align: left;
