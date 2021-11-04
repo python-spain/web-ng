@@ -5,35 +5,36 @@
         "weight": 1
     },
     {
-        "name": "Aprende python",
-        "url": "/aprende-python/",
-        "weight": 2
-    },
-    {
-        "name": "Ofertas de empleo",
-        "url": "/ofertas-de-empleo/",
-        "weight": 3
-    },
-    {
-        "name": "Comunidades locales",
-        "url": "/comunidades-locales/",
-        "weight": 4
-    },
-    {
         "name": "¡Hazte socio!",
         "url": "/hazte-socio/",
-        "weight": 5
-    },
-    {
-        "name": "Blog",
-        "url": "/blog/",
-        "weight": 6
+        "weight": 2
     },
     {
         "name": "Eventos",
         "url": "/eventos/",
+        "weight": 3
+    },
+    {
+        "name": "Comunidades",
+        "url": "/comunidadess/",
+        "weight": 4
+    },
+    {
+        "name": "Aprende Python",
+        "url": "/aprende-python/",
+        "weight": 5
+    },
+    {
+        "name": "Empleo",
+        "url": "/empleo/",
+        "weight": 6
+    },
+    {
+        "name": "Blog",
+        "url": "/blog/",
         "weight": 7
     }
+
     
     
     
