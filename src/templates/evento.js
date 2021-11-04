@@ -10,11 +10,11 @@ const Evento = ({ data }) => {
     const { html } = data.markdownRemark;
 
     return (
-        <Layout bodyClass='page-eventos-single'>
+        <Layout bodyClass='page-default-single'>
             <div className='container my-4'>
                 <div className='row justify-content-start'>
-                    <div className='image-container col-12 col-md-8'>
-                        <img src={image} alt={title}></img>
+                    <div className='col-12 col-md-8'>
+                        <img className="w-100" src={image} alt={title}></img>
                     </div>
                 </div>
                 <div className='row justify-content-start'>
