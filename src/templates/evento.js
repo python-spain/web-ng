@@ -4,7 +4,6 @@ import Layout from '../components/Layout';
 
 const Evento = ({ data }) => {
     const { title } = data.markdownRemark.frontmatter;
-    const { logo } = data.markdownRemark.frontmatter;
     const { image } = data.markdownRemark.frontmatter;
     const { fullDate } = data.markdownRemark.frontmatter;
     const { website } = data.markdownRemark.frontmatter;

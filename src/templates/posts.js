@@ -11,12 +11,12 @@ const Post = ({ data }) => {
             <div className='container my-6'>
                 <div className='row justify-content-start'>
                     <div className='col-12 col-md-8'>
-                            <h1 className="title mb-1">{title}</h1>
-                            <h3>{date}</h3>
-                            <div
-                                className='content mt-2'
-                                dangerouslySetInnerHTML={{ __html: html }}
-                            />
+                        <h1 className='title mb-1'>{title}</h1>
+                        <h3>{date}</h3>
+                        <div
+                            className='content mt-2'
+                            dangerouslySetInnerHTML={{ __html: html }}
+                        />
                     </div>
                 </div>
             </div>
