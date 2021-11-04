@@ -5,18 +5,18 @@ import Layout from '../components/Layout';
 const Post = ({ data }) => {
     const { title } = data.markdownRemark.frontmatter;
     const { html } = data.markdownRemark;
+    const { date } = data.markdownRemark.frontmatter;
     return (
-        <Layout bodyClass='page-services-single'>
-            <div className='container pb-6 pt-6 pt-md-10 pb-md-10'>
+        <Layout bodyClass='page-default-single'>
+            <div className='container my-6'>
                 <div className='row justify-content-start'>
                     <div className='col-12 col-md-8'>
-                        <div className='service service-single'>
-                            <h1 className='title'>{title}</h1>
-                            <div
-                                className='content'
-                                dangerouslySetInnerHTML={{ __html: html }}
-                            />
-                        </div>
+                        <h1 className='title mb-1'>{title}</h1>
+                        <h3>{date}</h3>
+                        <div
+                            className='content mt-2'
+                            dangerouslySetInnerHTML={{ __html: html }}
+                        />
                     </div>
                 </div>
             </div>
@@ -29,6 +29,7 @@ export const query = graphql`
         markdownRemark(id: { eq: $id }) {
             frontmatter {
                 title
+                date(formatString: "DD MMMM YYYY")
             }
             fields {
                 slug

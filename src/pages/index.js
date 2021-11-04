@@ -38,9 +38,7 @@ const Home = (props) => {
     }));
 
     useEffect(() => {
-        // eslint-disable-next-line no-undef
         if (typeof twttr.widgets !== 'undefined') {
-            // eslint-disable-next-line no-undef
             twttr.widgets.load();
         }
     }, []);
