@@ -5,47 +5,42 @@ import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import Twitter from '../components/Twitter';
 import PostList from '../components/PostList';
-import HeroImage from "../components/HeroImage";
-import FeaturesHome from "../components/FeaturesHome"
-import FeaturedEvents from "../components/FeaturedEvents";
+import HeroImage from '../components/HeroImage';
+import FeaturesHome from '../components/FeaturesHome';
+import FeaturedEvents from '../components/FeaturedEvents';
 
-
-const Home = props => {
+const Home = (props) => {
     const introImage = props.data.intro.frontmatter.image;
     const introImageMobile = props.data.intro.frontmatter.image_mobile;
     const site = props.data.site.siteMetadata;
-    const features = props.data.features.edges.map(({ node }) => {
-        return {
-            id: node.id,
-            title: node.title,
-            url: node.url,
-            image: node.image,
-        }
-    });
-    const lastPosts = props.data.posts.edges.map(({ node }) => {
-        return {
-            id: node.id,
-            image: node.frontmatter.featuredImage,
-            link: node.fields.slug,
-            title: node.frontmatter.title,
-            date: node.frontmatter.date,
-            summary: node.excerpt,
-        };
-    });
-    const featuredEvents = props.data.featuredEvents.edges.map(({ node }) => {
-        return {
-            id: node.id,
-            image: node.frontmatter.image,
-            link: node.fields.slug,
-            title: node.frontmatter.title,
-            date: node.frontmatter.fullDate,
-            logo: node.frontmatter.logo,
-            text: node.frontmatter.description,
-        };
-    });
+    const features = props.data.features.edges.map(({ node }) => ({
+        id: node.id,
+        title: node.title,
+        url: node.url,
+        image: node.image,
+    }));
+    const lastPosts = props.data.posts.edges.map(({ node }) => ({
+        id: node.id,
+        image: node.frontmatter.featuredImage,
+        link: node.fields.slug,
+        title: node.frontmatter.title,
+        date: node.frontmatter.date,
+        summary: node.excerpt,
+    }));
+    const featuredEvents = props.data.featuredEvents.edges.map(({ node }) => ({
+        id: node.id,
+        image: node.frontmatter.image,
+        link: node.fields.slug,
+        title: node.frontmatter.title,
+        date: node.frontmatter.fullDate,
+        logo: node.frontmatter.logo,
+        text: node.frontmatter.description,
+    }));
 
     useEffect(() => {
+        // eslint-disable-next-line no-undef
         if (typeof twttr.widgets !== 'undefined') {
+            // eslint-disable-next-line no-undef
             twttr.widgets.load();
         }
     }, []);
@@ -53,19 +48,14 @@ const Home = props => {
     return (
         <Layout bodyClass='page-home'>
             <SEO title={site.title} />
-            <Helmet>
-                <meta
-                    name='description'
-                    content='Small Business Theme. Multiple content types using Markdown and JSON sources. Responsive design and SCSS. This is a beautiful and artfully designed starting theme.'
-                />
-            </Helmet>
+            <Helmet></Helmet>
 
-            <HeroImage image={introImage} imageMobile={introImageMobile}/>
+            <HeroImage image={introImage} imageMobile={introImageMobile} />
 
-            <div className="container">
-                <FeaturesHome features={features}/>
+            <div className='container'>
+                <FeaturesHome features={features} />
 
-                <div className="mt-8">
+                <div className='mt-8'>
                     <h1>Eventos destacados</h1>
                     <FeaturedEvents eventos={featuredEvents}></FeaturedEvents>
                 </div>
@@ -74,12 +64,14 @@ const Home = props => {
                     <div className='row'>
                         <div className='col-12 col-lg-8'>
                             <h1>Últimos posts</h1>
-                            <PostList posts={lastPosts} twoColumns/>
+                            <PostList posts={lastPosts} twoColumns />
                         </div>
-                        <div className="col-12 col-lg-4">
-                            <Twitter/>
-                        </div>
-                    </div>    
+                        {window.innerWidth > 991 && (
+                            <div className='col-12 col-lg-4'>
+                                <Twitter />
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
         </Layout>
@@ -95,7 +87,6 @@ export const query = graphql`
             frontmatter {
                 image
                 image_mobile
-                title
             }
         }
         features: allFeaturesJson {
@@ -109,19 +100,20 @@ export const query = graphql`
             }
         }
         featuredEvents: allMarkdownRemark(
-            filter: { fileAbsolutePath: { regex: "/eventos/.*/" }, frontmatter: { featured: {eq: true}} }
+            filter: {
+                fileAbsolutePath: { regex: "/eventos/.*/" }
+                frontmatter: { featured: { eq: true } }
+            }
             sort: { fields: [frontmatter___date], order: ASC }
         ) {
             edges {
                 node {
                     id
-                    excerpt
                     fields {
                         slug
                     }
                     frontmatter {
                         title
-                        featured
                         image
                         fullDate
                         logo

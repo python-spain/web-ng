@@ -1,19 +1,6 @@
 import React from 'react';
 import Post from './Post';
 
-/* 
-La prop posts debe ser de type 
-        {
-            id: number,
-            image: string || undefined,
-            link: string,
-            title: string,
-            date: string,
-            summary: string,
-        }[]
-twoColumns: es opcional, y en caso de ser True el listado sería de dos columnas.
-*/
-
 const PostList = ({ posts, twoColumns }) => {
     return (
         <div
@@ -21,7 +8,7 @@ const PostList = ({ posts, twoColumns }) => {
                 twoColumns ? 'row-cols-lg-2' : 'row-cols-lg-3'
             }`}
         >
-            {posts.map(post => (
+            {posts.map((post) => (
                 <Post post={post} key={post.id} />
             ))}
         </div>

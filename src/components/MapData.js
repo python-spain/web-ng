@@ -1,37 +1,34 @@
-import { Marker, Popup } from 'react-leaflet'
-import React, { Component } from 'react'
+import { Marker, Popup } from 'react-leaflet';
+import React, { Component } from 'react';
 import Leaflet from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import 'react-leaflet-markercluster/dist/styles.min.css';
 import { divIcon } from 'leaflet';
 import { renderToStaticMarkup } from 'react-dom/server';
-import { SiPython } from "@react-icons/all-files/si/SiPython"
-import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter"
-import { BiWorld } from "@react-icons/all-files/bi/BiWorld"
-import { FaTelegram } from "@react-icons/all-files/fa/FaTelegram"
-import { FiMail } from "@react-icons/all-files/fi/FiMail"
-import { FaMeetup } from "@react-icons/all-files/fa/FaMeetup"
-import { FaVideo } from "@react-icons/all-files/fa/FaVideo"
-import { FaDiscord } from "@react-icons/all-files/fa/FaDiscord"
-import "./LeafletMap.css"
-
-
+import { SiPython } from '@react-icons/all-files/si/SiPython';
+import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter';
+import { BiWorld } from '@react-icons/all-files/bi/BiWorld';
+import { FaTelegram } from '@react-icons/all-files/fa/FaTelegram';
+import { FiMail } from '@react-icons/all-files/fi/FiMail';
+import { FaMeetup } from '@react-icons/all-files/fa/FaMeetup';
+import { FaVideo } from '@react-icons/all-files/fa/FaVideo';
+import { FaDiscord } from '@react-icons/all-files/fa/FaDiscord';
+import './LeafletMap.css';
 
 Leaflet.Icon.Default.mergeOptions({
     iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
     iconUrl: require('leaflet/dist/images/marker-icon.png'),
-    shadowUrl: require('leaflet/dist/images/marker-shadow.png')
+    shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
 });
 
-const iconMarkup = renderToStaticMarkup(<div class="python-logo"><SiPython /></div>); // Utilizamos renderToStaticMarkup() cuando queremos utilizar React como un simple generador de páginas estáticas, 
-const customMarkerIcon = divIcon({                                                    // en este caso LeafletMap se espera un "string" de markup que tiene que renderizar como icono, 
-    html: iconMarkup,                                                                 // de esta manera convertimos el JSX en un string
-});                                                                                   // Si planeas usar React en el cliente para hacer que el marcado sea interactivo, no uses este método. 
-                                                                                      // En su lugar, use renderToString en el servidor y ReactDOM.hydrate() en el cliente.
-
-
-
-
+const iconMarkup = renderToStaticMarkup(
+    <div class='python-logo'>
+        <SiPython />
+    </div>
+); 
+const customMarkerIcon = divIcon({
+    html: iconMarkup, 
+});
 
 const MapData = () => {
     const groups = [
@@ -223,31 +220,73 @@ const MapData = () => {
             mail: 'pyladies-bcn@googlegroups.com',
             video: 'https://www.youtube.com/watch?v=JYCcPr4QW_k',
         },
-    ]
-
+    ];
 
     return groups.map((group, index) => {
-        return < Marker key={index.toString()} position={[group.latitude, group.longitude]} icon={customMarkerIcon} >
-            <Popup>
-                <div class="div-container">
-                    <b>{group.name}</b>
-                    <div class="links">
-                        {group.twitter ? (<a href={group.twitter} target="_blank"><FaTwitter /></a>) : ''}
-                        {group.web ? (<a href={group.web} target="_blank">< BiWorld /></a>) : ''}
-                        {group.telegram ? (<a href={group.telegram} target="_blank"><FaTelegram /></a>) : ''}
-                        {group.mail ? (<a href={group.mail} target="_blank"><FiMail /></a>) : ''}
-                        {group.meetup ? (<a href={group.meetup} target="_blank"><FaMeetup /></a>) : ''}
-                        {group.video ? (<a href={group.video} target="_blank"><FaVideo /></a>) : ''}
-                        {group.discord ? (<a href={group.discord} target="_blank"><FaDiscord /></a>) : ''}
+        return (
+            <Marker
+                key={index.toString()}
+                position={[group.latitude, group.longitude]}
+                icon={customMarkerIcon}
+            >
+                <Popup>
+                    <div class='div-container'>
+                        <b>{group.name}</b>
+                        <div class='links'>
+                            {group.twitter ? (
+                                <a href={group.twitter} target='_blank'>
+                                    <FaTwitter />
+                                </a>
+                            ) : (
+                                ''
+                            )}
+                            {group.web ? (
+                                <a href={group.web} target='_blank'>
+                                    <BiWorld />
+                                </a>
+                            ) : (
+                                ''
+                            )}
+                            {group.telegram ? (
+                                <a href={group.telegram} target='_blank'>
+                                    <FaTelegram />
+                                </a>
+                            ) : (
+                                ''
+                            )}
+                            {group.mail ? (
+                                <a href={group.mail} target='_blank'>
+                                    <FiMail />
+                                </a>
+                            ) : (
+                                ''
+                            )}
+                            {group.meetup ? (
+                                <a href={group.meetup} target='_blank'>
+                                    <FaMeetup />
+                                </a>
+                            ) : (
+                                ''
+                            )}
+                            {group.video ? (
+                                <a href={group.video} target='_blank'>
+                                    <FaVideo />
+                                </a>
+                            ) : (
+                                ''
+                            )}
+                            {group.discord ? (
+                                <a href={group.discord} target='_blank'>
+                                    <FaDiscord />
+                                </a>
+                            ) : (
+                                ''
+                            )}
+                        </div>
                     </div>
-                </div>
-            </Popup>
-        </Marker >
-
-    })
-
-
-}
-export default MapData
-
-
+                </Popup>
+            </Marker>
+        );
+    });
+};
+export default MapData;
