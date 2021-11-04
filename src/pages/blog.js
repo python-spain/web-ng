@@ -18,7 +18,7 @@ const Blog = (props) => {
 
   return (
     <Layout bodyClass='page-default-single'>
-      <div className='container pb-6 pt-6'>
+      <div className='container my-6'>
         <div className='justify-content-start'>
           <h1 className='title'>Blog</h1>
           <div className='row'>
