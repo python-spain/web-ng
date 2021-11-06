@@ -3,8 +3,8 @@
         "show_call_box": true
     },
     "logo": {
-        "mobile": "/images/logo-pythonES.png",
-        "desktop": "/images/logo-pythonES.png",
+        "mobile": "/images/logo/logo-pythonES.png",
+        "desktop": "/images/logo/logo-pythonES.png",
         "desktop_height": "36px",
         "alt": "Python España"
     },
