@@ -64,7 +64,7 @@ const Home = (props) => {
                             <h1>Últimos posts</h1>
                             <PostList posts={lastPosts} twoColumns />
                         </div>
-                        {window.innerWidth > 991 && (
+                        {(typeof window !== 'undefined' ? window.innerWidth > 991 : false) && (
                             <div className='col-12 col-lg-4'>
                                 <Twitter />
                             </div>
