@@ -69,6 +69,5 @@ module.exports = {
         linkStyles: true // (default: true) Enable/disable loading stylesheets via CDN
       }
     }
-  ],
-  pathPrefix: "/web-ng",
+  ]
 };
