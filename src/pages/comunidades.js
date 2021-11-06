@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import React from 'react';
 import LeafletMap from '../components/LeafletMap';
 import Layout from '../components/Layout';
