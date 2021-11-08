@@ -8,8 +8,8 @@ const FeaturedEvents = ({ eventos }) => {
         <div className='featured-events'>
             <Carousel className='featured-events-slider'>
                 {eventos.map((evento) => (
-                    <Carousel.Item>
-                        <EventSlide evento={evento} key={evento.id} />
+                    <Carousel.Item key={evento.id}>
+                        <EventSlide evento={evento} />
                     </Carousel.Item>
                 ))}
             </Carousel>
