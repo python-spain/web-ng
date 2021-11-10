@@ -2,13 +2,14 @@ import React, { useEffect } from 'react';
 
 const Newsletter = ({ children }) => {
     useEffect(() => {
-        const script = document.createElement('script');
+        // `displayWidget` es una función que se define cuando se carga Mailjet
+        // y que al llamarla añade un listener a los elementos con la clase "mj-w-btn"
+        // para que al pulsarlos se abra el pop-in de subscripción
 
-        script.src = 'https://app.mailjet.com/statics/js/widget.modal.js';
-        script.type = 'text/javascript';
-        script.async = true;
-
-        document.body.appendChild(script);
+        // El archivo que carga esta función se incluye después del body en `gatsby-ssr.js` .
+        if (typeof displayWidget !== 'undefined') {
+            displayWidget();
+        }
     }, []);
     return (
         <>
