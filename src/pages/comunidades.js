@@ -19,7 +19,7 @@ const ComunidadesLocales = () => {
                         <p className='content mb-2'>
                             ¿Crees que falta alguna?
                             <a
-                                href='https://github.com/python-spain/web/edit/master/content/pages/comunidades-locales.md'
+                                href='https://github.com/python-spain/web-ng/blob/main/src/components/MapData.js#L37'
                                 target='_blank'
                             >
                                 ¡Puedes añadirla!
