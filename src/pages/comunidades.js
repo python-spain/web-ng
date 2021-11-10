@@ -17,7 +17,7 @@ const ComunidadesLocales = () => {
                             queda y conecta con gente como tú.
                         </p>
                         <p className='content mb-2'>
-                            ¿Crees que falta alguna?
+                            ¿Crees que falta alguna?{' '}
                             <a
                                 href='https://github.com/python-spain/web-ng/blob/main/src/components/MapData.js#L37'
                                 target='_blank'
