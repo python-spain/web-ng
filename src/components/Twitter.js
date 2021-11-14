@@ -3,7 +3,7 @@ import React from 'react';
 import '../scss/style.scss';
 
 const Twitter = () => (
-    <div>
+    <div className='twitter'>
         <a
             className='twitter-timeline'
             data-lang='es'

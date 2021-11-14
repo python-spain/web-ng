@@ -8,28 +8,28 @@ const Blog = (props) => {
     const posts = lastPosts.map(({ node }) => {
         return {
             id: node.id,
-            image: node.frontmatter.featuredImage,
             link: node.fields.slug,
             title: node.frontmatter.title,
             date: node.frontmatter.date,
             summary: node.excerpt,
+            image: node.frontmatter.image,
         };
     });
 
-  return (
-    <Layout bodyClass='page-default-single'>
-      <div className='container my-6'>
-        <div className='justify-content-start'>
-          <h1 className='title'>Blog</h1>
-          <div className='row'>
-            <div className='col'>
-              <PostList posts={posts} />
+    return (
+        <Layout bodyClass='page-default-single'>
+            <div className='container my-6'>
+                <div className='justify-content-start'>
+                    <h1 className='title'>Blog</h1>
+                    <div className='row'>
+                        <div className='col'>
+                            <PostList posts={posts} />
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </Layout>
-  );
+        </Layout>
+    );
 };
 
 export const query = graphql`
@@ -43,7 +43,11 @@ export const query = graphql`
                     id
                     frontmatter {
                         title
-                        date(formatString: "DD MMMM YYYY")
+                        date(
+                            formatString: "D [de] MMMM [de] YYYY"
+                            locale: "es"
+                        )
+                        image
                     }
                     fields {
                         slug

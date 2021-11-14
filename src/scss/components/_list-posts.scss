@@ -3,13 +3,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    text-align: center;
+    padding: 1rem;
+    background-color: $white-offset;
+    border-radius: 10px;
 
     .post-content {
-      text-align: left;
       margin-bottom: 0;
     }
     .cover-img {
-        border-radius: 3px;
+        border-radius: 10px;
     }
   }

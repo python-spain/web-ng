@@ -21,7 +21,7 @@ const Home = (props) => {
     }));
     const lastPosts = props.data.posts.edges.map(({ node }) => ({
         id: node.id,
-        image: node.frontmatter.featuredImage,
+        image: node.frontmatter.image,
         link: node.fields.slug,
         title: node.frontmatter.title,
         date: node.frontmatter.date,
@@ -58,17 +58,15 @@ const Home = (props) => {
                     <FeaturedEvents eventos={featuredEvents}></FeaturedEvents>
                 </div>
 
-                <div className='mt-8'>
+                <div className='mt-8 mb-3'>
                     <div className='row'>
                         <div className='col-12 col-lg-8'>
                             <h1>Últimos posts</h1>
                             <PostList posts={lastPosts} twoColumns />
                         </div>
-                        {(typeof window !== 'undefined' ? window.innerWidth > 991 : false) && (
-                            <div className='col-12 col-lg-4'>
-                                <Twitter />
-                            </div>
-                        )}
+                        <div className='col-12 col-lg-4'>
+                            <Twitter />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,14 +121,18 @@ export const query = graphql`
         posts: allMarkdownRemark(
             filter: { fileAbsolutePath: { regex: "/posts/.*/" } }
             sort: { fields: [frontmatter___date], order: DESC }
-            limit: 4
+            limit: 2
         ) {
             edges {
                 node {
                     id
                     frontmatter {
                         title
-                        date(formatString: "DD MMMM YYYY")
+                        date(
+                            formatString: "D [de] MMMM [de] YYYY"
+                            locale: "es"
+                        )
+                        image
                     }
                     fields {
                         slug
