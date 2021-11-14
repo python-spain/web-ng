@@ -3,7 +3,7 @@ title: "PyCamp España 2022"
 date: 
 fullDate: 15 - 18 Abril 2022
 featured: true
-image: ""
+image: "/images/eventos/pycampes-2022.png"
 logo: "/images/eventos/pycampes-2022-logo.png"
 description: "PyCamp es un evento para juntarnos a programar y divertirnos durante el fin de semana. Los asistentes proponen los proyectos Open Source en los que desean trabajar durante estos días (o alguna idea un poco loca que quieran implementar) y el resto se anota para colaborar y trabajar en esos proyectos." 
 website: "https://pycamp.es/"
