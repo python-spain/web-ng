@@ -56,6 +56,7 @@ exports.createPages = ({ graphql, actions }) => {
                                     frontmatter {
                                         title
                                         date(formatString: "DD MMMM YYYY")
+                                        image
                                     }
                                     fields {
                                         slug
