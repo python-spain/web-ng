@@ -13,12 +13,12 @@ website: "https://pycamp.es/"
 
 **La entrada incluye**:
 
-    - Alojamiento durante 4 días y 3 noches (*)
-    - Pensión completa: desayuno, comida y cena
-    - Coffee break en intermedio de comidas: café, té, agua y algunas frutas
-    - Acceso a áreas verdes donde podrás relajarte o programar
-    - Diversión: karaoke de charlas, juegos de mesa, ping pong y todo hobby que quieras compartir con nosotros
-    - Auto-tests de antígenos COVID-19 para todos los participantes (ver "Preguntas Frecuentes")
+- Alojamiento durante 4 días y 3 noches (*)
+- Pensión completa: desayuno, comida y cena
+- Coffee break en intermedio de comidas: café, té, agua y algunas frutas
+- Acceso a áreas verdes donde podrás relajarte o programar
+- Diversión: karaoke de charlas, juegos de mesa, ping pong y todo hobby que quieras compartir con nosotros
+- Auto-tests de antígenos COVID-19 para todos los participantes (ver "Preguntas Frecuentes")
 
 El lugar será de uso exclusivo para los asistentes al evento.
 
