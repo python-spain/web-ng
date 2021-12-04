@@ -7,7 +7,7 @@ const Post = ({ post }) => (
         <div className='list-post align-items-start '>
             <div
                 className='mb-1 d-flex justify-content-center '
-                style={{ width: '100%', height: '100%' }}
+                style={{ width: '100%' }}
             >
                 <img
                     src={post.image ?? logo}
@@ -15,7 +15,7 @@ const Post = ({ post }) => (
                     alt={`picture-${post.id}`}
                 />
             </div>
-            <h2 className='text-dark mt-auto mb-0'>
+            <h2 className='text-dark mb-0'>
                 <Link to={post.link} className='post-title'>
                     {post.title}
                 </Link>
