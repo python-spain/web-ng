@@ -30,8 +30,13 @@
         "weight": 6
     },
     {
+        "name": "Merchandising",
+        "url": "/merchandising/",
+        "weight": 7
+    },
+    {
         "name": "Blog",
         "url": "/blog/",
-        "weight": 7
+        "weight": 8
     }
 ]
