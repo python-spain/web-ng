@@ -1,4 +1,6 @@
-# Gatsby Serif Theme
+# Web de la Asociación Python España
+
+## Para developers
 
 Pasos para instalar e iniciar el sistema:
 
@@ -29,9 +31,10 @@ Basado en https://github.com/zerostaticthemes/gatsby-serif-theme.
 
 Para agregar un post/evento puedes seguir las instrucciones que se encuentran en nuestra guía de [contribución](https://github.com/python-spain/web-ng/blob/main/CONTRIBUTING.md).
 
-## Theme features
+## Web features
 
 -   Gatsby v3
+-   Theme: Gatsby Serif Theme
 -   Multi-page theme (not just a blog) that uses Markdown for multiple content-types/templates. It uses `gatsby-transformer-remark` and has several examples of querying and filtering `allMarkdownRemark`
 -   Includes a graphql query in `gatsby-node.js` that creates pages and templates by content type based on the folder `src/pages/services`, `src/pages/team`,
 -   Services (Markdown)
