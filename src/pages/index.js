@@ -45,7 +45,7 @@ const Home = (props) => {
 
     return (
         <Layout bodyClass='page-home'>
-            <SEO title={site.title} />
+            <SEO title={site.title} dontFormat />
             <Helmet></Helmet>
 
             <HeroImage image={introImage} imageMobile={introImageMobile} />

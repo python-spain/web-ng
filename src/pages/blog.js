@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import PostList from '../components/PostList';
 
 const Blog = (props) => {
@@ -18,6 +19,10 @@ const Blog = (props) => {
 
     return (
         <Layout bodyClass='page-default-single'>
+            <SEO
+                title='Blog'
+                description='Últimas noticias sobre la asociación y sus actividades.'
+            />
             <div className='container my-6'>
                 <div className='justify-content-start'>
                     <h1 className='title'>Blog</h1>

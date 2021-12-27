@@ -28,7 +28,10 @@ const Eventos = (props) => {
 
     return (
         <Layout bodyClass='page-default-single'>
-            <SEO title='Eventos' />
+            <SEO
+                title='Eventos'
+                description='Aprende, pásatelo bien y conoce gente en los eventos que co-organizamos'
+            />
             <div className='container my-6'>
                 <h1 className='title'>Eventos</h1>
                 <FeaturedEvents eventos={featuredEvents} />

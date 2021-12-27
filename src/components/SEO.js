@@ -7,7 +7,13 @@ const SEO = (props) => (
     <StaticQuery
         query={detailsQuery}
         render={(data) => {
-            const title = props.title || data.site.siteMetadata.title;
+            const title = props.title;
+            const fullTitle = props.dontFormat
+                ? `${title}`
+                : `${title} - ${data.site.siteMetadata.title}`;
+            const description =
+                props.description || data.site.siteMetadata.description;
+            const imageURL = props.image || data.intro.frontmatter.image_mobile;
             return (
                 <Helmet
                     htmlAttributes={{
@@ -15,7 +21,7 @@ const SEO = (props) => (
                     }}
                     title={title}
                     titleTemplate={
-                        props.title
+                        props.dontFormat
                             ? `%s`
                             : `%s - ${data.site.siteMetadata.title}`
                     }
@@ -26,7 +32,19 @@ const SEO = (props) => (
                             href: `${favicon}`,
                         },
                     ]}
-                />
+                >
+                    <meta name='description' content={description} />
+
+                    <meta property='og:title' content={fullTitle} />
+                    <meta property='og:description' content={description} />
+                    <meta property='og:image' content={imageURL} />
+
+                    <meta name='twitter:card' content='summary_large_image' />
+                    <meta name='twitter:site' content='@python_es' />
+                    <meta name='twitter:title' content={fullTitle} />
+                    <meta name='twitter:description' content={description} />
+                    <meta name='twitter:image' content={imageURL} />
+                </Helmet>
             );
         }}
     />
@@ -45,6 +63,14 @@ const detailsQuery = graphql`
         site {
             siteMetadata {
                 title
+                description
+            }
+        }
+        intro: markdownRemark(
+            fileAbsolutePath: { regex: "/content/index.md/" }
+        ) {
+            frontmatter {
+                image_mobile
             }
         }
     }

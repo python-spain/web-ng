@@ -1,10 +1,15 @@
 import React from 'react';
 import LeafletMap from '../components/LeafletMap';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 const ComunidadesLocales = () => {
     return (
         <Layout bodyClass='page-default-single'>
+            <SEO
+                title='Comunidades locales'
+                description='¡Python se disfruta mejor en compañía! Conoce las comunidades locales de Python en España.'
+            />
             <div className='container my-6'>
                 <div className='row justify-content-start'>
                     <div className='col-12 col-md-8'>
