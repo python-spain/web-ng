@@ -5,38 +5,43 @@
         "weight": 1
     },
     {
+        "name": "Participa",
+        "url": "/participa/",
+        "weight": 2
+    },
+    {
         "name": "¡Hazte socio!",
         "url": "/hazte-socio/",
-        "weight": 2
+        "weight": 3
     },
     {
         "name": "Eventos",
         "url": "/eventos/",
-        "weight": 3
+        "weight": 4
     },
     {
         "name": "Comunidades",
         "url": "/comunidades/",
-        "weight": 4
+        "weight": 5
     },
     {
         "name": "Aprende Python",
         "url": "/aprende-python/",
-        "weight": 5
+        "weight": 6
     },
     {
         "name": "Empleo",
         "url": "/empleo/",
-        "weight": 6
+        "weight": 7
     },
     {
         "name": "Merchandising",
         "url": "/merchandising/",
-        "weight": 7
+        "weight": 8
     },
     {
         "name": "Blog",
         "url": "/blog/",
-        "weight": 8
+        "weight": 9
     }
 ]
