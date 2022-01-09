@@ -35,7 +35,7 @@ Administra los canales de difusión de la asociación a través de Twitter, Tele
 
 Te puede interesar si te gusta o quieres aprender a escribir tweets que enganchen, configurar las mil y una preferencias y roles de Discord o componer con Mailjet newsletters que la gente lea.
 
-Si quieres colaborar escribe a [comunicacion@es.python.org](mailto:comunicacion@es.python.org).
+Si quieres colaborar escribe a [contacto@es.python.org](mailto:contacto@es.python.org).
 
 ## Hazte socio/a
 Si quieres dar un pasito más y contribuir a sostener la estructura de la asociación, tanto legal como económicamente, puedes [hacerte socio/a](/hazte-socio/).
