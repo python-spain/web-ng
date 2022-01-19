@@ -90,13 +90,13 @@ export const query = graphql`
                         title
                         image {
                             childImageSharp {
-                                gatsbyImageData
+                                gatsbyImageData(width: 800)
                             }
                         }
                         fullDate
                         logo {
                             childImageSharp {
-                                gatsbyImageData
+                                gatsbyImageData(width: 200)
                             }
                         }
                         description
@@ -120,7 +120,7 @@ export const query = graphql`
                         )
                         image {
                             childImageSharp {
-                                gatsbyImageData
+                                gatsbyImageData(width: 400)
                             }
                         }
                     }

@@ -15,6 +15,7 @@ const EventSlide = ({ evento }) => {
                         image={evento.logo}
                         alt={evento.title}
                         className='event-logo'
+                        imgClassName='event-logo-img'
                     />
 
                     <div className='mt-1'>
