@@ -14,6 +14,21 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     }
 };
 
+//Generate link on image and logo fields for all markdown files
+exports.createSchemaCustomization = ({ actions }) => {
+    const { createTypes } = actions;
+    const typeDefs = [
+        `type MarkdownRemark implements Node { frontmatter: Frontmatter }`,
+        `type Frontmatter {
+      image: File @link(by: "relativePath")
+      }`,
+        `type Frontmatter {
+        logo: File @link(by: "relativePath")
+        }`,
+    ];
+    createTypes(typeDefs);
+};
+
 // Create pages from markdown files
 exports.createPages = ({ graphql, actions }) => {
     const { createPage } = actions;
@@ -56,7 +71,11 @@ exports.createPages = ({ graphql, actions }) => {
                                     frontmatter {
                                         title
                                         date(formatString: "DD MMMM YYYY")
-                                        image
+                                        image {
+                                            childImageSharp {
+                                                gatsbyImageData
+                                            }
+                                        }
                                     }
                                     fields {
                                         slug
@@ -81,8 +100,16 @@ exports.createPages = ({ graphql, actions }) => {
                                         date
                                         fullDate
                                         featured
-                                        image
-                                        logo
+                                        image {
+                                            childImageSharp {
+                                                gatsbyImageData
+                                            }
+                                        }
+                                        logo {
+                                            childImageSharp {
+                                                gatsbyImageData
+                                            }
+                                        }
                                         website
                                     }
                                     fields {

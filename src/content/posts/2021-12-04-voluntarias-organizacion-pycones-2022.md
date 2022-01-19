@@ -4,7 +4,7 @@ date: 2021-12-04
 featured: false
 draft: false
 weight: 2
-image: "/images/posts/pycones-voluntarios.jpg"
+image: "posts/pycones-voluntarios.jpg"
 ---
 
 Hace nada hemos arrancado la organización de la PyConES 2022 de Granada. 

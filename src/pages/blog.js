@@ -13,7 +13,7 @@ const Blog = (props) => {
             title: node.frontmatter.title,
             date: node.frontmatter.date,
             summary: node.excerpt,
-            image: node.frontmatter.image,
+            image: node.frontmatter.image.childImageSharp.gatsbyImageData,
         };
     });
 
@@ -52,7 +52,11 @@ export const query = graphql`
                             formatString: "D [de] MMMM [de] YYYY"
                             locale: "es"
                         )
-                        image
+                        image {
+                            childImageSharp {
+                                gatsbyImageData
+                            }
+                        }
                     }
                     fields {
                         slug

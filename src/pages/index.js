@@ -13,7 +13,7 @@ const Home = (props) => {
     const site = props.data.site.siteMetadata;
     const lastPosts = props.data.posts.edges.map(({ node }) => ({
         id: node.id,
-        image: node.frontmatter.image,
+        image: node.frontmatter.image.childImageSharp.gatsbyImageData,
         link: node.fields.slug,
         title: node.frontmatter.title,
         date: node.frontmatter.date,
@@ -21,11 +21,11 @@ const Home = (props) => {
     }));
     const featuredEvents = props.data.featuredEvents.edges.map(({ node }) => ({
         id: node.id,
-        image: node.frontmatter.image,
+        image: node.frontmatter.image.childImageSharp.gatsbyImageData,
         link: node.fields.slug,
         title: node.frontmatter.title,
         date: node.frontmatter.fullDate,
-        logo: node.frontmatter.logo,
+        logo: node.frontmatter.logo.childImageSharp.gatsbyImageData,
         text: node.frontmatter.description,
     }));
 
@@ -72,10 +72,6 @@ export const query = graphql`
             fileAbsolutePath: { regex: "/content/index.md/" }
         ) {
             html
-            frontmatter {
-                image
-                image_mobile
-            }
         }
         featuredEvents: allMarkdownRemark(
             filter: {
@@ -92,9 +88,17 @@ export const query = graphql`
                     }
                     frontmatter {
                         title
-                        image
+                        image {
+                            childImageSharp {
+                                gatsbyImageData
+                            }
+                        }
                         fullDate
-                        logo
+                        logo {
+                            childImageSharp {
+                                gatsbyImageData
+                            }
+                        }
                         description
                     }
                 }
@@ -114,7 +118,11 @@ export const query = graphql`
                             formatString: "D [de] MMMM [de] YYYY"
                             locale: "es"
                         )
-                        image
+                        image {
+                            childImageSharp {
+                                gatsbyImageData
+                            }
+                        }
                     }
                     fields {
                         slug

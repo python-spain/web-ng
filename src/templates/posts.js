@@ -4,7 +4,9 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
 const Post = ({ data }) => {
-    const { title, image } = data.markdownRemark.frontmatter;
+    const { title } = data.markdownRemark.frontmatter;
+    const image =
+        data.markdownRemark.frontmatter.image.childImageSharp.gatsbyImageData;
     const { html, excerpt } = data.markdownRemark;
     const { date } = data.markdownRemark.frontmatter;
     return (
@@ -32,7 +34,11 @@ export const query = graphql`
             frontmatter {
                 title
                 date(formatString: "DD MMMM YYYY")
-                image
+                image {
+                    childImageSharp {
+                        gatsbyImageData
+                    }
+                }
             }
             fields {
                 slug

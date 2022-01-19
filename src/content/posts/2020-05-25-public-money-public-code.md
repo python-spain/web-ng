@@ -4,7 +4,7 @@ date: 2020-05-25
 featured: false
 draft: false
 weight: 2
-image: "/images/posts/public_money_public_code.jpg"
+image: "posts/public_money_public_code.jpg"
 ---
 
 A raíz de la propuesta que nos hizo un socio, Sergio Soto, en el [discourse](https://comunidad.es.python.org/t/apoyo-campana-public-money-public-code-de-la-fsfe/243), nos pusimos en contacto con la [FSFE](https://fsfe.org/) para ofrecer desde la asociación nuestro apoyo públicamente a esta campaña.

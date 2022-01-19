@@ -3,8 +3,8 @@ title: "TabularConf: On the edge of Data Science"
 date: 2021-01-30T12:33:46+10:00
 fullDate: 30 Enero 2021
 featured: false
-image: "/images/eventos/tabularconf-2021.png"
-logo: "/images/eventos/tabularconf-logo.png"
+image: "eventos/tabularconf-2021.png"
+logo: "eventos/tabularconf-logo.png"
 website: "https://tabularconf.es"
 ---
 
