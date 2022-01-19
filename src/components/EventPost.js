@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-const EventPost = ({ evento, featured }) => {
+const EventPost = ({ evento }) => {
     return (
         <div key={evento.id}>
             <Link to={evento.link} className='event-post'>

@@ -1,6 +1,6 @@
 .hero-image {
 
-    background: $primary 60%;
+    background: $primary;
 
     img {
         width: 100%;
@@ -13,7 +13,7 @@
     }
 
     .image-mobile {
-        display: inline;
+        display: block;        
     }
     
     h1 {
@@ -22,20 +22,17 @@
         padding: 1rem 0;
     }
 
-
-
-
     @include media-breakpoint-up(md) {
         .image-mobile {
             display: none;
         }
         .image-pc {
-            display: inline;
+            display: block;
         }
     }
 
     @include media-breakpoint-up(lg) {
-        background: linear-gradient($primary 60%, $white 40%);
+        background: linear-gradient($primary 65%, $white 35%);
         h1 {
             color: inherit;
             font-size: 30px;

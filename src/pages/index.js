@@ -10,15 +10,7 @@ import FeaturesHome from '../components/FeaturesHome';
 import FeaturedEvents from '../components/FeaturedEvents';
 
 const Home = (props) => {
-    const introImage = props.data.intro.frontmatter.image;
-    const introImageMobile = props.data.intro.frontmatter.image_mobile;
     const site = props.data.site.siteMetadata;
-    const features = props.data.features.edges.map(({ node }) => ({
-        id: node.id,
-        title: node.title,
-        url: node.url,
-        image: node.image,
-    }));
     const lastPosts = props.data.posts.edges.map(({ node }) => ({
         id: node.id,
         image: node.frontmatter.image,
@@ -48,10 +40,10 @@ const Home = (props) => {
             <SEO title={site.title} dontFormat />
             <Helmet></Helmet>
 
-            <HeroImage image={introImage} imageMobile={introImageMobile} />
+            <HeroImage />
 
             <div className='container'>
-                <FeaturesHome features={features} />
+                <FeaturesHome />
 
                 <div className='mt-8'>
                     <h1>Eventos destacados</h1>
@@ -83,16 +75,6 @@ export const query = graphql`
             frontmatter {
                 image
                 image_mobile
-            }
-        }
-        features: allFeaturesJson {
-            edges {
-                node {
-                    id
-                    title
-                    url
-                    image
-                }
             }
         }
         featuredEvents: allMarkdownRemark(
