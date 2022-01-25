@@ -8,21 +8,20 @@ import EventPost from '../components/EventPost';
 const Eventos = (props) => {
     const featuredEvents = props.data.featuredEvents.edges.map(({ node }) => ({
         id: node.id,
-        image: node.frontmatter.image,
+        image: node.frontmatter.image.childImageSharp.gatsbyImageData,
         link: node.fields.slug,
         title: node.frontmatter.title,
         date: node.frontmatter.fullDate,
-        logo: node.frontmatter.logo,
+        logo: node.frontmatter.logo.childImageSharp.gatsbyImageData,
         text: node.frontmatter.description,
     }));
     const nonFeaturedEvents = props.data.nonFeaturedEvents.edges.map(
         ({ node }) => ({
             id: node.id,
-            image: node.frontmatter.image,
+            image: node.frontmatter.image.childImageSharp.gatsbyImageData,
             link: node.fields.slug,
             title: node.frontmatter.title,
             date: node.frontmatter.fullDate,
-            logo: node.frontmatter.logo,
         })
     );
 
@@ -63,9 +62,17 @@ export const query = graphql`
                     }
                     frontmatter {
                         title
-                        image
+                        image {
+                            childImageSharp {
+                                gatsbyImageData(width: 800)
+                            }
+                        }
                         fullDate
-                        logo
+                        logo {
+                            childImageSharp {
+                                gatsbyImageData(width: 200)
+                            }
+                        }
                         description
                     }
                 }
@@ -87,9 +94,12 @@ export const query = graphql`
                     }
                     frontmatter {
                         title
-                        image
+                        image {
+                            childImageSharp {
+                                gatsbyImageData(width: 400)
+                            }
+                        }
                         fullDate
-                        logo
                     }
                 }
             }
