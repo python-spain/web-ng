@@ -1,13 +1,11 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
 const Evento = ({ data }) => {
     const { title } = data.markdownRemark.frontmatter;
-    const image =
-        data.markdownRemark.frontmatter.image.childImageSharp.gatsbyImageData;
+    const { image } = data.markdownRemark.frontmatter;
     const { fullDate } = data.markdownRemark.frontmatter;
     const { website } = data.markdownRemark.frontmatter;
     const { html, excerpt } = data.markdownRemark;
@@ -18,11 +16,7 @@ const Evento = ({ data }) => {
             <div className='container my-4'>
                 <div className='row justify-content-start'>
                     <div className='col-12 col-md-8'>
-                        <GatsbyImage
-                            className='w-100'
-                            image={image}
-                            alt={title}
-                        />
+                        <img className='w-100' src={image} alt={title}></img>
                     </div>
                 </div>
                 <div className='row justify-content-start'>
@@ -50,11 +44,8 @@ export const query = graphql`
         markdownRemark(id: { eq: $id }) {
             frontmatter {
                 title
-                image {
-                    childImageSharp {
-                        gatsbyImageData(width: 800)
-                    }
-                }
+                logo
+                image
                 date
                 fullDate
                 website

@@ -3,8 +3,8 @@ title: "Accesibilidad y diversidad funcional en el mundo tech"
 date: 2021-07-29T12:33:46+10:00
 fullDate: 29 Julio 2021
 featured: false
-image: "eventos/diversit-julio2021.png"
-logo: "eventos/diversit-logo.png"
+image: "/images/eventos/diversit-julio2021.png"
+logo: "/images/eventos/diversit-logo.png"
 website: "https://www.youtube.com/watch?v=l0ioWVMB35c"
 ---
 

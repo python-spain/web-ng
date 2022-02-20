@@ -4,7 +4,7 @@ date: 2021-10-03
 featured: false
 draft: false
 weight: 2
-image: "posts/pycones-granada.jpg"
+image: "/images/posts/pycones-granada.jpg"
 ---
 
 Tras un largo tiempo de deliberación hemos decidido que la próxima edición de la PyConES se celebrará en la ciudad de Granada.

@@ -1,0 +1,13 @@
+[
+  {
+    "title": "¿Conoces las comunidades locales de Python? Encuentra la tuya",
+    "url": "/comunidades/",
+    "image": "/images/features/comunidades.png"
+  },
+  {
+    "title": "¿Quieres aprender Python? Aquí encontrarás todos los recursos",
+    "url": "/aprende-python/",
+    "image": "/images/features/aprende-python.jpg"
+  }
+ 
+]

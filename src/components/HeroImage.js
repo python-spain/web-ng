@@ -1,22 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
 
-const HeroImage = () => (
+const HeroImage = ({ image, imageMobile }) => (
     <div className='hero-image mb-3'>
         <div className='container'>
-            <StaticImage
-                className='image-pc'
-                src='../../static/images/hero-images/socios.jpg'
-                alt='Socios'
-                layout='fullWidth'
-            />
-            <StaticImage
-                className='image-mobile'
-                src='../../static/images/hero-images/socios-movil.jpg'
-                alt='Socios'
-                layout='fullWidth'
-            />
+            <img className='image-pc' src={image} />
+            <img className='image-mobile mt-2' src={imageMobile} />
             <Link to='/participa/'>
                 <h1 className='text-center'>
                     Te estamos esperando ¡participa!

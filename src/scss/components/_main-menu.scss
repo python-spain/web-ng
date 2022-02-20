@@ -24,6 +24,7 @@
         }
         &.active {
           color: $secondary;
+          font-weight: bold;
           text-decoration: none;
           border-radius: 25px;
           &:hover {

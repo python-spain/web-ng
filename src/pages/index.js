@@ -10,10 +10,18 @@ import FeaturesHome from '../components/FeaturesHome';
 import FeaturedEvents from '../components/FeaturedEvents';
 
 const Home = (props) => {
+    const introImage = props.data.intro.frontmatter.image;
+    const introImageMobile = props.data.intro.frontmatter.image_mobile;
     const site = props.data.site.siteMetadata;
+    const features = props.data.features.edges.map(({ node }) => ({
+        id: node.id,
+        title: node.title,
+        url: node.url,
+        image: node.image,
+    }));
     const lastPosts = props.data.posts.edges.map(({ node }) => ({
         id: node.id,
-        image: node.frontmatter.image.childImageSharp.gatsbyImageData,
+        image: node.frontmatter.image,
         link: node.fields.slug,
         title: node.frontmatter.title,
         date: node.frontmatter.date,
@@ -21,11 +29,11 @@ const Home = (props) => {
     }));
     const featuredEvents = props.data.featuredEvents.edges.map(({ node }) => ({
         id: node.id,
-        image: node.frontmatter.image.childImageSharp.gatsbyImageData,
+        image: node.frontmatter.image,
         link: node.fields.slug,
         title: node.frontmatter.title,
         date: node.frontmatter.fullDate,
-        logo: node.frontmatter.logo.childImageSharp.gatsbyImageData,
+        logo: node.frontmatter.logo,
         text: node.frontmatter.description,
     }));
 
@@ -40,10 +48,10 @@ const Home = (props) => {
             <SEO title={site.title} dontFormat />
             <Helmet></Helmet>
 
-            <HeroImage />
+            <HeroImage image={introImage} imageMobile={introImageMobile} />
 
             <div className='container'>
-                <FeaturesHome />
+                <FeaturesHome features={features} />
 
                 <div className='mt-8'>
                     <h1>Eventos destacados</h1>
@@ -72,6 +80,20 @@ export const query = graphql`
             fileAbsolutePath: { regex: "/content/index.md/" }
         ) {
             html
+            frontmatter {
+                image
+                image_mobile
+            }
+        }
+        features: allFeaturesJson {
+            edges {
+                node {
+                    id
+                    title
+                    url
+                    image
+                }
+            }
         }
         featuredEvents: allMarkdownRemark(
             filter: {
@@ -88,17 +110,9 @@ export const query = graphql`
                     }
                     frontmatter {
                         title
-                        image {
-                            childImageSharp {
-                                gatsbyImageData(width: 800)
-                            }
-                        }
+                        image
                         fullDate
-                        logo {
-                            childImageSharp {
-                                gatsbyImageData(width: 200)
-                            }
-                        }
+                        logo
                         description
                     }
                 }
@@ -118,11 +132,7 @@ export const query = graphql`
                             formatString: "D [de] MMMM [de] YYYY"
                             locale: "es"
                         )
-                        image {
-                            childImageSharp {
-                                gatsbyImageData(width: 400)
-                            }
-                        }
+                        image
                     }
                     fields {
                         slug

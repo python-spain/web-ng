@@ -12,9 +12,6 @@ module.exports = {
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-react-leaflet',
         'gatsby-plugin-fontawesome-css',
-        'gatsby-plugin-image',
-        'gatsby-plugin-sharp',
-        'gatsby-transformer-sharp',
         {
             resolve: 'gatsby-source-filesystem',
             options: {
@@ -34,13 +31,6 @@ module.exports = {
             options: {
                 path: `${__dirname}/src/data`,
                 name: 'data',
-            },
-        },
-        {
-            resolve: 'gatsby-source-filesystem',
-            options: {
-                path: `${__dirname}/static/images`,
-                name: 'images',
             },
         },
         {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import logo from '../../static/images/logo/logo.png';
 
 const Post = ({ post }) => (
     <div key={post.id} className='mb-3 col'>
@@ -9,8 +9,8 @@ const Post = ({ post }) => (
                 className='mb-1 d-flex justify-content-center '
                 style={{ width: '100%' }}
             >
-                <GatsbyImage
-                    image={post.image}
+                <img
+                    src={post.image ?? logo}
                     className='img-fluid cover-img'
                     alt={`picture-${post.id}`}
                 />

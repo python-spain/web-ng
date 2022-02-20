@@ -4,7 +4,6 @@ date: 2021-04-19
 featured: false
 draft: false
 weight: 2
-image: "posts/default-image.png"
 ---
 
 Hola pythonista,
