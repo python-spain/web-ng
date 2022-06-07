@@ -16,24 +16,22 @@ Puedes acceder a los estatutos, reglamento de régimen interno, actas y otra doc
 
 ## Datos fiscales
 
-Asociación Python España  
-CIF G86766821  
-Calle La Botánica, 4, 1º  
+Asociación Python España
+CIF G86766821
+Calle La Botánica, 4, 1º
 28028, Madrid, España
 
 ## Junta directiva
 
-Actualmente la **junta directiva de Python España** (2020-2022) está formada por:
+Actualmente la **junta directiva de Python España** (2022-2024) está formada por:
 
 **Cargo** |	**Nombre**
 --- | ---
-Presidencia | Israel Saeta
-Vicepresidencia | Xavi Torelló
-Tesorería | Marcos Gabarda
-Secretaría | Raúl Cumplido
-Vocalía | Maria Antònia Tugores
-Vocalía | Yamila Moreno
-Vocalía | David Barragán
+Presidencia | Jimena Escobar
+Vicepresidencia | Johanna Sánchez
+Tesorería | Alberto Fernández
+Secretaría | Clara Martínez
+Vocalía | Israel Saeta
 
 Si quieres contactar con la junta escribe a **junta@es.python.org**.
 
@@ -58,7 +56,7 @@ Los objetivos de la actual Junta son los siguientes.
 
 - Estudiar cómo facilitar la labor de los grupos de trabajo:
     - Implementar el rol de responsable / facilitadora / es
-    - Buscar colaboradores/as en comunidades locales / regionales  
+    - Buscar colaboradores/as en comunidades locales / regionales
 
 ---
 
@@ -66,7 +64,7 @@ Los objetivos de la actual Junta son los siguientes.
     - Analizar qué puede integrarse en un grupo de trabajo
     - Documentar y automatizar en la medida de lo posible todas las tareas relacionadas con la gestión de la asociación
     - Dar visibilidad a las tareas de la asociación de cara a facilitar la colaboración de la comunidad
-    - Seguir mejorando los mecanismos de pago actuales, por ejemplo: añadir PayPal  
+    - Seguir mejorando los mecanismos de pago actuales, por ejemplo: añadir PayPal
 
 ---
 
