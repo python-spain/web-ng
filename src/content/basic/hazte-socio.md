@@ -1,10 +1,15 @@
 ---
 path: '/hazte-socio/'
-title: '¡Hazte socio!'
+title: '¡Hazte socio/a!'
 date: 2021-09-01T17:23:34+07:00
 ---
+Si quieres dar un pasito más y contribuir a sostener la estructura de la asociación, tanto legal como económicamente, puedes hacerte socio/a.
 
-Este documento detalla el procedimiento que ha establecido Python España para que una persona pueda formar parte de la asociación.
+Como agradecimiento por tu compromiso tendrás los siguientes beneficios, entre otros:
+- Prioridad para obtener entradas y descuentos en los eventos organizados por la asociación.
+- Un flamante buzón de correo tunombre@es.python.org y 30GB de almacenamiento en Google Drive.
+- Acceso a un grupo de Telegram exclusivo para socios/as, un lugar perfecto para el networking en petit-comité.
+- Apoyo de la asociación en los eventos que tú o tu grupo organicen, según [este reglamento](https://comunidad.es.python.org/t/reglamento-apoyo-eventos-promovidos-por-personas-asociadas-a-python-espana/253). Entre otras cosas, incluye apoyo económico, facturación, seguro de responsabilidad civil...
 
 ## Quiero asociarme
 

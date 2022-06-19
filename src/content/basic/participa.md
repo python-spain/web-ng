@@ -39,8 +39,3 @@ Si quieres colaborar escribe a [contacto@es.python.org](mailto:contacto@es.pytho
 
 ## Hazte socio/a
 Si quieres dar un pasito más y contribuir a sostener la estructura de la asociación, tanto legal como económicamente, puedes [hacerte socio/a](/hazte-socio/).
-
-Como agradecimiento por tu compromiso tendrás los siguientes beneficios, entre otros:
-- Un flamante buzón de correo tunombre@es.python.org y 30GB de almacenamiento en Google Drive.
-- Acceso a un grupo de Telegram exclusivo para socios/as, un lugar perfecto para el networking en petit-comité.
-- Apoyo de la asociación en los eventos que tú o tu grupo organicen, según [este reglamento](https://comunidad.es.python.org/t/reglamento-apoyo-eventos-promovidos-por-personas-asociadas-a-python-espana/253). Entre otras cosas, incluye apoyo económico, facturación, seguro de responsabilidad civil...
