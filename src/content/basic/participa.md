@@ -23,12 +23,14 @@ Te puede interesar si tienes conocimientos o quieres aprender: HTML, CSS, Javasc
 
 Consulta la lista actual de tareas pendientes [aquí](https://github.com/python-spain/web-ng/issues). Si quieres colaborar, simplemente comenta en el issue correspondiente o abre una nueva con más ideas.
 
-### Infra
+### IT
 Se encarga de cacharrear con los servidores, DNS, email y demás servicios de la asociación para que todo vaya fino. Actualmente administramos servidores en Scaleway, DNS con Cdmon y email y otros servicios de almacenamiento con Google.
 
 Te puede interesar si te mola o quieres aprender a administrar servidores Linux, configurar registros DNS como un mago, volverte loco entre las miles de pantallas de configuración del admin de Google o liderar la defensa contra ataques de malvados hackers.
 
-Si quieres colaborar escribe a [it@es.python.org](mailto:it@es.python.org).
+Si necesitas algo de este grupo, envía un email a [it@es.python.org](mailto:it@es.python.org) o crea directamente una [_issue_ en GH](https://github.com/python-spain/asociacion/issues) mencionando al equipo [@python-spain/gt-it](https://github.com/orgs/python-spain/teams/gt-it/).
+
+Si quieres colaborar con el grupo escribe a [it@es.python.org](mailto:it@es.python.org).
 
 ### Comunicación
 Administra los canales de difusión de la asociación a través de Twitter, Telegram y Discord. Además, elabora una newsletter trimestral con información muy fresca sobre la asociación y las comunidades locales.
