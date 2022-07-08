@@ -102,6 +102,7 @@ const MapData = () => {
             latitude: 37.1809,
             longitude: -3.5983,
             twitter: 'https://twitter.com/python_granada',
+            telegram: 'https://t.me/pythongrx',
             email: 'pythongranada@gmail.com',
             video: 'https://www.youtube.com/watch?v=pgKXhg0cDyE',
         },
