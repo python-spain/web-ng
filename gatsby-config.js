@@ -12,6 +12,8 @@ module.exports = {
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-react-leaflet',
         'gatsby-plugin-fontawesome-css',
+        'gatsby-redirect-from',
+        'gatsby-plugin-meta-redirect',
         {
             resolve: 'gatsby-source-filesystem',
             options: {
