@@ -1,8 +1,8 @@
 # Cómo contribuir con la web de Python España
 
-Existen muchas formas de contribuir con [Python España](https://web-ng.es.python.org/). Escribir contenido para la página web, mantener la información contenida actualizada, [detectar problemas](https://github.com/python-spain/web-ng/issues/new) o corregirlos son formas efectivas de mejorar la comunidad.
+Existen muchas formas de contribuir con [Python España](https://es.python.org/). Escribir contenido para la página web, mantener la información contenida actualizada, [detectar problemas](https://github.com/python-spain/web-ng/issues/new) o corregirlos son formas efectivas de mejorar la comunidad.
 
-Recuerda que, tanto contribuir a este repositorio como administrarlo, supone la aceptación de nuestro [código de conducta](https://web-ng.es.python.org/codigo-conducta/).
+Recuerda que, tanto contribuir a este repositorio como administrarlo, supone la aceptación de nuestro [código de conducta](https://es.python.org/codigo-conducta/).
 
 ## Informando de un problema
 
@@ -11,7 +11,7 @@ La forma más sencilla de contribuir con la página web es informar de un error 
 ```
 Dónde pone "title": Hay muy poco espacio entre títulos y contenido
 Dónde pone "leave a comment":
-En la sección "¡hazte socio!": https://web-ng.es.python.org/hazte-socio/
+En la sección "¡hazte socio!": https://es.python.org/hazte-socio/
 Hay muy poco espacio entre los títulos grandes y los subtítulos o contenido
 y esto dificulta la lectura.
 ```
@@ -96,4 +96,4 @@ Recuerda que puedes editar el fichero directamente desde el navegador, situándo
 
 Solucionar los problemas de un _pull request_ puede no ser el paso final. El proceso de revisión puede repetirse. Atiende las sucesivas revisiones y el equipo editorial aceptará tus cambios cuando todos los problemas se hayan resuelto.
 
-Recuerda que tanto los editores y administradores del repositorio, como tú, somos parte de esta comunidad y estamos sujetos al [código de conducta](https://web-ng.es.python.org/codigo-conducta/). Informa de los abusos que observes en las _pull request_ (incluso cuando no sean las tuyas) en contacto@es.python.org
+Recuerda que tanto los editores y administradores del repositorio, como tú, somos parte de esta comunidad y estamos sujetos al [código de conducta](https://es.python.org/codigo-conducta/). Informa de los abusos que observes en las _pull request_ (incluso cuando no sean las tuyas) en contacto@es.python.org
