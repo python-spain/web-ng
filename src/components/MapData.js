@@ -101,6 +101,7 @@ const MapData = () => {
             name: 'Python Granada',
             latitude: 37.1809,
             longitude: -3.5983,
+            web: 'http://python-granada.es',
             twitter: 'https://twitter.com/python_granada',
             telegram: 'https://t.me/pythongrx',
             email: 'pythongranada@gmail.com',
