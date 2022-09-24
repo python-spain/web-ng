@@ -124,7 +124,7 @@ const MapData = () => {
             meetup: 'https://www.meetup.com/es-ES/python_alc/',
             twitter: 'https://twitter.com/python_alc',
             telegram: 'https://t.me/python_alc',
-            discord: 'https://discord.gg/5AZkkC9egw',
+            discord: 'https://discord.gg/2g5zdgTnAB',
             email: 'pyalicante@gmail.com',
             video: 'https://www.youtube.com/watch?v=Om2kcuqvAsM',
         },
