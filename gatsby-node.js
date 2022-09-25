@@ -16,9 +16,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 // Create pages from markdown files
 exports.createPages = ({ graphql, actions }) => {
-    const { createPage, createRedirect } = actions;
-    createRedirect({ fromPath: `/pages/asociacion.html`, toPath: `/asociacion/`, redirectInBrowser: true, isPermanent:true });
-    createRedirect({ fromPath: `/pages/ofertas-de-empleo.html`, toPath: `/empleo/`, redirectInBrowser: true, isPermanent:true });
+    const { createPage } = actions;
     return new Promise((resolve, reject) => {
         resolve(
             graphql(
