@@ -6,7 +6,7 @@ draft: false
 weight: 2
 image: "/images/posts/hacktoberfest2022.svg"
 ---
-Como cada Octubre, las hojas de los arboles empiezan a caerse y llega el Hacktoberfest.
+Como cada Octubre, las hojas de los árboles empiezan a caerse y llega el Hacktoberfest.
 
 Este año, aun empezando con unos días de demora, no queremos dejar de apoyar una vez más los eventos Hacktoberfest que realicen nuestras comunidades locales.
 
