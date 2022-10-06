@@ -17,6 +17,6 @@ Para ello queremos compartir con todas vosotras una serie de recomendaciones:
 - Promoved vuestro evento e invitad a cualquier persona que pueda estar interesada en aprender y/o contribuir al open source.
 - Adoptad un código de conducta que facilite la diversidad y mantenga una atmósfera en la que cualquier persona sea bienvenida. Aquí podéis echar un ojo a nuestro [código de conducta](https://es.python.org/codigo-conducta/).
 
-Como muchas sabréis Hacktoberfest es un evento promovido por [DigitalOcean](https://www.digitalocean.com/) y [Hacktoberfest](https://twitter.com/hacktoberfest). Si queréis hacer un evento oficial podéis rellenar [este formulario](http://bit.ly/hacktoberfest-22-events) que provee la propia organización y se listará vuestro evento en su web oficial.
+Hacktoberfest es un evento promovido por la empresa [DigitalOcean](https://www.digitalocean.com/). Para que el evento aparezca en la web oficial, tenéis que rellenar [este formulario](http://bit.ly/hacktoberfest-22-events) que provee la propia organización.
 
 Además de estas recomendaciones desde Python España queremos dar visibilidad a los diferentes eventos de nuestras comunidades locales. Si tienes pensado hacer o estas promoviendo actualmente uno de estos eventos nos puedes contactar por Twitter en [@python_es](https://twitter.com/python_es) o en nuestro [Discord](https://discord.com/invite/35E3Ph7Fez) y compartiremos la información desde nuestra cuenta oficial así como haremos un update en este mismo post.
