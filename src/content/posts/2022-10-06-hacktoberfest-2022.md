@@ -10,7 +10,7 @@ Como cada Octubre, las hojas de los árboles empiezan a caerse y llega el Hackto
 
 Un año más varias comunidades locales están preparando eventos para celebrar Hacktoberfest, ¡y desde Python España queremos apoyarlos!
 
-Para ello queremos compartir con todas vosotras una serie de recomendaciones para vuestros eventos locales:
+Para ello queremos compartir con todas vosotras una serie de recomendaciones:
 
 - Elaborad una agenda del evento. Creemos que es importante que si vais a recibir gente nueva esta venga sabiendo en que va a consistir el evento.
 - Proponed una fecha una vez sepáis que todas las personas implicadas en el evento como organizadoras y ponentes podrán acudir.
