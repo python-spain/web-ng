@@ -1,5 +1,5 @@
 ---
-title: Ya estamos en Hacktoberfest!
+title: ¡Ya estamos en Hacktoberfest!
 date: 2022-10-06
 featured: false
 draft: false
