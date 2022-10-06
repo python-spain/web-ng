@@ -8,7 +8,7 @@ image: "/images/posts/hacktoberfest2022.svg"
 ---
 Como cada Octubre, las hojas de los árboles empiezan a caerse y llega el Hacktoberfest.
 
-Este año, aun empezando con unos días de demora, no queremos dejar de apoyar una vez más los eventos Hacktoberfest que realicen nuestras comunidades locales.
+Un año más varias comunidades locales están preparando eventos para celebrar Hacktoberfest, ¡y desde Python España queremos apoyarlos!
 
 Para ello queremos compartir con todas vosotras una serie de recomendaciones para vuestros eventos locales:
 
