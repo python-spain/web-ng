@@ -52,6 +52,12 @@ const MapData = () => {
             email: 'vigo@lists.es.python.org',
         },
         {
+            name: 'Python Coruña',
+            latitude: 43.361904,
+            longitude: -8.4301933,
+            telegram: 'https://t.me/+EPjPmsUNlMFvh-kF',
+        },
+        {
             name: 'Python Málaga',
             latitude: 36.7644,
             longitude: -4.4242,
