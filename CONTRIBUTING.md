@@ -20,7 +20,7 @@ y esto dificulta la lectura.
 
 Si prefieres pasar a la acción, habrás de comenzar [creando una cuenta en GitHub](https://github.com/join). Con ella **podrás [administrar los archivos del sitio web desde el navegador](https://help.github.com/articles/managing-files-on-github/)**.
 
-El contenido del sitio web de la asociación se encuentra en el directorio [`content`](https://github.com/python-spain/web-ng/tree/main/src/content) y está escrito en [Markdown](https://daringfireball.net/projects/markdown/syntax), lenguage de marcado sencillo que habrás de utilizar.
+El contenido del sitio web de la asociación se encuentra en el directorio [`src/content`](https://github.com/python-spain/web-ng/tree/main/src/content) y está escrito en [Markdown](https://daringfireball.net/projects/markdown/syntax), lenguaje de marcado sencillo que habrás de utilizar.
 
 Las revisiones por parte del equipo editorial se realizan a través de la web de GitHub y, aunque el procedimiento es bastante intuitivo, habrás de [familiarizarte con el procedimiento de revisión](#proceso-de-revisión).
 
@@ -34,19 +34,40 @@ Una vez hayas encontrado el fichero, edita el contenido desde GitHub, corrige el
 
 ### Añadiendo un artículo
 
-Si quieres añadir un artículo, entra en la carpeta [`content/posts`](https://github.com/python-spain/web-ng/tree/main/src/content/posts) y haz click en el botón "_Create new file_".
+Si quieres añadir un artículo, entra en la carpeta [`src/content/posts`](https://github.com/python-spain/web-ng/tree/main/src/content/posts) y haz click en el botón "_Create new file_". El nombre del archivo debe tener el formato `AAAA-MM-DD-post-slug.md`.
 
-Un artículo está compuesto de dos secciones, metadatos y contenido, separadas por dos líneas vacías. Los metadatos **son obligatorios** y sirven para clasificar el artículo. Son los siguientes:
+Un artículo está compuesto de dos secciones, metadatos (frotmatter) y contenido, separadas por las líneas (`---`). Los metadatos **son obligatorios** y sirven para clasificar el artículo. Son los siguientes:
 
 | Clave | Descripción                                  |
 | ----- | -------------------------------------------- |
-| Path  | Ruta del artículo                            |
-| Title | Título del artículo                          |
-| Date  | Fecha de publicación en formato `AAAA-MM-DD` |
+| title | Título del artículo                          |
+| date  |  Fecha de publicación en formato `AAAA-MM-DD` |
+| draft | `true`/`false`, dependiendo de si queremos que esté oculto o se muestre |
+| image | Ruta a la imagen del artículo, que debería estar dentro de `images/posts` |
 
 El contenido se ha de escribir utilizando [Markdown](https://daringfireball.net/projects/markdown/syntax). Un [ejemplo de artículo](https://github.com/python-spain/web-ng/blob/main/src/content/posts/2020-05-25-public-money-public-code.md).
 
-Cuando hayas terminado de editar, haz click sobre el botón "_Propose new file_"
+Cuando hayas terminado de editar, haz click sobre el botón "_Propose new file_".
+
+También deberás subir la imagen a la que hace referencia el campo `image` de los metadatos.
+
+### Añadiendo un evento
+
+El proceso para añadir eventos es igual que para añadir un artículo, con la salvedad de subir el Markdown del contenido a `src/content/eventos/` y la imagen a `images/eventos`, con un tamaño de 1080x600px. 
+
+Además, los campos de metadatos que tendrás que rellenar son:
+| Clave | Descripción                                  |
+| ----- | -------------------------------------------- |
+| title | Nombre del evento                          |
+| date  |  Fecha de inicio del evento en formato ISO |
+| fullDate | Fecha completa con inicio y final, escrita como texto en español |
+| featured | `true`/`false`, dependiendo de si queremos que se destaque en primera plana o no |
+| image | Ruta a la imagen del artículo, que debería estar dentro de `images/eventos` |
+| logo | Ruta al logo del evento, que debería estar dentro de `images/eventos`. Se mostrará si no existe `image` y en los eventos `featured`. |
+| description | Texto corto de un párrafo para mostrar como descripción para los eventos `featured`. |
+| website | Enlace a la web del evento |
+| draft | `true`/`false`, dependiendo de si queremos que esté oculto o se muestre |
+
 
 ### Añadiendo una asociación
 
