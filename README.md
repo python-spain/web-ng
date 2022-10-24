@@ -48,3 +48,4 @@ Para agregar un post/evento puedes seguir las instrucciones que se encuentran en
 -   Robust example content included
 -   Royalty free illustrations included
 -   SEO Titles & Meta using `gatsby-plugin-react-helmet`
+-   ESLint
