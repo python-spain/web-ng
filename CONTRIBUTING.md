@@ -103,7 +103,7 @@ Estas tareas son técnicas y es recomendable trabajar en un entorno de desarroll
 
 ## Mejorando la documentación
 
-Uno de los objetivos de este repositorio es que sea accesible y fácil de editar para personas sin perfil técnico. Esta guía, por ejemplo, recoge cómo realizar modificaciones diréctamente desde la web. Sin embargo el contenido no es perfecto y seguro que hay mejores maneras de explicar algo o cuestiones que podrían aclararse con una imagen.
+Uno de los objetivos de este repositorio es que sea accesible y fácil de editar para personas sin perfil técnico. Esta guía, por ejemplo, recoge cómo realizar modificaciones directamente desde la web. Sin embargo el contenido no es perfecto y seguro que hay mejores maneras de explicar algo o cuestiones que podrían aclararse con una imagen.
 
 Mejorar los documentos [`README.md`](https://github.com/python-spain/web-ng/blob/main/README.md) y [`CONTRIBUTING.md`](https://github.com/python-spain/web-ng/blob/main/CONTRIBUTING.md) es también una forma útil de contribuir con la asociación. Utiliza el mismo procedimiento explicado en la sección [Editando contenido ya existente](#editando-contenido-ya-existente) para proponer cambios en estos ficheros.
 
