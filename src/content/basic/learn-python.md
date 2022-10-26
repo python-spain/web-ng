@@ -77,7 +77,7 @@ Si no has programado antes, los entornos de desarrollo más populares para princ
 - [Mu](https://codewith.mu/es/) (más básico)
 - [Thonny](https://thonny.org/)
 
-Pero, si ya programas en otros lenguajes, sabrás que cada persona tiene sus preferencias, experiencia, sistema operativo, necesidades, etc. Lógicamente es importante sentirse cómodo con la herramienta que más vas a utilizar. Por lo tanto, en lugar de basarte en la opinión subjetiva de los demás (con otras preferencias, experiencias, ...), te resultará mucho más útil escoger uno o varios (de entre los listados que te damos a continuación) y probar durante un tiempo cada una. _Solo tú puedes contestar a la pregunta_.
+Pero, si ya programas en otros lenguajes, sabrás que cada persona tiene sus preferencias, experiencia, sistema operativo, necesidades, etc. Lógicamente es importante sentirse cómodo con la herramienta que más vas a utilizar. Por lo tanto, en lugar de basarte en la opinión subjetiva de los demás (con otras preferencias, experiencias, ...), te resultará mucho más útil escoger una o varias (de entre los listados que te damos a continuación) y probar durante un tiempo cada una. _Solo tú puedes contestar a la pregunta_.
 
 En [Real Python](https://realpython.com/) han escrito una buena guía sobre [entornos de desarrollo integrados y editores de código](https://realpython.com/python-ides-code-editors-guide/) (en inglés).
 
@@ -88,7 +88,7 @@ En la misma [wiki de Python.org](https://wiki.python.org/moin/) hay un par de li
 
 ## ¿Qué biblioteca/_framework_ recomendáis para...?
 
-Antes de preguntar por una biblioteca o _framework_ puedes echar un vistazo a las alternativas que hay en el ámbito de tu problema. Un recurso muy interesante para poder conocer dichas alternativas es [awesome-python](https://github.com/vinta/awesome-python). Verás que cubre muchos ámbitos. Si preguntas en un foro por una biblioteca o _framework_ intenta hacer una pregunta concreta. No es buena idea preguntar _¿qué es mejor X o Y?_. Sin información, la respuesta de cualquier participante será subjetiva. Matiza cuál es el problema que quieres resolver para que podamos ayudarte en la recomendación.
+Antes de preguntar por una biblioteca o _framework_ puedes echar un vistazo a las alternativas que hay en el ámbito de tu problema. Un recurso muy interesante para poder conocer dichas alternativas es [awesome-python](https://github.com/vinta/awesome-python). Verás que cubre muchos ámbitos. Si preguntas en un foro por una biblioteca o _framework_ intenta hacer una pregunta concreta. No es buena idea preguntar _¿qué es mejor X o Y?_ Sin información, la respuesta de cualquier participante será subjetiva. Matiza cuál es el problema que quieres resolver para que podamos ayudarte en la recomendación.
 
 ### Desarrollo web
 
@@ -107,7 +107,7 @@ También puede resultarte de ayuda el capítulo de [Web scraping](https://automa
     
 En caso de interesarte la programación de interfaces gráficas de usuario (GUI) para tu aplicación, puedes leer el [listado de GUIs](https://docs.python.org/es/3/faq/gui.html) en la web de Python así como de las [herramientas de diseño](https://wiki.python.org/moin/GuiProgramming#GUIDesignToolsandIDEs) en la wiki de Python.    
 
-## Dicen por ahí que Python es lento...¿es cierto?
+## Dicen por ahí que Python es lento... ¿es cierto?
 
 Es posible que te hayan contado _cosas malas_ de Python pero ¿te crees todo lo que te dicen? Te recomendamos que leas un par de páginas para formarte una idea más realista:
 
