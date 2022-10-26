@@ -12,7 +12,7 @@ Si quieres apoyar nuestra labor para que podamos abordar proyectos cada vez más
 
 ## Documentación
 
-Puedes acceder a los estatutos, reglamento de régimen interno, actas y otra documentación [aqui](https://github.com/python-spain/documentacion/).
+Puedes acceder a los estatutos, reglamento de régimen interno, actas y otra documentación [aquí](https://github.com/python-spain/documentacion/).
 
 ## Datos fiscales
 
