@@ -6,7 +6,7 @@ date: 2021-12-27T22:30:34+07:00
 
 ## Asiste o haz de voluntario en eventos y actividades
 
-Tanto Python España como las comunidades locales organizan múltiples actividades y quedadas a lo largo del año, tanto presenciales como virtuales. Asiste a los que más te gusten, comparte experiencias y conoce gente como tú. 
+Tanto Python España como las comunidades locales organizan múltiples actividades y quedadas a lo largo del año, tanto presenciales como virtuales. Asiste a las que más te gusten, comparte experiencias y conoce gente como tú. 
 
 Y si te pica el gusanillo... apúntate como voluntario a colaborar en su organización. Montar eventos es una experiencia muy gratificante y se aprende un montón. No te preocupes, nadie hemos nacido sabiendo ya cómo hacerlo todo, toda ayuda es bienvenida por pequeña que sea.
 
@@ -14,7 +14,7 @@ Y si te pica el gusanillo... apúntate como voluntario a colaborar en su organiz
 - Cada comunidad local publica los eventos que organiza en sus propios espacios. Puedes ver la lista de las comunidades locales y sus espacios [aquí](/comunidades/). Algunas tienen un grupo de Telegram público al que te puedes unir para interactuar con ellas.
 
 ## Grupos de trabajo de Python España
-Porque no a todo el mundo le interesa implicarse en todo y además no es eficiente ni sostenible sostenible, hemos creado grupos de trabajo temáticos para que puedas colaborar y/o aprender lo que más te guste. 
+Porque no a todo el mundo le interesa implicarse en todo y además no es eficiente ni sostenible, hemos creado grupos de trabajo temáticos para que puedas colaborar y/o aprender lo que más te guste. 
 
 ### Web
 Se dedica a actualizar y mejorar esta web que estás viendo, que es la cara visible de la asociación de cara al mundo. Trata de que sea atractiva y muestre información relevante y fácil de localizar.
