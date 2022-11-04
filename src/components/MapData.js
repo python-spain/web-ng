@@ -55,7 +55,7 @@ const MapData = () => {
             name: 'Python Coruña',
             latitude: 43.361904,
             longitude: -8.4301933,
-            telegram: 'https://t.me/+EPjPmsUNlMFvh-kF',
+            telegram: 'https://t.me/pythoncorunha',
         },
         {
             name: 'Python Málaga',
