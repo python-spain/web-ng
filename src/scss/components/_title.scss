@@ -3,6 +3,7 @@
   font-size: 35px;
   line-height: 1.2;
   text-transform: uppercase;
+  word-break: break-word;
   @include media-breakpoint-up(lg) {
     font-size: 45px;
   }
