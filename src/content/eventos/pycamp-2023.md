@@ -1,10 +1,10 @@
 ---
-title: "PyCamp España 2022"
+title: "PyCamp España 2023"
 date: 
-fullDate: 15 - 18 Abril 2022
-featured: false
-image: "/images/eventos/pycampes-2022.png"
-logo: "/images/eventos/pycampes-2022-logo.png"
+fullDate: 7 - 10 Abril 2023
+featured: true
+image: "/images/eventos/pycampes-2023.png"
+logo: "/images/eventos/pycampes-2023-logo.png"
 description: "PyCamp es un evento para juntarnos a programar y divertirnos durante el fin de semana. Las personas que asisten proponen los proyectos Open Source en los que desean trabajar durante estos días (o alguna idea un poco loca que quieran implementar) y el resto se anota para colaborar y trabajar en esos proyectos." 
 website: "https://pycamp.es/"
 ---
@@ -13,26 +13,13 @@ website: "https://pycamp.es/"
 
 **La entrada incluye**:
 
-- Alojamiento durante 4 días y 3 noches (*)
+- Alojamiento durante 4 días y 3 noches
 - Pensión completa: desayuno, comida y cena
 - Coffee break en intermedio de comidas: café, té, agua y algunas frutas
 - Acceso a áreas verdes donde podrás relajarte o programar
 - Diversión: karaoke de charlas, juegos de mesa, ping pong y todo hobby que quieras compartir con nosotros
-- Auto-tests de antígenos COVID-19 para todos los participantes (ver "Preguntas Frecuentes")
 
 El lugar será de uso exclusivo para los asistentes al evento.
-
-**English speakers are welcome**
-
-We apologize for the lack of translation, but we believe Google translation works quite well (see translated version). If you have any question don't hesitate in contact us! We are happy to help you and have you enjoying this event with us! 
-
-### Preguntas Frecuentes
-
-- [ ¿Qué es un PyCamp? ](https://pycamp.es/#faq)
-- [ ¿A qué público está dirigido? ](https://pycamp.es/#faq)
-- [ ¿Qué llevo?](https://pycamp.es/#what-to-bring)
-- [ ¿Aún no sabes qué proyecto o idea proponer? ](https://pycamp.es/#projects)
-- [ ¿Cómo será la política COVID-19 durante el evento? ](https://pycamp.es/#faq)
 
 
 ### Organiza
@@ -40,9 +27,6 @@ We apologize for the lack of translation, but we believe Google translation work
 
 ### Colaboradores
 - [Argentina en Python](https://argentinaenpython.com/) 
-- [Python Girona](https://pythongirona.cat/)
-- [Python Argentina](https://www.python.org.ar/) 
-- [Python Amsterdan](https://www.meetup.com/es/Amsterdam-Python-Meetup-Group/)
 
 ### Enlaces
-Puedes verlo en [WWW.PYCAMP.ES](https://pycamp.es/).
+Puedes verlo en [www.pycamp.es](https://pycamp.es/).
