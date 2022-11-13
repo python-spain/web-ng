@@ -1,7 +1,7 @@
 ---
 title: "PyCamp España 2023"
 date: 
-fullDate: 7 - 10 Abril 2022
+fullDate: 7 - 10 Abril 2023
 featured: true
 image: "/images/eventos/pycampes-2023.png"
 logo: "/images/eventos/pycampes-2023-logo.png"

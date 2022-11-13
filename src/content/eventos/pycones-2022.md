@@ -2,7 +2,7 @@
 title: "PyConES 2022 Granada"
 date: 2022-09-30T12:33:46+10:00
 fullDate: 30 Septiembre - 2 Octubre
-featured: true
+featured: false
 image: "/images/eventos/pycones-2022.png"
 logo: "/images/eventos/pycones-2022-logo.png"
 description: "La conferencia más grande de la comunidad Python en España, donde se dan cita profesionales y entusiastas del lenguaje para difundir su experiencia y conocimientos."
