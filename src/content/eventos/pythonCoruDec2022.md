@@ -2,7 +2,7 @@
 title: "Quedada Python Coruña"
 date: 2022-12-10T19:00:00+10:00
 fullDate: 10 de Diciembre de 2022 desde las 19:00h hasta las 20:30h
-featured: false
+featured: true
 image: "/images/eventos/pythonCorunha-dec2022.jpg"
 logo: "/images/eventos/pythonCorunha-dec2022.jpg"
 description: "Primera quedada de Python Coruña para conocernos y crear comunidad. "
