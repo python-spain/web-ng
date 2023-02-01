@@ -72,7 +72,7 @@ const MapData = () => {
             name: 'Python Valencia',
             latitude: 39.4227,
             longitude: -0.3525,
-            web: 'http://www.meetup.com/es-ES/Python-Valencia-Meetup/',
+            web: 'https://pyvlc.es/',
             twitter: 'https://twitter.com/python_vlc',
         },
         {
