@@ -35,13 +35,18 @@
         "weight": 7
     },
     {
+        "name": "Patrocina",
+        "url": "/patrocina/",
+        "weight": 8
+    },
+    {
         "name": "Merchandising",
         "url": "/merchandising/",
-        "weight": 8
+        "weight": 9
     },
     {
         "name": "Blog",
         "url": "/blog/",
-        "weight": 9
+        "weight": 10
     }
 ]
