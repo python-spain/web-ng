@@ -13,12 +13,7 @@ const Home = (props) => {
     const introImage = props.data.intro.frontmatter.image;
     const introImageMobile = props.data.intro.frontmatter.image_mobile;
     const site = props.data.site.siteMetadata;
-    const features = props.data.features.edges.map(({ node }) => ({
-        id: node.id,
-        title: node.title,
-        url: node.url,
-        image: node.image,
-    }));
+    const features = props.data.features.nodes;
     const lastPosts = props.data.posts.edges.map(({ node }) => ({
         id: node.id,
         image: node.frontmatter.image,
@@ -86,13 +81,12 @@ export const query = graphql`
             }
         }
         features: allFeaturesJson {
-            edges {
-                node {
-                    id
-                    title
-                    url
-                    image
-                }
+            nodes {
+                id
+                title
+                url
+                image
+                target
             }
         }
         featuredEvents: allMarkdownRemark(
