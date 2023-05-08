@@ -8,6 +8,11 @@
     "title": "¿Quieres aprender Python? Aquí encontrarás todos los recursos",
     "url": "/aprende-python/",
     "image": "/images/features/aprende-python.jpg"
+  },
+  {
+    "title": "No te olvides de subscribirte a nuestro boletín",
+    "url": "/newsletter/",
+    "image": "/images/features/newsletter.jpg",
+    "target": "_blank"
   }
- 
 ]
