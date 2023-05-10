@@ -10,7 +10,6 @@ Tienes varias opciones donde buscar trabajo relacionado con Python:
 
 - [Comunidad de Python España](https://comunidad.es.python.org/c/empleo/9)
 - [LinkedIn](https://www.linkedin.com/jobs/search/) (buscando por Python programming language o Python Developer)
-- [StackOverflow](https://stackoverflow.com/jobs) (buscando por Python)
 - [Python.org](https://www.python.org/jobs/) (puedes filtrar por lugar utilizando el menú Location)
 
 Si tienes dudas sobre cómo prepararte para la entrevista de trabajo, te recomendamos que veas una mesa redonda sobre el tema además de otra [charla sobre los requisitos de un perfil Fullstack](https://www.youtube.com/watch?v=_D-wcRYzsHo).
