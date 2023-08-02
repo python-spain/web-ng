@@ -18,12 +18,6 @@
         "imageDark": "/images/social/youtube-dark.svg"
     },
     {
-        "name": "Planet",
-        "link": "http://planet.es.python.org/",
-        "image": "/images/social/mundo.svg",
-        "imageDark": "/images/social/mundo-dark.svg"
-    },
-    {
         "name": "Telegram",
         "link": "https://t.me/PythonEsp",
         "image": "/images/social/telegram.svg",
