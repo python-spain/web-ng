@@ -56,6 +56,10 @@ const MapData = () => {
             latitude: 43.361904,
             longitude: -8.4301933,
             telegram: 'https://t.me/pythoncorunha',
+            web: 'https://pythoncoruna.github.io/',
+            twitter: 'https://twitter.com/pythoncoruna',
+            meetup: 'https://www.meetup.com/python-a-coruna/',
+            email: 'pythoncoruna@proton.me',
         },
         {
             name: 'Python Málaga',
