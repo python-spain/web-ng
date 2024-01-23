@@ -37,7 +37,7 @@ Para responder esta pregunta primero debes responder a la siguiente situación: 
 - [Learning Python](https://docs.python-guide.org/intro/learning/) - una sección de [The Hitchhiker's Guide to Python](https://docs.python-guide.org/) (¡una guía muy buena y completa de recursos!)
 - [Python for everybody](https://books.trinket.io/pfe/) - Charles Severance (Dr. Chuck)
 - [Dive into Python](https://diveintopython3.net/) - Mark Pilgrim
-- [Python Free Programming Books](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md#python) - libros con licencias libres
+- [Python Free Programming Books](https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-langs.md#python) - libros con licencias libres
 - [Awesome Python Books](https://github.com/Junnplus/awesome-python-books) - libros ordenados por categorías
 - [Python Tutorial for Beginners](https://www.youtube.com/watch?v=YYXdXT2l-Gg&list=PL-osiE80TeTskrapNbzXhwoFUiLCjGgY7) - Vídeo tutoriales de Corey Schafer
 
