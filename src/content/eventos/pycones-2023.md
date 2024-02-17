@@ -2,7 +2,7 @@
 title: "PyConES 2023 Tenerife"
 date: 2023-07-25T11:29:46+10:00
 fullDate: 6, 7 y 8 de Octubre
-featured: true
+featured: false
 image: "/images/eventos/pycones-2023.png"
 logo: "/images/eventos/pycones-2023-logo.png"
 description: "La conferencia más grande de la comunidad Python en España, donde se dan cita profesionales y entusiastas del lenguaje para difundir su experiencia y conocimientos."
