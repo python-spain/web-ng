@@ -18,9 +18,7 @@ Puedes acceder a los estatutos, reglamento de régimen interno, actas y otra doc
 
 Asociación Python España  
 CIF G86766821 
-
 C/ Isaac Newton S/N Edificio Naorte, local 11, Parc Bit 
-
 CP 07121, Islas Baleares, España. 
 
 
