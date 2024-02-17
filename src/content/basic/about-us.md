@@ -17,9 +17,12 @@ Puedes acceder a los estatutos, reglamento de régimen interno, actas y otra doc
 ## Datos fiscales
 
 Asociación Python España  
-CIF G86766821  
-Calle La Botánica, 4, 1º  
-28028, Madrid, España
+CIF G86766821 
+
+C/ Isaac Newton S/N Edificio Naorte, local 11, Parc Bit 
+
+CP 07121, Islas Baleares, España. 
+
 
 ## Junta directiva
 
