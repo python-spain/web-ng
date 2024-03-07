@@ -3,7 +3,6 @@ import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
-import Twitter from '../components/Twitter';
 import PostList from '../components/PostList';
 import HeroImage from '../components/HeroImage';
 import FeaturesHome from '../components/FeaturesHome';
@@ -55,12 +54,9 @@ const Home = (props) => {
 
                 <div className='mt-8 mb-3'>
                     <div className='row'>
-                        <div className='col-12 col-lg-8'>
+                        <div className='col-12 col-lg-12'>
                             <h1>Últimos posts</h1>
-                            <PostList posts={lastPosts} twoColumns />
-                        </div>
-                        <div className='col-12 col-lg-4'>
-                            <Twitter />
+                            <PostList posts={lastPosts} threeColumns />
                         </div>
                     </div>
                 </div>
@@ -115,7 +111,7 @@ export const query = graphql`
         posts: allMarkdownRemark(
             filter: { fileAbsolutePath: { regex: "/posts/.*/" } }
             sort: { fields: [frontmatter___date], order: DESC }
-            limit: 2
+            limit: 3
         ) {
             edges {
                 node {
