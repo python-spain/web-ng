@@ -28,7 +28,7 @@ Actualmente la **junta directiva de Python España** (2022-2024) está formada p
 
 **Cargo** |	**Nombre**
 --- | ---
-Presidencia | Javi
+Presidencia | Javier 
 Vicepresidencia | Johanna Sánchez
 Tesorería | Alberto Fernández Valiente
 Secretaría | Clara Martínez
