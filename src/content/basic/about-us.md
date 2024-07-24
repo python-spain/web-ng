@@ -22,59 +22,59 @@ Puedes acceder a los estatutos, reglamento de régimen interno, actas y otra doc
 - CP 07121, Islas Baleares, España. 
 
 
-## Junta directiva
+## Junta Directiva
 
-Actualmente la **junta directiva de Python España** (2022-2024) está formada por:
+Actualmente la **Junta Directiva de Python España** (2024-2026) está formada por:
 
 **Cargo** |	**Nombre**
 --- | ---
-Presidencia | Jimena Escobar Bermúdez
-Vicepresidencia | Johanna Sánchez
-Tesorería | Alberto Fernández Valiente
-Secretaría | Clara Martínez
-Vocalía | Israel Saeta Pérez
+Presidencia | Javier Alonso Silva
+Vicepresidencia | Sara Medrano Sánchez
+Tesorería | Diego Díaz Morón
+Secretaría | Marina Moro López
+Vocalía I | Lucía Cabrera Garabote
+Vocalía II | Jimena Escobar Bermúdez
 
 Si quieres contactar con la junta escribe a **junta@es.python.org**.
 
-Los objetivos de la actual Junta son los siguientes.
+## Los objetivos de la actual Junta:
 
-### Python España como espacio de encuentro de las comunidades locales
+### 1. Potenciar las comunidades locales.
 
-- Estrechar lazos entre las comunidades locales y con Python España
-- Estimular la creación de nuevas comunidades locales allá donde no existan actualmente
-- Potenciar la celebración de eventos locales pequeños y medianos (PyDay, PyCamp, PyPaella…)
+  * Estos pasados años hemos visto cómo los distintos eventos que se han organizado han potenciado - e incluso creado - las comunidades locales en donde se han realizado.
 
+  * Actualizar las vías de comunicación de la Asociación.
 
-### Sostenibilidad del trabajo de la asociación
+  * Pensando en local, actuando en global. Disponemos de muchos recursos, ¡busquemos a las personas adecuadas!
 
-- Proponer la creación de nuevos grupos de trabajo, por ejemplo:
-    - Comunicación (interna y externa)
-    - Traducción de la documentación oficial de Python
-    - Portal empleo
-    - Infraestructura
+### 2. Fomentar la formación.
 
----
+  * El equipo busca crear un grupo de formación y orientar las nuevas vías de comunicación para facilitar el acceso a cualquiera.
 
-- Estudiar cómo facilitar la labor de los grupos de trabajo:
-    - Implementar el rol de responsable / facilitadora / es
-    - Buscar colaboradores/as en comunidades locales / regionales  
+  * Ponerse manos a la obra es, muchas veces, la mejor manera de empezar con algo. Por eso, el equipo promocionará actividades tipo *"manos a la obra con [...]"*.
 
----
+  * Y para acercar más la Asociación, el lenguaje y lo que se hace en la comunidad, se recuperará el meet-up de Python España.
 
-- Optimizar los procesos de Python España:
-    - Analizar qué puede integrarse en un grupo de trabajo
-    - Documentar y automatizar en la medida de lo posible todas las tareas relacionadas con la gestión de la asociación
-    - Dar visibilidad a las tareas de la asociación de cara a facilitar la colaboración de la comunidad
-    - Seguir mejorando los mecanismos de pago actuales, por ejemplo: añadir PayPal  
+### 3. Romper la brecha de edad.
 
----
+  * Se fomentarán y trabajará activamente en talleres de iniciación en donde la gente con interés pueda andentrarse en el mundo Python.
 
-- Consolidar la figura de miembro/a de la asociación y dar visibilidad a las ventajas de ser socio/a
+  * Se colabolará con Universidades promoviendo charlas, talleres para dar a conocer el lenguaje y la comunidad.
 
-### Continuar la labor de la junta actual para mejorar la diversidad
+  * Se propone impartir charlas en institutos, FPs y centros educativos.
 
-- Tejer lazos con comunidades existentes, como PyLadies, DjangoGirls, MigraCode o Codebar… que estén trabajando la diversidad en el mundo tecnológico
-- Impulsar el interés por Python en sectores no tecnológicos
-- Crear un código de conducta para la Asociación
-- Adaptar las comunicaciones oficiales para que usen lenguaje inclusivo
+  * Y actualizar las vías de comunicación existentes para llegar a más gente restaurando el equipo de RR.SS.
 
+### 4. Continuar con la gran labor de la Junta actual
+
+  * La Asociación será cada vez más accesible para personas interesadas en participar.
+  * Se abogará y se hará por mantener un ecosistema saludable y de respeto, tanto dentro de la Asociación como hacia fuera, cuando se realicen eventos en representación de.
+  * **Tolerancia cero ante la intolerancia**.
+
+* * *
+
+Tanto Sara, Marina, Diego, Lucía, Jimena y Javier estamos súper ilusionados de poder embarcarnos en un proyecto tan bonito. Contad con cualquiera para resolver dudas, atacar problemas y colaborar en pro de la Asociación y la comunidad.
+
+¡Muchísimas gracias por el apoyo! 🙌 
+
+> ¿Quieres leer la propuesta completa? Mírala aquí 👉 [Presentación de candidatura a la Junta Directiva 2024](https://comunidad.es.python.org/t/presentacion-de-candidatura-a-la-junta-directiva-2024/1323?u=javinator9889)
