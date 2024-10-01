@@ -19,5 +19,5 @@ Como no podía ser de otra manera, un evento así en un lugar así continúa má
 
 Pero, sin duda, lo más bonito fue compartir esta experiencia con (casi) toda la Junta Directiva y demás gentecilla de la comunidad de Python España ❤️ ¡Esperamos que nos volvamos a ver pronto (en Vigo, por ejemplo 👀)! 
 
-Os dejamos un video muy especial que resume nuestro viaje --> https://youtu.be/zHyg7trwxV0  
+Os dejamos un video muy especial que resume nuestro viaje --> https://www.youtube.com/watch?v=VEHyaDCxUYU 
 
