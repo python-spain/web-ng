@@ -17,5 +17,7 @@ Este año se ha celebrado en Praga, sitio que desde luego no tiene rival en lo d
 
 Como no podía ser de otra manera, un evento así en un lugar así continúa más allá del horario del congreso (muchos días hasta altas horas de la madrugada). Pudimos disfrutar y charlar y brindar (por no decir otra cosa) en, nada más y nada menos, sitios como un mirador con vistas a toda Praga o ¡un monasterio! rehabilitado para alojar eventos. Desde luego, nuestras más sinceras felicitaciones a la organización de la Europython por el trabajazo.
 
-Pero, sin duda, lo más bonito fue compartir esta experiencia con (casi) toda la Junta Directiva y demás gentecilla de la comunidad de Python España ❤️ ¡Esperamos que nos volvamos a ver pronto (en Vigo, por ejemplo 👀)! Os dejamos un video muy especial que resume nuestro viaje --> https://youtu.be/zHyg7trwxV0  
+Pero, sin duda, lo más bonito fue compartir esta experiencia con (casi) toda la Junta Directiva y demás gentecilla de la comunidad de Python España ❤️ ¡Esperamos que nos volvamos a ver pronto (en Vigo, por ejemplo 👀)! 
+
+Os dejamos un video muy especial que resume nuestro viaje --> https://youtu.be/zHyg7trwxV0  
 
