@@ -74,10 +74,13 @@ const MapData = () => {
         },
         {
             name: 'Python Valencia',
-            latitude: 39.4227,
-            longitude: -0.3525,
-            web: 'https://pyvlc.es/',
+            latitude: 39.4704,
+            longitude: -0.3764,
+            web: 'https://python-valencia.es/',
+            meetup: 'https://www.meetup.com/es-ES/python-valencia-meetup/',
             twitter: 'https://twitter.com/python_vlc',
+            telegram: 'https://t.me/python_vlc',
+            email: 'valencia@es.python.org',
         },
         {
             name: 'PyBCN',
