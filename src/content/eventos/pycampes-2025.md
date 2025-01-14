@@ -1,15 +1,15 @@
 ---
-title: "PyCamp España 2024"
+title: "PyCamp España 2025"
 date: 
-fullDate: 29 Marzo - 1 Abril 2024
-featured: false
-image: "/images/eventos/pycampes-2024.png"
+fullDate: 1 Mayo - 4 Mayo 2025
+featured: true
+image: "/images/eventos/pycampes-2025.png"
 logo: "/images/eventos/pycampes-2023-logo.png"
 description: "¡Bienvenido a PyCamp! ¿Estás listo para un fin de semana lleno de programación, diversión y naturaleza? En este evento, nos reunimos para compartir nuestra pasión por la programación y colaborar en proyectos Open Source. ¿Qué es lo mejor? ¡Tú puedes ser parte de la acción!" 
 website: "https://pycamp.es/"
 ---
 
-**PyCamp España**, es tu oportunidad de sumergirte en un fin de semana único en Guixers, Lleida, España (¡Nuevo Venue!). Durante 4 días y 3 noches, disfrutarás de alojamiento con pensión completa. Podrás dedicarle el tiempo que desees a ese proyecto o idea que querías codificar hace tanto tiempo y que no encontrabas el momento o lugar perfecto para hacerlo. 
+**PyCamp España**, es tu oportunidad de sumergirte en un fin de semana único en Castilblanco de los Arroyos, Sevilla, España (¡Nuevo Venue, ahora en el sur!). Durante 4 días y 3 noches, disfrutarás de alojamiento con pensión completa. Podrás dedicarle el tiempo que desees a ese proyecto o idea que querías codificar hace tanto tiempo y que no encontrabas el momento o lugar perfecto para hacerlo. 
 
 **La entrada incluye**:
 
