@@ -244,7 +244,15 @@ const MapData = () => {
             twitter: 'https://twitter.com/PyLadies_BCN',
             mail: 'pyladies-bcn@googlegroups.com',
             video: 'https://www.youtube.com/watch?v=JYCcPr4QW_k',
-        }
+        },
+        {
+            name: 'Python Bilbao',
+            latitude: 43.263002,
+            longitude: -2.935004,
+            telegram: 'https://t.me/pythonbilbao',
+            email: 'bilbao@es.python.org',
+            meetup: 'https://www.meetup.com/python-bilbao/',
+        },
     ];
     return groups.map((group, index) => {
         return (
