@@ -250,7 +250,7 @@ const MapData = () => {
             latitude: 43.263002,
             longitude: -2.935004,
             telegram: 'https://t.me/pythonbilbao',
-            email: 'bilbao@es.python.org',
+            mail: 'bilbao@es.python.org',
             meetup: 'https://www.meetup.com/python-bilbao/',
         },
     ];
