@@ -244,6 +244,13 @@ const MapData = () => {
             twitter: 'https://twitter.com/PyLadies_BCN',
             mail: 'pyladies-bcn@googlegroups.com',
             video: 'https://www.youtube.com/watch?v=JYCcPr4QW_k',
+        },
+        {
+            name: 'Python Zaragoza',
+            latitude: 41.6563497,
+            longitude: -0.876566,
+            meetup: 'https://www.meetup.com/es-ES/python_zgz/',
+            mail: 'zaragoza@es.python.org',
         }
     ];
     return groups.map((group, index) => {
