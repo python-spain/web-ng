@@ -246,6 +246,13 @@ const MapData = () => {
             video: 'https://www.youtube.com/watch?v=JYCcPr4QW_k',
         },
         {
+            name: 'Python Zaragoza',
+            latitude: 41.6563497,
+            longitude: -0.876566,
+            meetup: 'https://www.meetup.com/es-ES/python_zgz/',
+            mail: 'zaragoza@es.python.org',
+        },
+        {
             name: 'Python Bilbao',
             latitude: 43.263002,
             longitude: -2.935004,
