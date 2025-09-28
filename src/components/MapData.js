@@ -251,7 +251,15 @@ const MapData = () => {
             longitude: -0.876566,
             meetup: 'https://www.meetup.com/es-ES/python_zgz/',
             mail: 'zaragoza@es.python.org',
-        }
+        },
+        {
+            name: 'Python Bilbao',
+            latitude: 43.263002,
+            longitude: -2.935004,
+            telegram: 'https://t.me/pythonbilbao',
+            mail: 'bilbao@es.python.org',
+            meetup: 'https://www.meetup.com/python-bilbao/',
+        },
     ];
     return groups.map((group, index) => {
         return (
