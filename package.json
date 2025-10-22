@@ -23,6 +23,7 @@
     "@react-icons/all-files": "^4.1.0",
     "bootstrap": "^5.1.0",
     "gatsby": "^3.9.1",
+    "gatsby-plugin-client-side-redirect": "^1.1.0",
     "gatsby-plugin-fontawesome-css": "^1.1.0",
     "gatsby-plugin-google-analytics": "^3.0.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
@@ -34,7 +35,6 @@
     "gatsby-transformer-json": "^3.0.0",
     "gatsby-transformer-remark": "^4.6.0",
     "leaflet": "^1.7.1",
-    "sass": "^1.43.4",
     "postcss": "^8.3.5",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -44,7 +44,8 @@
     "react-icons": "^4.2.0",
     "react-leaflet": "^3.2.1",
     "react-leaflet-markercluster": "^3.0.0-rc1",
-    "remark-parse": "^9.0.0"
+    "remark-parse": "^9.0.0",
+    "sass": "^1.43.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.10",
