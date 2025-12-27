@@ -17,7 +17,7 @@ Antes de nada: **¡muchas gracias!** El proceso para asociarte es muy sencillo. 
 
 **Opción 1: Domiciliación bancaria (recomendada)**
 
-1. Realiza el **primer pago de la cuota anual (30€)** a través de [nuestro sistema de domiciliación bancaria con GoCardless](http://xih15.mjt.lu/lnk/AWMAADy7QSIAAcp9VNgAAdoxPfQAAYCr4qMAJgaEABTcwABmG6LGEUNCF_IsTxOlnpOk-s6AZgAUrvo/6/4ZaJwwHBETxNBtB3_FfyCw/aHR0cHM6Ly9wYXkuZ29jYXJkbGVzcy5jb20vQUwwMDA0RDVBUzVQMUg).
+1. Realiza el **primer pago de la cuota anual (30€)** a través de [nuestro sistema de domiciliación bancaria con GoCardless](https://pay.gocardless.com/AL0004D5AS5P1H).
 2. Una vez completado el proceso, **no tendrás que preocuparte de nada más**. La cuota se te cobrará automáticamente cada año en la misma fecha en la que hiciste el primer pago (GoCardless te mandará un aviso unos días antes de cada cargo).
 3. Mándanos un correo a [alta@es.python.org](mailto:alta@es.python.org) con **asunto "Alta nuevo/a socio/a"**, adjuntando:
     - Tu documento de identidad (DNI/NIE/pasaporte) escaneado
@@ -65,7 +65,7 @@ BIC/SWIFT: TRIOESMMXXX
 
 **Servicio de domiciliación automática de la asociación:**
 
-[GoCardless de Python España](http://xih15.mjt.lu/lnk/AWMAADy7QSIAAcp9VNgAAdoxPfQAAYCr4qMAJgaEABTcwABmG6LGEUNCF_IsTxOlnpOk-s6AZgAUrvo/6/4ZaJwwHBETxNBtB3_FfyCw/aHR0cHM6Ly9wYXkuZ29jYXJkbGVzcy5jb20vQUwwMDA0RDVBUzVQMUg)
+[GoCardless de Python España](https://pay.gocardless.com/AL0004D5AS5P1H)
 
 ## Quiero darme de baja
 
