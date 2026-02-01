@@ -2,7 +2,7 @@
 title: "PyCamp España 2025"
 date: 
 fullDate: 1 Mayo - 4 Mayo 2025
-featured: true
+featured: false
 image: "/images/eventos/pycampes-2025.png"
 logo: "/images/eventos/pycampes-2023-logo.png"
 description: "¡Bienvenido a PyCamp! ¿Estás listo para un fin de semana lleno de programación, diversión y naturaleza? En este evento, nos reunimos para compartir nuestra pasión por la programación y colaborar en proyectos Open Source. ¿Qué es lo mejor? ¡Tú puedes ser parte de la acción!" 
