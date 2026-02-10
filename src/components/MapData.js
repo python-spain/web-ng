@@ -52,6 +52,15 @@ const MapData = () => {
             email: 'vigo@lists.es.python.org',
         },
         {
+            name: 'Python Cardedeu',
+            latitude: 41.638278861338755,
+            longitude: 2.3562868325741277,
+            web: 'https://www.cardedeu.cat',
+            twitter: 'https://x.com/ajcardedeu?lang=es',
+            telegram: 'arabeshop.com',
+            email: 'arnausoler2006@ginebro.cat',
+        },
+        {
             name: 'Python Coruña',
             latitude: 43.361904,
             longitude: -8.4301933,
