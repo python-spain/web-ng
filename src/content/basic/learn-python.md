@@ -35,7 +35,7 @@ Para responder esta pregunta primero debes responder a la siguiente situación: 
 
 - [Python's original tutorial](https://docs.python.org/3/tutorial/)
 - [Learning Python](https://docs.python-guide.org/intro/learning/) - una sección de [The Hitchhiker's Guide to Python](https://docs.python-guide.org/) (¡una guía muy buena y completa de recursos!)
-- [Python for everybody](https://books.trinket.io/pfe/) - Charles Severance (Dr. Chuck)
+- [Python for everybody](https://www.py4e.com/book) - Charles Severance (Dr. Chuck)
 - [Dive into Python](https://diveintopython3.net/) - Mark Pilgrim
 - [Python Free Programming Books](https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-langs.md#python) - libros con licencias libres
 - [Awesome Python Books](https://github.com/Junnplus/awesome-python-books) - libros ordenados por categorías
@@ -61,7 +61,7 @@ Si es de las primeras veces que preguntas en un foro:
 - [https://pastebin.com/](https://pastebin.com/)
 - [https://bpaste.net/](https://bpaste.net/)
 - [https://repl.it/languages/python3](https://repl.it/languages/python3)
-- [https://trinket.io/python](https://trinket.io/python)
+- [https://coddy.tech/playground/es/python](https://coddy.tech/playground/es/python)
 - [https://gist.github.com/](https://gist.github.com/)
 
 O indicarnos tu repositorio de código en:
